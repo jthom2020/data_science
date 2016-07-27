@@ -1,0 +1,228 @@
+# Getaround search for Ashbury Heights
+https://index.getaround.com/v1.0/search?product=web&uid=100005837281185&
+user_lat=37.7717185&user_lng=-122.44389289999998&lat=37.7717185&lng=-122
+.44389289999998&distance=1&properties=car_id,car_name,car_photo,
+carkit_enabled,distance,latitude,longitude,make,model,price_daily,
+price_hourly,price_weekly,total_price,timezone,year,dedicated_parking&
+sort=best&page_sort=magic&page_size=500
+
+# Getaround search for San Francisco
+https://index.getaround.com/v1.0/search?product=web&uid=100005837281185&
+user_lat=37.7717185&user_lng=-122.44389289999998&viewport=37.514591%2C-
+122.644614%2C38.028441%2C-122.243172&properties=car_id,car_name,
+car_photo,carkit_enabled,distance,latitude,longitude,make,model,
+price_daily,price_hourly,price_weekly,total_price,timezone,year,
+dedicated_parking&sort=best&page_sort=magic&page_size=1000
+
+
+SPEC: VEHICLE MODEL
+
+-GET CAR MODEL DETAILS BY CAR MAKE AND MODEL NICENAMES
+https://api.edmunds.com/api/vehicle/v2/honda/fit?state=used&year=2015&view=basic&fmt=json&api_key=5gttt525w7ktadeqkytk2jez
+
+,
+            "trim": "EX-L w/Navigation"
+        }, {
+            "id": 200692514,
+            "name": "LX 4dr Hatchback (1.5L 4cyl CVT)",
+            "submodel": {
+                "body": "Hatchback",
+                "modelName": "Fit Hatchback",
+                "niceName": "hatchback"
+            },
+            
+
+-GET CAR MODELS COUNT         
+ {
+        "id": 200498131,
+        "year": 2015,
+        "stylesCount": 6
+    },
+    
+    
+    
+SPEC: VEHICLE MODEL YEAR
+
+-GET CAR MODEL YEAR BY CAR MAKE AND MODEL NICENAMES AND CAR YEAR
+https://api.edmunds.com/api/vehicle/v2/honda/fit/2015?view=full&fmt=json&api_key=5gttt525w7ktadeqkytk2jez
+
+{
+    "id": 200498131,
+    "make": {
+        "id": 200001444,
+        "name": "Honda",
+        "niceName": "honda"
+    },
+    "model": {
+        "id": "Honda_Fit",
+        "name": "Fit",
+        "niceName": "fit"
+    },
+    "year": 2015,
+    "styles": [{
+        "id": 200692509,
+        "name": "EX-L 4dr Hatchback (1.5L 4cyl CVT)",
+        "submodel": {
+            "body": "Hatchback",
+            "modelName": "Fit Hatchback",
+            "niceName": "hatchback"
+        },
+        
+        
+SPEC: VEHICLE STYLE
+
+-GET STYLES DETAILS BY VEHICLE MAKE/MODEL/YEAR
+https://api.edmunds.com/api/vehicle/v2/honda/fit/2015/styles?state=used&view=full&fmt=json&api_key=5gttt525w7ktadeqkytk2jez
+
+{
+    "styles": [{
+        "make": {
+            "id": 200001444,
+            "name": "Honda",
+            "niceName": "honda"
+        },
+        "model": {
+            "id": "Honda_Fit",
+            "name": "Fit",
+            "niceName": "fit"
+        },
+        "engine": {
+            "id": "200498133",
+            "name": "1.5L Inline4 16 Valve   Gas Regular Unleaded",
+            "equipmentType": "ENGINE",
+            "compressionRatio": 11.5,
+            "cylinder": 4,
+            "size": 1.5,
+            "displacement": 1498.0,
+            "configuration": "inline",
+            "fuelType": "regular unleaded",
+            "horsepower": 130,
+            "torque": 114,
+            "totalValves": 16,
+            "type": "gas",
+            "code": "4INAG1.5",
+            "compressorType": "NA",
+            "rpm": {
+                "horsepower": 6600,
+                "torque": 4600
+            },
+            "valve": {
+                "timing": "variable valve timing",
+                "gear": "double overhead camshaft"
+            }
+        },
+        "transmission": {
+            "id": "200692522",
+            "name": "continuously variableA",
+            "equipmentType": "TRANSMISSION",
+            "automaticType": "Continuously variable",
+            "transmissionType": "AUTOMATIC",
+            "numberOfSpeeds": "continuously variable"
+        },
+        "drivenWheels": "front wheel drive",
+        "numOfDoors": "4",
+....
+,
+        "categories": {
+            "market": "Hatchback",
+            "EPAClass": "Small Station Wagons",
+            "vehicleSize": "Compact",
+            "primaryBodyType": "Car",
+            "vehicleStyle": "4dr Hatchback",
+            "vehicleType": "Car"
+        },        
+
+
+SPEC: VEHICLE COLORS AND OPTIONS
+SPEC: VEHICLE ENGINE & TRANSMISSION
+- Need to pass a Style ID or an Options ID 
+
+
+
+SPEC: VEHICLE EQUIPMENT
+
+-GET EQUIPMENT DETAILS BY STYLE ID
+* This is where everything is at!
+
+Can look for features that are "STANDARD"
+
+ {
+        "id": "20069251466",
+        "name": "Cargo Dimensions",
+        "equipmentType": "OTHER",
+        "availability": "STANDARD",
+        "attributes": [{
+            "name": "Cargo Capacity, All Seats In Place",
+            "value": "16.6"
+        }, {
+            "name": "Cargo Capacity, Rear Seat Down Or Removed",
+            "value": "52.7"
+        }, {
+            "name": "Max Cargo Capacity",
+            "value": "52.7"
+        }]
+....
+, {
+        "id": "20069251494",
+        "name": "Specifications",
+        "equipmentType": "OTHER",
+        "availability": "STANDARD",
+        "attributes": [{
+            "name": "Ege Highway Mpg",
+            "value": "41"
+        }, {
+            "name": "Epa Combined Mpg",
+            "value": "36"
+        }, {
+            "name": "Epa City Mpg",
+            "value": "33"
+        }, {
+            "name": "Curb Weight",
+            "value": "2513"
+        }, {
+            "name": "Turning Diameter",
+            "value": "35.1"
+        }, {
+            "name": "Epa Highway Mpg",
+            "value": "41"
+        }, {
+            "name": "Tco Curb Weight",
+            "value": "2513"
+        }, {
+            "name": "Ege Combined Mpg",
+            "value": "36"
+        }, {
+            "name": "Fuel Capacity",
+            "value": "10.6"
+        }, {
+            "name": "Ege City Mpg",
+            "value": "33"
+        }]
+    }
+
+
+SPEC: VEHICLE CONFIGURATION
+- Nothing useful in here
+
+
+CONTENT: EDMUNDS CAR RATINGS
+-GET CAR RATINGS BY MAKE/MODEL/YEAR
+
+    "ratings": [{
+        "title": "Performance",
+        "grade": "B",
+        "score": 7.5,
+        "summary": "The Fit isn't overly quick to accelerate, but it is nimble and tossable. It's far more stable at freeway speeds than the previous Fit. Though by no means what we would call a \"hot hatch,\" the Fit is responsive and an easy car to live with on a daily basis. ",
+        "subRatings": [{
+            "title": "Acceleration",
+            "grade": "B",
+            "score": 7.5,
+            "summary": "Around town the 130 horsepower from the Fit's 1.5-liter 4-cylinder feels adequate. There's never a whole bunch of thrust. The continuously variable transmission (CVT) has somewhat slow responses, but the Fit did get to 60 mph in 8.8 sec. "
+        }, {
+            "title": "Braking",
+            "grade": "C",
+            "score": 6.5,
+            "summary": "Brake pedal action is reasonably firm and progressive in around-town driving, easy to modulate. It stopped from 60 mph in 127 feet, which is about average for the segment, with just a bit of side-to-side squirm."
+        }
+        
+        
