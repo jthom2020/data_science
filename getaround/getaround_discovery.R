@@ -14,6 +14,10 @@ vehicle_model <- fromJSON("https://api.edmunds.com/api/vehicle/v2/honda/fit?stat
 getaround <- as.data.frame(getaround)
 vehicle_model <- as.data.frame(vehicle_model)
 
+#Write to .csv
+write.csv(getaround, "getaround/getaround_api.csv")
+write.csv(vehicle_model,"getaround/edmunds_vehicle_model_api.csv")
+
 #get new cars and sort
 getaround %>%
   filter(cars.year > 2010) %>%
