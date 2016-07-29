@@ -1,0 +1,76 @@
+---
+title: "titanic"
+author: "Jonathon Thompson"
+date: "July 28, 2016"
+output: html_document
+---
+
+##Data Wrangling Exercise 2: Dealing with missing values
+###Exercise
+Using R, you’ll be handling missing values in this data set, and creating a new data set. Specifically, these are the tasks you need to do:
+
+###0: Load the data in RStudio
+Save the data set as a CSV file called titanic_original.csv and load it in RStudio into a data frame.
+```{r}
+titanic_df <- read.csv("/Users/jonathonthompson/Documents/data_science/sb_datawrangling_2/titanic_original.csv")
+```
+
+
+###1: Port of embarkation
+The embarked column has some missing values, which are known to correspond to passengers who actually embarked at Southampton. Find the missing values and replace them with S. *(Caution: Sometimes a missing value might be read into R as a blank or empty string.)*
+
+```{r}
+titanic_df$embarked <- gsub("^$", "S", titanic_df$embarked)
+```
+
+
+###2: Age
+You’ll notice that a lot of the values in the Age column are missing. While there are many ways to fill these missing values, using the mean or median of the rest of the values is quite common in such cases.
+
+1. Calculate the mean of the Age column and use that value to populate the missing values
+
+    ```{r}
+titanic_df$age[is.na(titanic_df$age)] <- mean(titanic_df$age, na.rm = TRUE)
+```
+
+2. Think about other ways you could have populated the missing values in the age column. Why would you pick any of those over the mean (or not)?
+  
+    Alternatively, could have grouped by sex and calculated mean or looked at age distribution to find a better proxy than mean of entire population.
+
+
+###3: Lifeboat
+You’re interested in looking at the distribution of passengers in different lifeboats, but as we know, many passengers did not make it to a boat :-( This means that there are a lot of missing values in the boat column. Fill these empty slots with a dummy value e.g. the string *'None' or 'NA'*
+
+```{r}
+#Convert to chr first
+titanic_df$boat <- as.character(titanic_df$boat)
+titanic_df$boat[grep("^$", titanic_df$boat)] <- "NA"
+```
+
+
+###4: Cabin
+You notice that many passengers don’t have a cabin number associated with them.
+
+1. Does it make sense to fill missing cabin numbers with a value?
+
+    It probably does not make sense to fill in a value here since there are so many missing that the column is unlikely to provide additional insight. We could make assumptions based on the class of passenger but if we did that we should just use class.
+
+2. What does a missing value here mean?
+
+    There were either poorly kept records or passengers may not have been assigned to unique cabins.
+
+
+You have a hunch that the fact that the cabin number is missing might be a useful indicator of survival. Create a new column has_cabin_number which has 1 if there is a cabin number, and 0 otherwise.
+
+```{r}
+has_cabin_number <- as.numeric(titanic_df$cabin != "")
+titanic_df <- cbind(titanic_df, has_cabin_number)
+```
+
+
+###5: Submit the project on Github
+Include your code, the original data as a CSV file titanic_original.csv, and the cleaned up data as a CSV file called titanic_clean.csv.
+```{r}
+write.csv(titanic_df, ("/Users/jonathonthompson/Documents/data_science/sb_datawrangling_2/titanic_clean.csv"))
+```
+
