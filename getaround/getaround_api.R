@@ -1,77 +1,102 @@
-library(httr)
-library(jsonlite)
-options(stringsAsFactors = FALSE)
-####
-##08/27##
+#load libraries
 library(dplyr)
 library(httr)
 library(jsonlite)
 options(stringsAsFactors = FALSE)
+#rm(list=ls(all=TRUE))
 
-getaround_acura <- filter(getaround_mmy, cars.make == "Acura")
-str(getaround_acura)
+#Get search results from Getaround
+getaround <- fromJSON("https://index.getaround.com/v1.0/search?product=web&uid=100005837281185&user_lat=37.7717185&user_lng=-122.44389289999998&viewport=37.514591%2C-122.644614%2C38.028441%2C-122.243172&properties=car_id,car_name,car_photo,carkit_enabled,distance,latitude,longitude,make,model,price_daily,price_hourly,price_weekly,total_price,timezone,year,dedicated_parking&sort=best&page_sort=magic&page_size=5000")
+
+##Convert to a data frame
+getaround <- as.data.frame(getaround)
+write.csv(getaround, file = paste0("getaround_orig_", format(Sys.Date(), "%Y%m%d%I%M"), ".csv"))
+
+
+#Clean Getaround Data
+##Replace spaces with _
+getaround$cars.make <- tolower(getaround$cars.make)
+getaround$cars.model <- tolower(getaround$cars.model)
+getaround$cars.model <- gsub(" ", "-", getaround$cars.model, fixed = TRUE)
+
+##Fix models
+##Acura - ok
+##Audi - ok
+##BMW - ok
+##Buick - ok
+##Cadillac - ok
+##Chevrolet - ok
+##Chrysler - ok
+##Dodge - ok
+##FIAT - ok
+##Ford - ok
+##GMC - ok
+##Honda - ok
+##Hyundai - ok
+##Infiniti - ok
+##Jeep - ok
+##Kia - ok
+##Lexus - ok
+##Lincoln - ok
+##Mazda - Model 3, 5, 6 fixes
+  getaround$cars.model[getaround$cars.make == "mazda" & grepl("mazda3", getaround$cars.model)] <- "3"
+  getaround$cars.model[getaround$cars.make == "mazda" & grepl("mazdaspeed3", getaround$cars.model)] <- "mazdaspeed-3"
+  getaround$cars.model[getaround$cars.make == "mazda" & grepl("mazda5", getaround$cars.model)] <- "5"
+  getaround$cars.model[getaround$cars.make == "mazda" & grepl("mazda6", getaround$cars.model)] <- "6"
+##Mercedes-Benz - ok
+##Mercury - ok
+##Mini - ok
+##Mitsubishi - ok
+##Nissan - ok
+##Porsche - ok
+##Ram - ok
+##Saturn - ok
+##Scion - ok
+##Smart - ok
+##Subaru - ok
+##Suzuki - ok
+##Tesla - ok
+##Toyota - ok
+##Volkswagen - GTI/Golf-GTI fixes
+  getaround$cars.model[getaround$cars.make == "volkswagen" & (getaround$cars.year == "2015"|getaround$cars.year == "2016") & grepl("gti", getaround$cars.model)] <- "golf-gti"
+##Volvo - ok
+
+##Export Clean Getaround data
+write.csv(getaround, file = paste0("getaround_clean_", format(Sys.Date(), "%Y%m%d%I%M"), ".csv"))
+  
+##Get distinct list of year/make/model
+getaround_mmy <- distinct(select(getaround, cars.year, cars.make, cars.model))
+
 
 #Creating Styles api calls
 #https://api.edmunds.com/api/vehicle/v2/honda/pilot/2010/styles?state=used&view=basic&fmt=json&api_key=5gttt525w7ktadeqkytk2jez
 
-url <- "https://api.edmunds.com/api/vehicle/v2/"
-path <- "/styles?state=used&view=basic&fmt=json&api_key="
+url_styles <- "https://api.edmunds.com/api/vehicle/v2/"
+path_styles <- "/styles?state=used&view=basic&fmt=json&api_key="
 api_key <- "5gttt525w7ktadeqkytk2jez"
 
-#Create empty dataframe to store api results
+##Create empty dataframe to store api results
 #rm(edmunds_styles_df)
 edmunds_styles_df <- data.frame()
 
-#For loop to create api url, import json, convert to df, add api info and add to existing df
-for(i in 1:nrow(getaround_acura)) {
-  ga_url <- print(paste0(url, tolower(getaround_acura$cars.make[i]),  "/", tolower(getaround_acura$cars.model[i]), "/", getaround_acura$cars.year[i], 
-                         path, api_key))
+##For loop to create api url, import json, convert to df, add api info and add to existing df
+for(i in 1:nrow(getaround_mmy)) {
+  ga_url <- print(paste0(url_styles, tolower(getaround_mmy$cars.make[i]),  "/", tolower(getaround_mmy$cars.model[i]), "/", getaround_mmy$cars.year[i], 
+                         path_styles, api_key))
   ga_json_styles <- fromJSON(ga_url, flatten =  TRUE)
   ga_json_styles <- as.data.frame(ga_json_styles) 
-
-  #Add api call info
-  ga_json_styles$cars.make <- tolower(getaround_acura$cars.make[i])
-  ga_json_styles$cars.model <- tolower(getaround_acura$cars.model[i])
-  ga_json_styles$cars.year <- getaround_acura$cars.year[i]
-  ga_json_styles$cars.api <- ga_url
   
+  #Add api call info
+  ga_json_styles$cars.make <- tolower(getaround_mmy$cars.make[i])
+  ga_json_styles$cars.model <- tolower(getaround_mmy$cars.model[i])
+  ga_json_styles$cars.year <- getaround_mmy$cars.year[i]
+  ga_json_styles$cars.api <- ga_url
   
   edmunds_styles_df <- bind_rows(edmunds_styles_df, ga_json_styles)
 }
 
-write.csv(edmunds_styles_df, file = paste0("edmunds_styles_orig_", format(Sys.Date(), "%Y%m%d%I%M"), ".csv"))
-##08/27##
-####
-
-?strpdate
-
-####
-raw.result.check <- GET(url = url)
-
-
-
-make <- "honda"
-model <- 
-year <- 
-
-
-
-edmunds_link <- paste0("https://api.edmunds.com/api/vehicle/v2/styles/200477004/equipment?availability=standard&fmt=json&api_key=", api_key)
-
-
-
-
-vehicle_equip <- fromJSON("https://api.edmunds.com/api/vehicle/v2/styles/200477004/equipment?availability=standard&fmt=json&api_key=5gttt525w7ktadeqkytk2jez")
-
-#https://api.edmunds.com/api/vehicle/v2/honda/pilot/2010/styles?state=used&view=basic&fmt=json&api_key=5gttt525w7ktadeqkytk2jez
-
-
-edmund_makes<- fromJSON("https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key=5gttt525w7ktadeqkytk2jez", flatten)
-edmund_makes <- as.data.frame(edmund_makes)
-tbl_df(edmund_makes)
-
-
-
+##Export raw Edmunds styles data
+write.csv(edmunds_styles_df, file = paste0("edmunds_styles_orig_", format(Sys.Date(), "%Y%m%d"), ".csv"))
 
 
 
