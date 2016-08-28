@@ -1,0 +1,56 @@
+> tbl_df(vehicle_equip)
+# A tibble: 43 x 26
+   equipment.id                           equipment.name equipment.equipmentType equipment.availability  equipment.attributes equipment.compressionRatio equipment.cylinder
+*         <chr>                                    <chr>                   <chr>                  <chr>                <list>                      <dbl>              <int>
+1     200069327                                   OnStar              TELEMATICS               STANDARD <data.frame [18 x 2]>                         NA                 NA
+2     200476998  3.6L V6 24 Valve   Gas Regular Unleaded                  ENGINE               STANDARD                <NULL>                       11.5                  6
+3     200476999                                       6A            TRANSMISSION               STANDARD                <NULL>                         NA                 NA
+4   20047700419                         Cargo Dimensions                   OTHER               STANDARD  <data.frame [1 x 2]>                         NA                 NA
+5   20047700420                      Mobile Connectivity                   OTHER               STANDARD  <data.frame [4 x 2]>                         NA                 NA
+6   20047700423                          Instrumentation                   OTHER               STANDARD  <data.frame [7 x 2]>                         NA                 NA
+7   20047700424                                    Doors                   OTHER               STANDARD  <data.frame [1 x 2]>                         NA                 NA
+8   20047700425                          Exterior Lights                   OTHER               STANDARD  <data.frame [6 x 2]>                         NA                 NA
+9   20047700428                     Front Passenger Seat                   OTHER               STANDARD  <data.frame [4 x 2]>                         NA                 NA
+10  20047700429                                  Mirrors                 MIRRORS               STANDARD  <data.frame [8 x 2]>                         NA                 NA
+# ... with 33 more rows, and 19 more variables: equipment.size <dbl>, equipment.displacement <dbl>, equipment.configuration <chr>, equipment.fuelType <chr>,
+#   equipment.horsepower <int>, equipment.torque <int>, equipment.totalValves <int>, equipment.manufacturerEngineCode <chr>, equipment.type <chr>, equipment.code <chr>,
+#   equipment.compressorType <lgl>, equipment.automaticType <chr>, equipment.transmissionType <chr>, equipment.numberOfSpeeds <chr>, equipment.rpm.horsepower <int>,
+#   equipment.rpm.torque <int>, equipment.valve.timing <chr>, equipment.valve.gear <chr>, equipmentCount <int>
+
+
+> vehicle_equip[[27,"equipment.attributes"]]
+                   name value
+1  Gross Vehicle Weight  5346
+2       Ege Highway Mpg    28
+3      Epa Combined Mpg    21
+4          Epa City Mpg    17
+5           Curb Weight  4006
+6      Turning Diameter  38.7
+7       Epa Highway Mpg    28
+8       Tco Curb Weight  4006
+9      Ege Combined Mpg    21
+10        Fuel Capacity  19.0
+11         Ege City Mpg    17
+12      Towing Capacity  1000
+
+
+> vehicle_equip[[1,"equipment.attributes"]]
+                                             name                                               value
+1                               Concierge Service                                   Concierge Service
+2                               Crisis Assistance                                   Crisis Assistance
+3                  Vehicle Collision Notification                      Vehicle Collision Notification
+4                                 Vehicle Locator                                     Vehicle locator
+5                     Sent To Navigation Function                         Sent-to Navigation Function
+6              Stolen Vehicle Tracking/assistance                  Stolen Vehicle Tracking/Assistance
+7                              Remote Door Unlock                                  Remote Door Unlock
+8                             Roadside Assistance                                 Roadside Assistance
+9  Destination Guidance (turn By Turn Navigation) Destination guidance (also Turn-by-Turn Navigation)
+10                 Airbag Deployment Notification                      Airbag Deployment Notification
+11                             Hands Free Calling                                  Hands-Free Calling
+12                           Destination Download                                Destination Download
+13                             Remote Horn/lights                                  Remote Horn/Lights
+14                              Emergency Service                                   Emergency Service
+15                            Vehicle Diagnostics                                 Vehicle Diagnostics
+16         Customer Relations/vehicle Information              Customer Relations/Vehicle Information
+17                              Poi Communication                                   POI communication
+18                               Remote Door Lock                                    Remote Door Lock

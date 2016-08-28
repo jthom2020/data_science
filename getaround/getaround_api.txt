@@ -16,6 +16,9 @@ dedicated_parking&sort=best&page_sort=magic&page_size=1000
 
 
 SPEC: VEHICLE MODEL
+All makes
+https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key=5gttt525w7ktadeqkytk2jez
+
 
 -GET CAR MODEL DETAILS BY CAR MAKE AND MODEL NICENAMES
 https://api.edmunds.com/api/vehicle/v2/honda/fit?state=used&year=2015&view=basic&fmt=json&api_key=5gttt525w7ktadeqkytk2jez

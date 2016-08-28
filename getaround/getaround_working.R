@@ -67,6 +67,39 @@ edmunds_equip_full <- left_join(edmunds_equip_id, edmunds_equip_df, by = "equipm
 
 
 
+#8/27
+library(dplyr)
+library(httr)
+library(jsonlite)
+options(stringsAsFactors = FALSE)
+
+getaround_acura <- filter(getaround_mmy, cars.make == "Acura")
+str(getaround_acura)
+
+#Creating Styles api calls
+#https://api.edmunds.com/api/vehicle/v2/honda/pilot/2010/styles?state=used&view=basic&fmt=json&api_key=5gttt525w7ktadeqkytk2jez
+
+url <- "https://api.edmunds.com/api/vehicle/v2/"
+path <- "/styles?state=used&view=basic&fmt=json&api_key="
+api_key <- "5gttt525w7ktadeqkytk2jez"
+
+#rm(edmunds_styles_df)
+edmunds_styles_df <- data.frame(a=character(),
+                                  stringsAsFactors=FALSE) 
+
+for(i in 1:nrow(getaround_acura)) {
+  ga_url <- print(paste0(url, tolower(getaround_acura$cars.make[i]),  "/", tolower(getaround_acura$cars.model[i]), "/", getaround_acura$cars.year[i], 
+               path, api_key))
+  ga_json_styles <- fromJSON(ga_url, flatten =  TRUE)
+  ga_json_styles <- as.data.frame(ga_json_styles) 
+  
+  ga_json_styles$cars.make <- tolower(getaround_acura$cars.make[i])
+  ga_json_styles$cars.model <- tolower(getaround_acura$cars.model[i])
+  ga_json_styles$cars.year <- getaround_acura$cars.year[i]
+  ga_json_styles$cars.api <- ga_url
+  
+  edmunds_styles_df <- bind_rows(edmunds_styles_df, ga_json_styles)
+}
 
 
 
@@ -76,8 +109,48 @@ edmunds_equip_full <- left_join(edmunds_equip_id, edmunds_equip_df, by = "equipm
 
 
 
+#
+for(i in 1:nrow(getaround_acura)) {
+  GET(url=(paste0(url, tolower(getaround_acura$cars.make[i]),  "/", tolower(getaround_acura$cars.model[i]), "/", getaround_acura$cars.year[i], 
+               path, api_key)))
+}
 
 
+
+rm(raw.getaround)
+
+raw.getaround <- GET(url = "https://api.edmunds.com/api/vehicle/v2/acura/rdx/2008/styles?state=used&view=basic&fmt=json&api_key=5gttt525w7ktadeqkytk2jez" )
+head(raw.getaround$content)
+this.raw.content <- rawToChar(raw.getaround$content)
+nchar(this.raw.content)
+this.content <- fromJSON(this.raw.content)
+class(this.content)
+length(this.content)
+this.content[[1]]
+
+#turn into DF
+this.content.df <- as.data.frame(this.content)
+class(this.content.df)
+dim(this.content.df)
+head(this.content.df)
+
+
+
+#8/27
+######
+
+raw.getaround <- GET(url = "https://api.edmunds.com/api/vehicle/v2/toyota/yaris/2010/styles?state=used&view=basic&fmt=json&api_key=5gttt525w7ktadeqkytk2jez")
+
+edmunds_styles_api <- data.frame(ga_url = character())
+
+#For loop to create api url, import json, convert to df, add api info and add to existing df
+for(i in 1:nrow(getaround_mmy)) {
+  ga_url <- (paste0(url, tolower(getaround_mmy$cars.make[i]),  "/", tolower(getaround_mmy$cars.model[i]), "/", getaround_mmy$cars.year[i], 
+                         path, api_key))
+}
+  
+  
+str(ga_url)
 
 
 vehicle_equip5 <- data.frame(matrix(unlist(vehicle_equip$equipment.attributes),nrow = 217, byrow = T), stringsAsFactors = FALSE)
@@ -94,9 +167,9 @@ unnest(vehicle_equip$equipment.attributes)
 vehicle_equip[[27,"equipment.attributes"]]
 
 
-vehicle_style <- fromJSON("https://api.edmunds.com/api/vehicle/v2/styles/200477004?view=full&fmt=json&api_key=5gttt525w7ktadeqkytk2jez", flatten = TRUE)
+vehicle_mazda <- fromJSON("https://api.edmunds.com/api/vehicle/v2/chevrolet/models?state=used&view=basic&fmt=json&api_key=5gttt525w7ktadeqkytk2jez", flatten = TRUE)
 str(vehicle_equip)
-vehicle_style <- as.data.frame(vehicle_style)
+vehicle_mazda <- as.data.frame(vehicle_mazda)
 tbl_df(vehicle_style)
 
 
