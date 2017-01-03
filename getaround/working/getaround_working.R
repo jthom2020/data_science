@@ -1,6 +1,7 @@
 library("dplyr")
 library("tidyjson")
 library("jsonlite")
+library("tidyr")
 
 edmunds_equip_id <- fromJSON("https://api.edmunds.com/api/vehicle/v2/styles/200477004/equipment?availability=standard&fmt=json&api_key=5gttt525w7ktadeqkytk2jez", flatten = TRUE)
 
@@ -162,14 +163,19 @@ for(i in 1:nrow(edmunds_styles_ids)) {
   ed_details_json <- ed_details_json %>% 
     enter_object("equipment") %>% 
     gather_array %>%
-    spread_values(equipment.id = jstring("id")) %>%
+    spread_values(equipment.id = jstring("id"),
+                  equipment.type = jstring("equipmentType"),
+                  equipment.name = jstring("name"),
+                  engine.cr = jstring("compressionRatio"),
+                  engine.cylinder = jstring("cylinder"),
+                  engine.displacement = jstring("displacement")) %>%
     enter_object("attributes") %>% 
     gather_array %>%
     spread_values(
       attributes.name = jstring("name"),
       attributes.value = jstring("value")
     ) %>%
-    select(equipment.id, attributes.name, attributes.value)
+    select(equipment.id, equipment.type, equipment.name, attributes.name, attributes.value, engine.cr, engine.cylinder, engine.displacement)
   
   #Add api call info
   ed_details_json$styles.id <- edmunds_styles_ids$styles.id[i]
@@ -205,12 +211,16 @@ edmunds_equip_tst <- json_raw %>%
   enter_object("equipment") %>% 
   gather_array %>%
   spread_values(equipment.id = jstring("id")) %>%
+  
   enter_object("attributes") %>% 
   gather_array %>%
-  spread_values(
+   spread_values(
     attributes.name = jstring("name"),
     attributes.value = jstring("value")
   ) %>%
+  
+  
+  
   select(equipment.id, attributes.name, attributes.value)
 
 
@@ -222,12 +232,175 @@ edmunds_equip_full <- left_join(edmunds_equip_id, edmunds_equip_df, by = "equipm
 
 #08/29
 #####
+#08/30
+
+test_json <- fromJSON("https://api.edmunds.com/api/vehicle/v2/styles/101418219?view=full&fmt=json&api_key=5gttt525w7ktadeqkytk2jez")
+test_json1 <- fromJSON("https://api.edmunds.com/api/vehicle/v2/styles/101418219?view=full&fmt=json&api_key=5gttt525w7ktadeqkytk2jez", flatten = TRUE)
+
+ed_styles_tst <- GET(url = "https://api.edmunds.com/api/vehicle/v2/styles/101418219?view=full&fmt=json&api_key=5gttt525w7ktadeqkytk2jez")
+ed_styles_json <- httr::content(ed_styles_tst, type = "text")
+
+#Format json ##need to get a few more fields from here##
+ed_styles_json_df <- ed_styles_json %>%
+  
+  spread_values(styles.id = jstring("id"),
+                styles.trim = jstring("trim"),
+                styles.drivewheels = jstring("drivenWheels"),
+                styles.doors = jstring("numOfDoors")) %>%
+  
+  spread_values(categories.market = jstring("categories", "market"),
+                categories.epaclass = jstring("categories", "EPAClass"),
+                categories.vehiclesize = jstring("categories", "vehicleSize"),
+                categories.bodytype = jstring("categories", "primaryBodyType"),
+                categories.vehiclestyle = jstring("categories", "vehicleStyle"),
+                categories.vehicletype = jstring("categories", "vehicleType")
+                ) %>%
+  
+  enter_object("engine") %>%
+  spread_values(engine.cylinder = jstring("cylinder"),
+                engine.displacement = jstring("displacement"),
+                engine.horsepower = jstring("horsepower"),
+                engine.rpm.hp = jstring("rpm","horsepower"),
+                engine.torque = jstring("torque"),
+                engine.rpm.tq = jstring("rpm","torque"))
+
+###
+prettify(ed_styles_json)
+json_types(ed_styles_json)
+###
 
 
+##For loop to create api url, import json, convert to df, add api info and add to existing df
+for(i in 1:nrow(edmunds_styles_ids)) {
+  ed_details_url <- print(paste0(url_details, edmunds_styles_ids$styles.id[i], path_details, api_key))
+  ed_details_json <- GET(url = ed_details_url)
+  ed_details_json <- httr::content(ed_details_json, type = "text")
+  
+  #Format json ##need to get a few more fields from here##
+  ed_details_json <- ed_details_json %>% 
+    enter_object("equipment") %>% 
+    gather_array %>%
+    spread_values(equipment.id = jstring("id"),
+                  equipment.type = jstring("equipmentType"),
+                  equipment.name = jstring("name")) %>%
+    enter_object("attributes") %>% 
+    gather_array %>%
+    spread_values(
+      attributes.name = jstring("name"),
+      attributes.value = jstring("value")
+    ) %>%
+    select(equipment.id, equipment.type, equipment.name, attributes.name, attributes.value, engine.cr, engine.cylinder, engine.displacement)
+  
+  #Add api call info
+  ed_details_json$styles.id <- edmunds_styles_ids$styles.id[i]
+  
+  edmunds_styles_details_df <- bind_rows(edmunds_styles_details_df, ed_details_json)
+}
+
+  
+  engine.cr = jstring("compressionRatio"),
+  engine.cylinder = jstring("cylinder"),
+  engine.displacement = jstring("displacement")
+  
+  
+  #Get search results from Getaround
+  edmunds_styles_spec <- fromJSON("https://api.edmunds.com/api/vehicle/v2/styles/101418219?view=full&fmt=json&api_key=5gttt525w7ktadeqkytk2jez", flatten = TRUE)
+  
+  ##Convert to a data frame
+  edmunds_styles_spec <- as.data.frame(edmunds_styles_spec)  
+  
+  
+#rm(edmunds_styles_details_df)
+##08/30
+######
+
+######
+#09/01
+library("tidyr")  
+
+str(edmunds_styles_details_df)
+  
+edmunds_styles_details_df$attributes.name <- gsub(" ", "_", edmunds_styles_details_df$attributes.name, fixed = TRUE)
+
+ed_spread5 <- edmunds_styles_details_df %>%
+  select(styles.id, attributes.name, attributes.value) %>%
+  spread(attributes.name, attributes.value, drop = TRUE)
+  
+  spread(edmunds_styles_details_df, attributes.name, attributes.value, drop = TRUE) %>% select(styles.id, Epa_Interior_Volume)
+\
+  
+#Creating Edmunds Ratings api calls
+#https://api.edmunds.com/api/vehicle/v2/grade/acura/ilx/2013?submodel=sedan&fmt=json&api_key=5gttt525w7ktadeqkytk2jez
+url_reviews <- "https://api.edmunds.com/api/vehicle/v2/grade/"
+path_reviews <- "&fmt=json&api_key="
+
+  
+##Create empty dataframe to store api results
+#rm(edmunds_reviews_df)
+edmunds_reviews_df <- data.frame()
+  
+##For loop to create api url, import json, convert to df, add api info and add to existing df
+for(i in 1:nrow(edmunds_styles_ids)) {
+  try(
+    {review_url <- print(paste0(url_reviews, edmunds_styles_ids$cars.make[i],  "/", edmunds_styles_ids$cars.model[i], "/", edmunds_styles_ids$cars.year[i], 
+                           "?submodel=", edmunds_styles_ids$styles.submodel.niceName[i], path_reviews, api_key))
+    review_json <- fromJSON(review_url, flatten =  TRUE)
+    review_df <- as.data.frame(review_json)
+    
+    review_df <- unnest(review_df, ratings.subRatings)
+    
+    edmunds_reviews_df <- bind_rows(edmunds_reviews_df, review_df)}
+  )
+} 
+    
+distinct(select(edmunds_reviews_df, style.id, model.niceName, make.niceName ))
+
+edmunds_styles_ids2 <- distinct(select(edmunds_styles_df, styles.make.niceName, styles.model.niceName, styles.year.year, styles.submodel.niceName)) %>% 
+  filter(styles.year.year >= 2013)
+####
+#09/03
+
+edmunds_styles_details_distinct <- distinct(select(edmunds_styles_details_df, equipment.type, equipment.name, attributes.name, attributes.value ))
+
+###
+str(edmunds_styles_details_df)
+
+**WORKING ON THIS  
+review_json  <- fromJSON("https://api.edmunds.com/api/vehicle/v2/grade/acura/ilx/2013?submodel=sedan&fmt=json&api_key=5gttt525w7ktadeqkytk2jez", flatten = TRUE)
+review_df <- as.data.frame(review_json)
+
+review_sub_df <- unnest(review_df, ratings.subRatings)
+
+review_df %>%
+  select(style.id, ratings.title, ratings.grade) %>%
+  spread(ratings.title, ratings.grade)
+
+colnames(review_sub_df)[22] <- "sub.title"
+colnames(review_sub_df)[23] <- "sub.grade"
+colnames(review_sub_df)[24] <- "sub.score"
+colnames(review_sub_df)[25] <- "sub.summary"
+
+reviezzz <- review_sub_df %>%
+  unite(ratings.sub.title, ratings.title, sub.title) %>%
+  select(style.id, ratings.sub.title, sub.grade) %>%
+  spread(ratings.sub.title, sub.grade)
+
+  select(style.id, ratings.title, sub.title, sub.grade) %>%
+  
+  
 
 
-
-
+#09/01
+######
+  
+  
+  
+  
+  
+  
+  
+  
+  
 raw.getaround <- GET(url = "https://api.edmunds.com/api/vehicle/v2/toyota/yaris/2010/styles?state=used&view=basic&fmt=json&api_key=5gttt525w7ktadeqkytk2jez")
 
 edmunds_styles_api <- data.frame(ga_url = character())
@@ -324,62 +497,6 @@ getaround %>%
 #get vehicle model data into df
 vehicle_model[[6]]
 ed_style_id <- as.data.frame(vehicle_model[[6]])
-
-
-
-##
-rm(edmunds)
-
-vehicle_model[[6]][["id"]]
-
-sapply(vehicle_model[[6]], 
-       function(x) c(x$id, x$name, x$trim, x$submodel.body, x$submodel.modelName, x$submodel.niceName))
-
-
-newnew <- lapply(
-  vehicle_model[[6]], 
-  function(x) c(x$id, x$name, x$trim, x$submodel.body, x$submodel.modelName, x$submodel.niceName))
-newnew <- do.call(rbind, newnew)
-newnew <- as.data.frame(newnew)
-
-newnewish <- unlist(newnew)
-newnewish <- as.data.frame(newnewish)
-
-test <- unlist(vehicle_model)
-test <- as.data.frame((test))
-
-str(vehicle_model)
-#####
-
-
-
-getaround_mmy %>% 
-  filter(getaround_mmy$cars.make == "mazda") %>%
-  filter(grepl("5", getaround_mmy$cars.model))
-
-
-
-mazda3 <- (filter(getaround_mmy, cars.make == "Mazda", (grepl("3", cars.model))))
-
-
-mutate(getaround_mmy, cars.model = (ifelse(cars.make = "Mazda", (grepl("3", cars.model), "3" ))))
-
-getaround_mmy %>%
-  mutate()
-
-?replace
-
-
-gsub("3","3", getaround_mmy$cars.model)
-
-filter(getaround_mmy, cars.make == "Mazda") %>%
-  
-  getaround_mmy$cars.model
-refine_df$company[grepl("^ak", refine_df$company)] <- "akzo"
-grepl("GTI", getaround_mmy$cars.model)
-gsub("GTI", "_", getaround_mmy$cars.model, fixed = TRUE)
-
-
 
 
 

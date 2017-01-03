@@ -11,7 +11,7 @@ vehicle_years <- fromJSON("https://api.edmunds.com/api/vehicle/v2/makes?state=us
 
 #Convert to a data frame
 getaround <- as.data.frame(getaround)
-vehicle_model <- as.data.frame(vehicle_model)
+#vehicle_model <- as.data.frame(vehicle_model)
 
 #Getaround Data
 ##Get distinct list of year/make/model
@@ -24,12 +24,12 @@ getaround_year <- distinct(select(getaround, cars.year))
 
 #Edmunds Vehicle Model Data
 ##Unnest and rename styles nested df
-styles_json <- unnest(vehicle_model_flat$years)
+styles_json <- unnest(vehicle_model$years)
 colnames(styles_json)[1] <- "years.id"
 colnames(styles_json)[3] <- "styles.id"
 
 ##Join back with vehicles
-vehicle_model <- left_join(vehicle_model_flat, styles_json, by = "years.id")
+vehicle_model <- left_join(vehicle_model, styles_json, by = "years.id")
 
 ##Start cleaning up
 vehicle_model <- separate(vehicle_model, id, c("make","model"))

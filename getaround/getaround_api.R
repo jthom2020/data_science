@@ -2,6 +2,8 @@
 library(dplyr)
 library(httr)
 library(jsonlite)
+library("tidyjson")
+library("tidyr")
 options(stringsAsFactors = FALSE)
 #rm(list=ls(all=TRUE))
 
@@ -65,14 +67,14 @@ getaround$cars.model <- gsub(" ", "-", getaround$cars.model, fixed = TRUE)
 write.csv(getaround, file = paste0("getaround_clean_", format(Sys.Date(), "%Y%m%d"), ".csv"))
   
 ##Get distinct list of year/make/model
-getaround_mmy <- distinct(select(getaround, cars.year, cars.make, cars.model)) %>%
+getaround_mmy <- distinct(select(getaround, cars.year, cars.make, cars.model))  %>%
   filter(cars.make == "acura") ##remove this for the full api call
 
 
 #Creating Styles api calls
 #https://api.edmunds.com/api/vehicle/v2/honda/pilot/2010/styles?state=used&view=basic&fmt=json&api_key=5gttt525w7ktadeqkytk2jez
-url_styles <- "https://api.edmunds.com/api/vehicle/v2/"
-path_styles <- "/styles?state=used&view=basic&fmt=json&api_key="
+url_styles_id <- "https://api.edmunds.com/api/vehicle/v2/"
+path_styles_id <- "/styles?state=used&view=basic&fmt=json&api_key="
 api_key <- "5gttt525w7ktadeqkytk2jez"
 
 ##Create empty dataframe to store api results
@@ -81,8 +83,8 @@ edmunds_styles_df <- data.frame()
 
 ##For loop to create api url, import json, convert to df, add api info and add to existing df
 for(i in 1:nrow(getaround_mmy)) {
-  ga_url <- print(paste0(url_styles, getaround_mmy$cars.make[i],  "/", getaround_mmy$cars.model[i], "/", getaround_mmy$cars.year[i], 
-                         path_styles, api_key))
+  ga_url <- print(paste0(url_styles_id, getaround_mmy$cars.make[i],  "/", getaround_mmy$cars.model[i], "/", getaround_mmy$cars.year[i], 
+                         path_styles_id, api_key))
   ga_json_styles <- fromJSON(ga_url, flatten =  TRUE)
   ga_json_styles <- as.data.frame(ga_json_styles) 
   
@@ -101,11 +103,11 @@ write.csv(edmunds_styles_df, file = paste0("edmunds_styles_orig_", format(Sys.Da
 
 #Filter down to a single, unique style_id
 edmunds_styles_ids <- edmunds_styles_df %>%
-  select(cars.year, cars.make, cars.model, styles.id) %>%
+  select(styles.id, cars.year, cars.make, cars.model, styles.submodel.niceName) %>%
   group_by(cars.year, cars.make, cars.model) %>%
   arrange(styles.id) %>%
   slice(1:1) %>%
-  arrange(cars.make, cars.model, cars.year) %>%
+  arrange(cars.make, cars.model, cars.year) %>% 
   filter(cars.make == "acura") ##remove this for the full api call
 
 
@@ -128,14 +130,15 @@ for(i in 1:nrow(edmunds_styles_ids)) {
   ed_details_json <- ed_details_json %>% 
     enter_object("equipment") %>% 
     gather_array %>%
-    spread_values(equipment.id = jstring("id")) %>%
+    spread_values(equipment.id = jstring("id"),
+                  equipment.type = jstring("equipmentType"),
+                  equipment.name = jstring("name")) %>%
     enter_object("attributes") %>% 
     gather_array %>%
     spread_values(
       attributes.name = jstring("name"),
       attributes.value = jstring("value")
-    ) %>%
-    select(equipment.id, attributes.name, attributes.value)
+    ) 
   
   #Add api call info
   ed_details_json$styles.id <- edmunds_styles_ids$styles.id[i]
@@ -145,3 +148,47 @@ for(i in 1:nrow(edmunds_styles_ids)) {
 
 ##Export raw Edmunds styles details data
 write.csv(edmunds_styles_details_df, file = paste0("edmunds_styles_details_orig_", format(Sys.Date(), "%Y%m%d"), ".csv"))
+
+
+#Creating Styles Basics api calls
+#"https://api.edmunds.com/api/vehicle/v2/styles/101418219?view=full&fmt=json&api_key=5gttt525w7ktadeqkytk2jez"
+url_styles <- "https://api.edmunds.com/api/vehicle/v2/styles/"
+path_styles <- "?view=full&fmt=json&api_key="
+
+##Create empty dataframe to store api results
+#rm(ed_styles_df)
+edmunds_styles_basic_df <- data.frame()
+
+##For loop to create api url, import/ json, convert to df, add api info and add to existing df
+for(i in 1:nrow(edmunds_styles_ids)) {
+  ed_styles_url <- print(paste0(url_styles, edmunds_styles_ids$styles.id[i], path_styles, api_key))
+  ed_styles_json <- GET(url = ed_styles_url)
+  ed_styles_json <- httr::content(ed_styles_json, type = "text")
+
+
+ed_styles_json_df <- ed_styles_json %>%
+  
+  spread_values(styles.id = jstring("id"),
+                styles.trim = jstring("trim"),
+                styles.drivewheels = jstring("drivenWheels"),
+                styles.doors = jstring("numOfDoors")) %>%
+  
+  spread_values(categories.market = jstring("categories", "market"),
+                categories.epaclass = jstring("categories", "EPAClass"),
+                categories.vehiclesize = jstring("categories", "vehicleSize"),
+                categories.bodytype = jstring("categories", "primaryBodyType"),
+                categories.vehiclestyle = jstring("categories", "vehicleStyle"),
+                categories.vehicletype = jstring("categories", "vehicleType")) %>%
+  
+  enter_object("engine") %>%
+  spread_values(engine.cylinder = jstring("cylinder"),
+                engine.displacement = jstring("displacement"),
+                engine.horsepower = jstring("horsepower"),
+                engine.rpm.hp = jstring("rpm","horsepower"),
+                engine.torque = jstring("torque"),
+                engine.rpm.tq = jstring("rpm","torque"))
+
+edmunds_styles_basic_df <- bind_rows(edmunds_styles_basic_df, ed_styles_json_df)
+}
+
+write.csv(edmunds_styles_basic_df, file = paste0("edmunds_styles_basic_orig_", format(Sys.Date(), "%Y%m%d"), ".csv"))
