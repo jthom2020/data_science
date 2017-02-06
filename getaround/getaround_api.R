@@ -14,10 +14,10 @@ getaround <- fromJSON("https://index.getaround.com/v1.0/search?product=web&uid=1
 getaround <- as.data.frame(getaround)
 write.csv(getaround, file = paste0("getaround_orig_", format(Sys.Date(), "%Y%m%d"), ".csv"))
 
-
 #Clean Getaround Data
 ##Make lowercase and replace spaces with "-"
 getaround$cars.make <- tolower(getaround$cars.make)
+getaround$cars.make <- gsub(" ", "-", getaround$cars.make, fixed = TRUE)
 getaround$cars.model <- tolower(getaround$cars.model)
 getaround$cars.model <- gsub(" ", "-", getaround$cars.model, fixed = TRUE)
 
@@ -38,6 +38,7 @@ getaround$cars.model <- gsub(" ", "-", getaround$cars.model, fixed = TRUE)
 ##Infiniti - ok
 ##Jeep - ok
 ##Kia - ok
+##Land Rover - ??
 ##Lexus - ok
 ##Lincoln - ok
 ##Mazda - Model 3, 5, 6 fixes
@@ -67,8 +68,8 @@ getaround$cars.model <- gsub(" ", "-", getaround$cars.model, fixed = TRUE)
 write.csv(getaround, file = paste0("getaround_clean_", format(Sys.Date(), "%Y%m%d"), ".csv"))
   
 ##Get distinct list of year/make/model
-getaround_mmy <- distinct(select(getaround, cars.year, cars.make, cars.model))  %>%
-  filter(cars.make == "acura") ##remove this for the full api call
+getaround_mmy <- distinct(select(getaround, cars.year, cars.make, cars.model))  #%>%
+  #filter(cars.make == "acura") ##remove this for the full api call
 
 
 #Creating Styles api calls
@@ -83,7 +84,8 @@ edmunds_styles_df <- data.frame()
 
 ##For loop to create api url, import json, convert to df, add api info and add to existing df
 for(i in 1:nrow(getaround_mmy)) {
-  ga_url <- print(paste0(url_styles_id, getaround_mmy$cars.make[i],  "/", getaround_mmy$cars.model[i], "/", getaround_mmy$cars.year[i], 
+  try(
+  {ga_url <- print(paste0(url_styles_id, getaround_mmy$cars.make[i],  "/", getaround_mmy$cars.model[i], "/", getaround_mmy$cars.year[i], 
                          path_styles_id, api_key))
   ga_json_styles <- fromJSON(ga_url, flatten =  TRUE)
   ga_json_styles <- as.data.frame(ga_json_styles) 
@@ -94,7 +96,8 @@ for(i in 1:nrow(getaround_mmy)) {
   ga_json_styles$cars.year <- getaround_mmy$cars.year[i]
   ga_json_styles$cars.api <- ga_url
   
-  edmunds_styles_df <- bind_rows(edmunds_styles_df, ga_json_styles)
+  edmunds_styles_df <- bind_rows(edmunds_styles_df, ga_json_styles)}
+  )
 }
 
 ##Export raw Edmunds styles data
@@ -103,12 +106,13 @@ write.csv(edmunds_styles_df, file = paste0("edmunds_styles_orig_", format(Sys.Da
 
 #Filter down to a single, unique style_id
 edmunds_styles_ids <- edmunds_styles_df %>%
+  #filter(styles.trim == 'Base') %>% ##Not a good hit rate, this is a limitation of the analysis
   select(styles.id, cars.year, cars.make, cars.model, styles.submodel.niceName) %>%
   group_by(cars.year, cars.make, cars.model) %>%
   arrange(styles.id) %>%
   slice(1:1) %>%
-  arrange(cars.make, cars.model, cars.year) %>% 
-  filter(cars.make == "acura") ##remove this for the full api call
+  arrange(cars.make, cars.model, cars.year) #%>% 
+  #filter(cars.make == "acura") ##remove this for the full api call
 
 
 #Creating Styles Details api calls for STANDARD Equipment
@@ -122,7 +126,8 @@ edmunds_styles_details_df <- data.frame()
 
 ##For loop to create api url, import/ json, convert to df, add api info and add to existing df
 for(i in 1:nrow(edmunds_styles_ids)) {
-  ed_details_url <- print(paste0(url_details, edmunds_styles_ids$styles.id[i], path_details, api_key))
+  try(
+  {ed_details_url <- print(paste0(url_details, edmunds_styles_ids$styles.id[i], path_details, api_key))
   ed_details_json <- GET(url = ed_details_url)
   ed_details_json <- httr::content(ed_details_json, type = "text")
   
@@ -143,8 +148,8 @@ for(i in 1:nrow(edmunds_styles_ids)) {
   #Add api call info
   ed_details_json$styles.id <- edmunds_styles_ids$styles.id[i]
   
-  edmunds_styles_details_df <- bind_rows(edmunds_styles_details_df, ed_details_json)
-}
+  edmunds_styles_details_df <- bind_rows(edmunds_styles_details_df, ed_details_json)}
+)}
 
 ##Export raw Edmunds styles details data
 write.csv(edmunds_styles_details_df, file = paste0("edmunds_styles_details_orig_", format(Sys.Date(), "%Y%m%d"), ".csv"))
@@ -161,7 +166,8 @@ edmunds_styles_basic_df <- data.frame()
 
 ##For loop to create api url, import/ json, convert to df, add api info and add to existing df
 for(i in 1:nrow(edmunds_styles_ids)) {
-  ed_styles_url <- print(paste0(url_styles, edmunds_styles_ids$styles.id[i], path_styles, api_key))
+  try(
+  {ed_styles_url <- print(paste0(url_styles, edmunds_styles_ids$styles.id[i], path_styles, api_key))
   ed_styles_json <- GET(url = ed_styles_url)
   ed_styles_json <- httr::content(ed_styles_json, type = "text")
 
@@ -188,7 +194,40 @@ ed_styles_json_df <- ed_styles_json %>%
                 engine.torque = jstring("torque"),
                 engine.rpm.tq = jstring("rpm","torque"))
 
-edmunds_styles_basic_df <- bind_rows(edmunds_styles_basic_df, ed_styles_json_df)
-}
+edmunds_styles_basic_df <- bind_rows(edmunds_styles_basic_df, ed_styles_json_df)}
+)}
 
+##Export data
 write.csv(edmunds_styles_basic_df, file = paste0("edmunds_styles_basic_orig_", format(Sys.Date(), "%Y%m%d"), ".csv"))
+
+
+#!!Working on this 01/16!!#
+#Creating Edmunds Ratings api calls
+#https://api.edmunds.com/api/vehicle/v2/grade/acura/ilx/2013?submodel=sedan&fmt=json&api_key=5gttt525w7ktadeqkytk2jez
+url_reviews <- "https://api.edmunds.com/api/vehicle/v2/grade/"
+path_reviews <- "&fmt=json&api_key="
+
+edmunds_styles_ids_2013 <- distinct(select(edmunds_styles_df, styles.make.niceName, styles.model.niceName, styles.year.year, styles.submodel.niceName)) %>% 
+  filter(styles.year.year >= 2013) %>%
+  arrange(styles.make.niceName, styles.model.niceName, styles.year.year, styles.submodel.niceName)
+
+##Create empty dataframe to store api results
+#rm(edmunds_reviews_df)
+edmunds_reviews_df <- data.frame()
+
+##For loop to create api url, import json, convert to df, add api info and add to existing df
+for(i in 1:nrow(edmunds_styles_ids_2013)) {
+  try(
+    {review_url <- print(paste0(url_reviews, edmunds_styles_ids_2013$styles.make.niceName[i],  "/", edmunds_styles_ids_2013$styles.model.niceName[i], "/", 
+                                edmunds_styles_ids_2013$styles.year.year[i], "?submodel=", edmunds_styles_ids_2013$styles.submodel.niceName[i], path_reviews, api_key))
+    review_json <- fromJSON(review_url, flatten =  TRUE)
+    review_df <- as.data.frame(review_json)
+    
+    review_df <- unnest(review_df, ratings.subRatings)
+    
+    edmunds_reviews_df <- bind_rows(edmunds_reviews_df, review_df)}
+  )
+} 
+
+##Export raw Edmunds styles data
+write.csv(edmunds_reviews_df, file = paste0("edmunds_reviews_df_", format(Sys.Date(), "%Y%m%d"), ".csv"))
