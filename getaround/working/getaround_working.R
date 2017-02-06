@@ -1,3 +1,8 @@
+install.packages("dplyr")
+install.packages("tidyjson")
+install.packages("jsonlite")
+install.packages("tidyr")
+
 library("dplyr")
 library("tidyjson")
 library("jsonlite")
@@ -329,36 +334,39 @@ ed_spread5 <- edmunds_styles_details_df %>%
   spread(edmunds_styles_details_df, attributes.name, attributes.value, drop = TRUE) %>% select(styles.id, Epa_Interior_Volume)
 \
   
-#Creating Edmunds Ratings api calls
-#https://api.edmunds.com/api/vehicle/v2/grade/acura/ilx/2013?submodel=sedan&fmt=json&api_key=5gttt525w7ktadeqkytk2jez
-url_reviews <- "https://api.edmunds.com/api/vehicle/v2/grade/"
-path_reviews <- "&fmt=json&api_key="
-
   
-##Create empty dataframe to store api results
-#rm(edmunds_reviews_df)
-edmunds_reviews_df <- data.frame()
+##01/16##  
+  #Creating Edmunds Ratings api calls
+  #https://api.edmunds.com/api/vehicle/v2/grade/acura/ilx/2013?submodel=sedan&fmt=json&api_key=5gttt525w7ktadeqkytk2jez
+  url_reviews <- "https://api.edmunds.com/api/vehicle/v2/grade/"
+  path_reviews <- "&fmt=json&api_key="
   
-##For loop to create api url, import json, convert to df, add api info and add to existing df
-for(i in 1:nrow(edmunds_styles_ids)) {
-  try(
-    {review_url <- print(paste0(url_reviews, edmunds_styles_ids$cars.make[i],  "/", edmunds_styles_ids$cars.model[i], "/", edmunds_styles_ids$cars.year[i], 
-                           "?submodel=", edmunds_styles_ids$styles.submodel.niceName[i], path_reviews, api_key))
-    review_json <- fromJSON(review_url, flatten =  TRUE)
-    review_df <- as.data.frame(review_json)
-    
-    review_df <- unnest(review_df, ratings.subRatings)
-    
-    edmunds_reviews_df <- bind_rows(edmunds_reviews_df, review_df)}
-  )
-} 
-    
-distinct(select(edmunds_reviews_df, style.id, model.niceName, make.niceName ))
+  
+  ##Create empty dataframe to store api results
+  #rm(edmunds_reviews_df)
+  edmunds_reviews_df <- data.frame()
+  
+  ##For loop to create api url, import json, convert to df, add api info and add to existing df
+  for(i in 1:nrow(edmunds_styles_ids2)) {
+    try(
+      {review_url <- print(paste0(url_reviews, edmunds_styles_ids$cars.make[i],  "/", edmunds_styles_ids$cars.model[i], "/", edmunds_styles_ids$cars.year[i], 
+                                  "?submodel=", edmunds_styles_ids$styles.submodel.niceName[i], path_reviews, api_key))
+      review_json <- fromJSON(review_url, flatten =  TRUE)
+      review_df <- as.data.frame(review_json)
+      
+      review_df <- unnest(review_df, ratings.subRatings)
+      
+      edmunds_reviews_df <- bind_rows(edmunds_reviews_df, review_df)}
+    )
+  } 
+  
+review_count <- distinct(select(edmunds_reviews_df, style.id, model.niceName, make.niceName,year.year ))
 
+##01/16 add this logic into list##
 edmunds_styles_ids2 <- distinct(select(edmunds_styles_df, styles.make.niceName, styles.model.niceName, styles.year.year, styles.submodel.niceName)) %>% 
   filter(styles.year.year >= 2013)
 ####
-#09/03
+
 
 edmunds_styles_details_distinct <- distinct(select(edmunds_styles_details_df, equipment.type, equipment.name, attributes.name, attributes.value ))
 
@@ -371,115 +379,69 @@ review_df <- as.data.frame(review_json)
 
 review_sub_df <- unnest(review_df, ratings.subRatings)
 
-review_df %>%
+review_spread_main <- review_df %>%
   select(style.id, ratings.title, ratings.grade) %>%
   spread(ratings.title, ratings.grade)
 
+review_spread_sub <- review_sub_df %>%
+  select(style.id, sub.title, sub.grade) %>%
+  spread(sub.title, sub.grade)
+
+#Rename sub-category columns
 colnames(review_sub_df)[22] <- "sub.title"
 colnames(review_sub_df)[23] <- "sub.grade"
 colnames(review_sub_df)[24] <- "sub.score"
 colnames(review_sub_df)[25] <- "sub.summary"
 
-reviezzz <- review_sub_df %>%
+
+review_spread_sub <- review_sub_df %>%
   unite(ratings.sub.title, ratings.title, sub.title) %>%
   select(style.id, ratings.sub.title, sub.grade) %>%
   spread(ratings.sub.title, sub.grade)
 
-  select(style.id, ratings.title, sub.title, sub.grade) %>%
-  
-  
+full_reviews <- merge(review_spread_main, review_spread_sub)
 
+####
+#Sample data sets
+##Getaround
+getaround_sample <- getaround %>% 
+  select(cars.year, cars.make, cars.model, cars.car_name, cars.car_id, cars.distance)
+write.csv(getaround_sample, file = paste0("getaround_sample_", format(Sys.Date(), "%Y%m%d"), ".csv"))
 
-#09/01
-######
-  
-  
-  
-  
-  
-  
-  
-  
-  
-raw.getaround <- GET(url = "https://api.edmunds.com/api/vehicle/v2/toyota/yaris/2010/styles?state=used&view=basic&fmt=json&api_key=5gttt525w7ktadeqkytk2jez")
+##Vehicle Style
+ed_style_sample <- edmunds_styles_df %>%
+  select(styles.id, styles.year.year, styles.make.niceName, styles.model.niceName, styles.trim, styles.submodel.niceName) %>%
+  filter(styles.trim == 'Base')
+write.csv(ed_style_sample, file = paste0("ed_style_sample_", format(Sys.Date(), "%Y%m%d"), ".csv"))
 
-edmunds_styles_api <- data.frame(ga_url = character())
+##Vehicle Equipment Basic
+ed_basic_sample <- edmunds_styles_basic_df %>%
+  select(styles.id, styles.drivewheels, styles.doors, categories.market, categories.vehiclesize, categories.vehiclestyle, engine.cylinder, engine.horsepower, engine.torque)
+write.csv(ed_basic_sample, file = paste0("ed_basic_sample_", format(Sys.Date(), "%Y%m%d"), ".csv"))
 
-#For loop to create api url, import json, convert to df, add api info and add to existing df
-for(i in 1:nrow(getaround_mmy)) {
-  ga_url <- (paste0(url, tolower(getaround_mmy$cars.make[i]),  "/", tolower(getaround_mmy$cars.model[i]), "/", getaround_mmy$cars.year[i], 
-                         path, api_key))
-}
-  
-  
-str(ga_url)
+##Vehicle Equipment Details
+ed_detail_sample <- edmunds_styles_details_df %>%
+  select(styles.id, attributes.name, attributes.value) %>%
+  filter(attributes.name == 'Epa City Mpg' | attributes.name == 'Epa Combined Mpg' | attributes.name == 'Epa Interior Volume' | attributes.name == 'Max Cargo Capacity' | 
+           attributes.name == 'Total Number Of Speakers' | attributes.name == 'Curb Weight') %>%
+  spread(attributes.name, attributes.value)
+write.csv(ed_detail_sample, file = paste0("ed_detail_sample_", format(Sys.Date(), "%Y%m%d"), ".csv"))
 
+##Reviews
+full_reviews <- merge(review_spread_main, review_spread_sub)
+write.csv(full_reviews, file = paste0("edmunds_reviews_sample_", format(Sys.Date(), "%Y%m%d"), ".csv"))
 
-vehicle_equip5 <- data.frame(matrix(unlist(vehicle_equip$equipment.attributes),nrow = 217, byrow = T), stringsAsFactors = FALSE)
+####
+getaround_2013 <- subset(getaround, cars.year >= 2013)
+getaround_mmy_2013 <- subset(getaround_mmy, cars.year >= 2013)
 
-vehicle_equip3 <- do.call(rbind.data.frame, vehicle_equip$equipment.attributes)
+edmunds_styles_ids_2013 <- subset(edmunds_styles_ids, cars.year >= 2013)
+########
+##01/17##
+reviews_mmy <- distinct(select(edmunds_reviews_df, year.year, make.niceName, model.niceName)) 
 
-library(data.table)
-vehicle_equip4 <- rbindlist(vehicle_equip$equipment.attributes)
-
-unnest(vehicle_equip$equipment.attributes)
-
-
-
-vehicle_equip[[27,"equipment.attributes"]]
-
-
-vehicle_mazda <- fromJSON("https://api.edmunds.com/api/vehicle/v2/mazda/models?state=used&year=2013&view=basic&fmt=json&api_key=5gttt525w7ktadeqkytk2jez", flatten = TRUE)
-str(vehicle_equip)
-vehicle_mazda <- as.data.frame(vehicle_mazda)
-tbl_df(vehicle_style)
-
-
-
-rm(equip_tst)
-
-#add one df to another
-biggerset <- bind_rows(bigset, vehicle_model)  
-
-
-tbl_df(vehicle_years)
-
-dim(years_json)
-vehicle_years <- as.data.frame(vehicle_years)
-years_json <- unnest(vehicle_years1$makes)
-
-years_json1 <- data.frame(matrix(unlist(years_json$years),nrow = 361, byrow = T), stringsAsFactors = FALSE)
-vehicle_years <- bind_cols(years_json, years_json1)
-
-
-
-
-
-
-
-
-data.table_rbindlist
-
-?combine()
-
-class(years_json1)
-class(years_json$years)
-
-
-years_json1 <- lapply(years_json1$years, unlist)
-years_tbl <- as.data.frame(years_flat)
-tbl_df(years_tbl)
-
-
-
-rm(years_flat)
-
-
-
-#Write to .csv
-write.csv(getaround, "getaround/getaround_api.csv")
-write.csv(vehicle_model,"getaround/edmunds_vehicle_model_api.csv")
-
+###
+##Summarize Getaround Data
 #get new cars and sort
 getaround %>%
   filter(cars.year > 2010) %>%
@@ -494,9 +456,130 @@ getaround %>%
   select(cars.year, cars.make, cars.model, max_price, min_price) %>%
   arrange(cars.year, cars.make, cars.model, max_price)
 
-#get vehicle model data into df
-vehicle_model[[6]]
-ed_style_id <- as.data.frame(vehicle_model[[6]])
+
+#########
+##01/24##
+#########
+
+#Set working directory
+setwd("~/Library/Mobile\ Documents/com~apple~CloudDocs/data_science/getaround")
+
+#Load csv files
+getaround <- read.csv("getaround_clean_20170116.csv")
+edmunds_style <- read.csv("edmunds_styles_orig_20170116.csv")
+edmunds_basic <- read.csv("edmunds_styles_basic_orig_20170116.csv")
+edmunds_detail <- read.csv("edmunds_styles_details_orig_20170116.csv")
+
+
+#Gather data needed for models
+edmunds_style <- edmunds_style %>%
+  select(styles.id, cars.make, cars.model, cars.year, styles.submodel.fuel, styles.submodel.tuner)  
+  
+edmunds_basic <- edmunds_basic %>%
+  select(styles.id, styles.drivewheels, styles.doors, categories.market, categories.epaclass, categories.vehiclestyle, engine.horsepower)
+  
+model.data <- merge(edmunds_style, edmunds_basic) 
+
+edmunds_detail <- edmunds_detail %>%
+  select(styles.id, attributes.name, attributes.value) %>%
+  filter(attributes.name == 'Manufacturer 0 60mph Acceleration Time (seconds)' | attributes.name == 'Epa City Mpg' | attributes.name == 'Epa Combined Mpg' | attributes.name == 'Epa Interior Volume' | attributes.name == 'Max Cargo Capacity' | 
+           attributes.name == 'Total Number Of Speakers' | attributes.name == 'Curb Weight') %>%
+  spread(attributes.name, attributes.value)
+
+model.data <-  merge(model.data, edmunds_detail)
+
+
+#Transform data
+##Rename columns
+colnames(model.data)[17] <- "zero_sixty"
+
+##
+model.data$zero_sixty <- as.numeric(as.character(model.data$zero_sixty))
+model.data$power_weight <- (as.numeric(model.data$engine.horsepower) / as.numeric(model.data$`Curb Weight`))
+
+str(model.data)
+
+#Normalize Getaround distance
+#for(i in 1:nrow(getaround)) {
+ # getaround$dist_norm[i] <- 1 - (getaround$cars.distance[i] - min(getaround$cars.distance, na.rm = TRUE))/(max(getaround$cars.distance, na.rm = TRUE) - min(getaround$cars.distance, na.rm = TRUE))
+#}
+
+#Build Models
+##Fun to drive
+##rm(model.fun.output)
+model.fun.output <- model.data %>%
+  select(styles.id)
+  
+###0-60 second time (Lower time is better)
+for(i in 1:nrow(model.data)) {
+  #?Do I want to use average zero to 60 like this? titanic_df$age[is.na(titanic_df$age)] <- mean(titanic_df$age, na.rm = TRUE)
+  #?Take 
+  model.fun.output$zero_sixty[i] <- 1 - (model.data$zero_sixty[i] - min(model.data$zero_sixty, na.rm = TRUE))/(max(model.data$zero_sixty, na.rm = TRUE) - min(model.data$zero_sixty, na.rm = TRUE))
+  model.fun.output$power_weight[i] <- (model.data$power_weight[i] - min(model.data$power_weight, na.rm = TRUE))/(max(model.data$power_weight, na.rm = TRUE) - min(model.data$power_weight, na.rm = TRUE))
+  }
+
+###Vehicle into binary
+model.fun.output$market <- as.numeric(grepl("Performance", model.data$categories.market)|grepl("Exotic", model.data$categories.market)|grepl("Factory Tuner",model.data$categories.market))
+model.fun.output$vehiclestyle <- as.numeric(grepl("Coupe", model.data$categories.vehiclestyle)|grepl("Convertible", model.data$categories.vehiclestyle))
+model.fun.output$drivewheels <- as.numeric(grepl("all wheel drive", model.data$styles.drivewheels)|grepl("rear wheel drive", model.data$styles.drivewheels))
+
+
+###Sum Score
+model.fun.output$score <- (model.fun.output$zero_sixty + model.fun.output$power_weight + model.fun.output$market + model.fun.output$vehiclestyle + model.fun.output$drivewheels)
+
+###########
+#01/28
+#model.fun.output$horsepower[i] <- (model.data$engine.horsepower[i] - min(model.data$engine.horsepower, na.rm = TRUE))/(max(model.data$engine.horsepower, na.rm = TRUE) - min(model.data$engine.horsepower, na.rm = TRUE))
+
+#scale function
+for(i in 1:nrow(model.data.test)) {
+  model.fun.output.test$zero_scaleTF[i] <- scale(model.data.test$zero_sixty[i], center = TRUE, scale = FALSE)
+  model.fun.output.test$zero_scaleFF[i] <- scale(model.data.test$zero_sixty[i], center = FALSE, scale = FALSE)
+  model.fun.output.test$zero_scaleFT[i] <- scale(model.data.test$zero_sixty[i], center = FALSE, scale = TRUE)
+  model.fun.output.test$zero_scaleFF[i] <- scale(model.data.test$zero_sixty[i], center = FALSE, scale = FALSE)
+  model.fun.output.test$zero_scaleTT[i] <- scale(model.data.test$zero_sixty[i], center = TRUE, scale = TRUE)
+  
+  }
+
+
+model.data.test <- model.data %>%
+  select(zero_sixty) %>%
+  filter(zero_sixty != "NA")
+
+######
+##adding columns
+model.fun.output$score <- rowsum(x, model.fun.output, na.rm = TRUE)
+
+model.fun.output <- model.fun.output %>%
+  select()
+
+
+x <- matrix(runif(100), ncol = 5)
+group <- sample(1:8, 20, TRUE)
+(xsum <- rowsum(x, group))
+
+mutate(model.fun.output, model.fun.output$score = rowSums(model.fun.output[,2:6]))
+
+##
+has_cabin_number <- as.numeric(titanic_df$cabin != "")
+
+|model.data$categories.market=="High-Performance"|model.data$categories.market=="Performance"|
+  model.data$categories.market=="Exotic")
+
+
+x <- mean(model.data$zero_sixty, na.rm = TRUE)
+y <- min(model.data$zero_sixty, na.rm = TRUE)
+z <- max(model.data$zero_sixty, na.rm = TRUE)
+
+
+categories.vehiclestyle
+Coupe,Convertible
+
+plot(model.data$categories.vehiclestyle, model.data$zero_sixty)
+###
+#02/03
+
+ggplot2()
 
 
 

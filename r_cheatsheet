@@ -5,6 +5,12 @@ JSON Packages
 #install.package("RJSONIO")
 #install.packages("tidyjson")
 
+
+enter_object("transmission") %>%
+  gather_keys() %>%
+  append_values_string()
+
+
 Remove all objects from session
 rm(list=ls(all=TRUE))
 

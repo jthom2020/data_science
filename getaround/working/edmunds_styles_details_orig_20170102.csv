@@ -1,0 +1,1693 @@
+"","document.id","array.index","equipment.id","equipment.type","equipment.name","attributes.name","attributes.value","styles.id"
+"1",1,1,"200374621","TELEMATICS","AcuraLink","Vehicle Collision Notification","Vehicle Collision Notification",200701416
+"2",1,2,"200374621","TELEMATICS","AcuraLink","Vehicle Locator","Vehicle locator",200701416
+"3",1,3,"200374621","TELEMATICS","AcuraLink","Sent To Navigation Function","Sent-to Navigation Function",200701416
+"4",1,4,"200374621","TELEMATICS","AcuraLink","Poi Search","POI Search",200701416
+"5",1,5,"200374621","TELEMATICS","AcuraLink","Stolen Vehicle Tracking/assistance","Stolen Vehicle Tracking/Assistance",200701416
+"6",1,6,"200374621","TELEMATICS","AcuraLink","Remote Door Unlock","Remote Door Unlock",200701416
+"7",1,7,"200374621","TELEMATICS","AcuraLink","Destination Guidance (turn By Turn Navigation)","Destination guidance (also Turn-by-Turn Navigation)",200701416
+"8",1,8,"200374621","TELEMATICS","AcuraLink","Airbag Deployment Notification","Airbag Deployment Notification",200701416
+"9",1,9,"200374621","TELEMATICS","AcuraLink","Destination Download","Destination Download",200701416
+"10",1,10,"200374621","TELEMATICS","AcuraLink","Text Message/memo Display","Text Message/Memo Display",200701416
+"11",1,11,"200374621","TELEMATICS","AcuraLink","Dealer Service Contact","Dealer Service contact",200701416
+"12",1,12,"200374621","TELEMATICS","AcuraLink","Traffic Information","Traffic Information",200701416
+"13",1,13,"200374621","TELEMATICS","AcuraLink","Vehicle Diagnostics","Vehicle Diagnostics",200701416
+"14",1,14,"200374621","TELEMATICS","AcuraLink","Customer Relations/vehicle Information","Customer Relations/Vehicle Information",200701416
+"15",1,15,"200374621","TELEMATICS","AcuraLink","Weather Information","Weather Information",200701416
+"16",1,16,"200374621","TELEMATICS","AcuraLink","Remote Door Lock","Remote Door Lock",200701416
+"17",1,1,"20070141632","OTHER","Cargo Dimensions","Cargo Capacity, All Seats In Place","12.3",200701416
+"18",1,1,"20070141633","OTHER","Mobile Connectivity","Satellite Communications","AcuraLink",200701416
+"19",1,2,"20070141633","OTHER","Mobile Connectivity","Months Of Free Satellite Communications Service","3",200701416
+"20",1,3,"20070141633","OTHER","Mobile Connectivity","Bluetooth","Bluetooth",200701416
+"21",1,1,"20070141635","OTHER","Instrumentation","External Temperature Gauge","external temperature display",200701416
+"22",1,2,"20070141635","OTHER","Instrumentation","Compass","compass",200701416
+"23",1,3,"20070141635","OTHER","Instrumentation","Tire Pressure Monitoring System","tire pressure monitoring",200701416
+"24",1,4,"20070141635","OTHER","Instrumentation","Low Fuel Level Indicator","low fuel level",200701416
+"25",1,5,"20070141635","OTHER","Instrumentation","Tachometer","tachometer",200701416
+"26",1,6,"20070141635","OTHER","Instrumentation","Trip Computer","trip computer",200701416
+"27",1,7,"20070141635","OTHER","Instrumentation","Clock","clock",200701416
+"28",1,1,"20070141636","OTHER","Misc. Exterior Features","Exterior Camera","rear view with wide-angle and top view camera",200701416
+"29",1,1,"20070141637","OTHER","Doors","Number Of Doors","4",200701416
+"30",1,1,"20070141638","OTHER","Exterior Lights","Front Fog Lights","front fog/driving lights",200701416
+"31",1,2,"20070141638","OTHER","Exterior Lights","Exterior Entry Lights","exterior entry lighting",200701416
+"32",1,3,"20070141638","OTHER","Exterior Lights","Headlights Auto Delay","auto delay off",200701416
+"33",1,4,"20070141638","OTHER","Exterior Lights","Daytime Running Lights","daytime running lights",200701416
+"34",1,5,"20070141638","OTHER","Exterior Lights","Xenon Headlights","xenon high intensity discharge",200701416
+"35",1,6,"20070141638","OTHER","Exterior Lights","Headlights Dusk Sensor","dusk sensing",200701416
+"36",1,1,"20070141641","OTHER","Front Passenger Seat","Number Of Passenger Seat Manual Adjustments","4",200701416
+"37",1,2,"20070141641","OTHER","Front Passenger Seat","Heated Passenger Seat","multi-level heating",200701416
+"38",1,1,"20070141642","MIRRORS","Mirrors","Auto Dimming Rearview Mirror","electrochromatic",200701416
+"39",1,2,"20070141642","MIRRORS","Mirrors","1st Row Vanity Mirrors","dual illuminated vanity mirrors",200701416
+"40",1,3,"20070141642","MIRRORS","Mirrors","Turn Signal Side Mirrors","turn signal in mirrors",200701416
+"41",1,4,"20070141642","MIRRORS","Mirrors","Exterior Mirror Adjustment","power",200701416
+"42",1,5,"20070141642","MIRRORS","Mirrors","Heated Exterior Mirrors","heated",200701416
+"43",1,6,"20070141642","MIRRORS","Mirrors","Reverse Tilt Side Mirrors","driver mirror",200701416
+"44",1,1,"20070141643","OTHER","Steering","Power Steering","electric speed-proportional power steering",200701416
+"45",1,1,"20070141644","OTHER","1st Row Seats","1st Row Seat Type","bucket",200701416
+"46",1,2,"20070141644","OTHER","1st Row Seats","Adjustable Seat Headrest","height adjustable headrests",200701416
+"47",1,3,"20070141644","OTHER","1st Row Seats","1st Row Upholstery","leather",200701416
+"48",1,4,"20070141644","OTHER","1st Row Seats","Number Of 1st Row Headrests","2",200701416
+"49",1,5,"20070141644","OTHER","1st Row Seats","Seat Whiplash Protection","whiplash protection system",200701416
+"50",1,1,"20070141645","OTHER","Interior Dimensions","2nd Row Leg Room","34.0",200701416
+"51",1,2,"20070141645","OTHER","Interior Dimensions","1st Row Hip Room","50.2",200701416
+"52",1,3,"20070141645","OTHER","Interior Dimensions","2nd Row Shoulder Room","53.5",200701416
+"53",1,4,"20070141645","OTHER","Interior Dimensions","1st Row Head Room","38.0",200701416
+"54",1,5,"20070141645","OTHER","Interior Dimensions","1st Row Leg Room","42.3",200701416
+"55",1,6,"20070141645","OTHER","Interior Dimensions","2nd Row Head Room","35.9",200701416
+"56",1,7,"20070141645","OTHER","Interior Dimensions","2nd Row Hip Room","51.7",200701416
+"57",1,8,"20070141645","OTHER","Interior Dimensions","Epa Interior Volume","101.6",200701416
+"58",1,9,"20070141645","OTHER","Interior Dimensions","1st Row Shoulder Room","55.6",200701416
+"59",1,1,"20070141646","OTHER","Spare Tire/Wheel","Spare Tire Size","temporary",200701416
+"60",1,2,"20070141646","OTHER","Spare Tire/Wheel","Spare Tire Mount Location","inside",200701416
+"61",1,1,"20070141647","OTHER","Trunk","Emergency Trunk Release","interior trunk release",200701416
+"62",1,1,"20070141649","OTHER","Power Outlets","Power Outlet(s)","12V",200701416
+"63",1,1,"20070141650","OTHER","Exterior Dimensions","Overall Width Without Mirrors","70.6",200701416
+"64",1,2,"20070141650","OTHER","Exterior Dimensions","Wheelbase","105.1",200701416
+"65",1,3,"20070141650","OTHER","Exterior Dimensions","Overall Length","179.1",200701416
+"66",1,4,"20070141650","OTHER","Exterior Dimensions","Overall Height","55.6",200701416
+"67",1,5,"20070141650","OTHER","Exterior Dimensions","Maximum Ground Clearance","6.2",200701416
+"68",1,1,"20070141651","OTHER","Windows","Remote Window Operation","remote window operation",200701416
+"69",1,2,"20070141651","OTHER","Windows","Rain Sensing Front Wipers","rain sensing",200701416
+"70",1,3,"20070141651","OTHER","Windows","Speed Sensitive Front Wipers","speed sensitive",200701416
+"71",1,4,"20070141651","OTHER","Windows","One Touch Windows","2",200701416
+"72",1,5,"20070141651","OTHER","Windows","Power Windows","power windows",200701416
+"73",1,6,"20070141651","OTHER","Windows","Intermittent Front Wipers","intermittent",200701416
+"74",1,7,"20070141651","OTHER","Windows","Rear Defogger","rear defogger",200701416
+"75",1,1,"20070141652","OTHER","Steering Wheel","Steering Wheel Adjustments","tilt and telescopic",200701416
+"76",1,2,"20070141652","OTHER","Steering Wheel","Cruise Controls On Steering Wheel","cruise controls",200701416
+"77",1,3,"20070141652","OTHER","Steering Wheel","Transmission Controls On Steering Wheel","gear shift controls",200701416
+"78",1,4,"20070141652","OTHER","Steering Wheel","Steering Wheel Trim","leather",200701416
+"79",1,5,"20070141652","OTHER","Steering Wheel","Audio Controls On Steering Wheel","audio controls",200701416
+"80",1,6,"20070141652","OTHER","Steering Wheel","Phone Controls On Steering Wheel","phone controls on steering wheel",200701416
+"81",1,1,"20070141655","OTHER","Storage","Cupholders Location","front and rear",200701416
+"82",1,2,"20070141655","OTHER","Storage","Seatback Storage","front seatback storage",200701416
+"83",1,3,"20070141655","OTHER","Storage","Door Pockets Location","front and rear",200701416
+"84",1,4,"20070141655","OTHER","Storage","Center Console","front console with storage",200701416
+"85",1,1,"20070141656","OTHER","Sunroof","One Touch Power Sunroof","one-touch power sunroof",200701416
+"86",1,2,"20070141656","OTHER","Sunroof","Remote Sunroof Operation","remote sunroof operation",200701416
+"87",1,3,"20070141656","OTHER","Sunroof","Sunroof","power glass",200701416
+"88",1,1,"20070141657","OTHER","Seating Configuration","1st Row Seating Capacity","2",200701416
+"89",1,2,"20070141657","OTHER","Seating Configuration","2nd Row Seating Capacity","3",200701416
+"90",1,1,"20070141658","OTHER","Air Conditioning","Front Air Conditioning Zones","dual",200701416
+"91",1,2,"20070141658","OTHER","Air Conditioning","Front Air Conditioning","automatic climate control",200701416
+"92",1,3,"20070141658","OTHER","Air Conditioning","Sun Sensor","Sun sensor",200701416
+"93",1,4,"20070141658","OTHER","Air Conditioning","Air Filtration","interior air filtration",200701416
+"94",1,1,"20070141659","OTHER","Differential","Final Drive Ratio","4.44",200701416
+"95",1,1,"20070141661","OTHER","Seatbelts","Seatbelt Pretensioners","front",200701416
+"96",1,2,"20070141661","OTHER","Seatbelts","Seatbelt Force Limiters","front",200701416
+"97",1,3,"20070141661","OTHER","Seatbelts","2nd Row Center Seatbelt","3-point belt",200701416
+"98",1,1,"20070141662","OTHER","Suspension","Front Suspension Classification","independent",200701416
+"99",1,2,"20070141662","OTHER","Suspension","Rear Spring Type","coil springs",200701416
+"100",1,3,"20070141662","OTHER","Suspension","Independent Suspension","four-wheel",200701416
+"101",1,4,"20070141662","OTHER","Suspension","Rear Arm Type","trailing links, lateral links",200701416
+"102",1,5,"20070141662","OTHER","Suspension","Rear Suspension Type","multi-link",200701416
+"103",1,6,"20070141662","OTHER","Suspension","Front Arm Type","lower control arms",200701416
+"104",1,7,"20070141662","OTHER","Suspension","Rear Suspension Classification","independent",200701416
+"105",1,8,"20070141662","OTHER","Suspension","Front Stabilizer Bar","stabilizer bar",200701416
+"106",1,9,"20070141662","OTHER","Suspension","Front Spring Type","coil springs",200701416
+"107",1,10,"20070141662","OTHER","Suspension","Rear Stabilizer Bar","stabilizer bar",200701416
+"108",1,11,"20070141662","OTHER","Suspension","Front Suspension Type","MacPherson strut",200701416
+"109",1,1,"20070141664","OTHER","Specifications","Ege Highway Mpg","35",200701416
+"110",1,2,"20070141664","OTHER","Specifications","Epa Combined Mpg","28",200701416
+"111",1,3,"20070141664","OTHER","Specifications","Epa City Mpg","24",200701416
+"112",1,4,"20070141664","OTHER","Specifications","Curb Weight","2970",200701416
+"113",1,5,"20070141664","OTHER","Specifications","Turning Diameter","36.1",200701416
+"114",1,6,"20070141664","OTHER","Specifications","Epa Highway Mpg","35",200701416
+"115",1,7,"20070141664","OTHER","Specifications","Tco Curb Weight","2970",200701416
+"116",1,8,"20070141664","OTHER","Specifications","Ege Combined Mpg","28",200701416
+"117",1,9,"20070141664","OTHER","Specifications","Fuel Capacity","13.2",200701416
+"118",1,10,"20070141664","OTHER","Specifications","Ege City Mpg","24",200701416
+"119",1,1,"20070141665","OTHER","Brake System","Rear Brake Type","disc",200701416
+"120",1,2,"20070141665","OTHER","Brake System","Front Brake Type","ventilated disc",200701416
+"121",1,3,"20070141665","OTHER","Brake System","Antilock Braking System","4-wheel ABS",200701416
+"122",1,4,"20070141665","OTHER","Brake System","Braking Assist","braking assist",200701416
+"123",1,1,"20070141666","OTHER","Drive Type","Driven Wheels","front wheel drive",200701416
+"124",1,1,"20070141667","OTHER","Misc. Interior Features","Cruise Control","cruise control",200701416
+"125",1,2,"20070141667","OTHER","Misc. Interior Features","Floor Mats","floor mats",200701416
+"126",1,3,"20070141667","OTHER","Misc. Interior Features","Universal Remote Transmitter","universal remote transmitter",200701416
+"127",1,4,"20070141667","OTHER","Misc. Interior Features","Floor Mat Material","carpet",200701416
+"128",1,1,"20070141669","OTHER","Driver Seat","Height Adjustable Driver Seat","height adjustable",200701416
+"129",1,2,"20070141669","OTHER","Driver Seat","Number Of Driver Seat Power Adjustments","8",200701416
+"130",1,3,"20070141669","OTHER","Driver Seat","Heated Driver Seat","multi-level heating",200701416
+"131",1,1,"20070141670","OTHER","Security","Engine Immobilizer","engine immobilizer",200701416
+"132",1,2,"20070141670","OTHER","Security","Power Door Locks","hands-free entry",200701416
+"133",1,3,"20070141670","OTHER","Security","Anti Theft Alarm System","remote anti-theft alarm system",200701416
+"134",1,1,"20070141672","OTHER","Airbags","Head Airbags","front and rear",200701416
+"135",1,2,"20070141672","OTHER","Airbags","Passenger Airbag Deactivation","occupant sensing deactivation",200701416
+"136",1,3,"20070141672","OTHER","Airbags","Side Airbags","dual front",200701416
+"137",1,1,"20070141673","OTHER","Navigation System","Navigation System","navigation with voice activation",200701416
+"138",1,2,"20070141673","OTHER","Navigation System","Real Time Traffic","real time traffic",200701416
+"139",1,1,"20070141674","OTHER","2nd Row Seats","Folding 2nd Row","one-piece folding",200701416
+"140",1,2,"20070141674","OTHER","2nd Row Seats","2nd Row Seat Type","bench",200701416
+"141",1,3,"20070141674","OTHER","2nd Row Seats","Adjustable 2nd Row Headrests","height adjustable headrests",200701416
+"142",1,4,"20070141674","OTHER","2nd Row Seats","Number Of 2nd Row Headrests","3",200701416
+"143",1,5,"20070141674","OTHER","2nd Row Seats","2nd Row Center Armrest","folding with storage",200701416
+"144",1,1,"200701424","WARRANTY","Basic, 4 Years, 50000/L Miles","Warranty Maximum Mileage","50000",200701416
+"145",1,2,"200701424","WARRANTY","Basic, 4 Years, 50000/L Miles","Warranty End Date","09-Sep-2099",200701416
+"146",1,3,"200701424","WARRANTY","Basic, 4 Years, 50000/L Miles","Warranty Start Date","19-Jun-2014",200701416
+"147",1,4,"200701424","WARRANTY","Basic, 4 Years, 50000/L Miles","Warranty Miles Limited/unlimited","L",200701416
+"148",1,5,"200701424","WARRANTY","Basic, 4 Years, 50000/L Miles","Warranty Years Limited/unlimited","L",200701416
+"149",1,6,"200701424","WARRANTY","Basic, 4 Years, 50000/L Miles","Warranty Maximum Years","4",200701416
+"150",1,7,"200701424","WARRANTY","Basic, 4 Years, 50000/L Miles","Warranty Type","Basic",200701416
+"151",1,1,"200701425","WARRANTY","Rust, 5 Years,  /U Miles","Warranty End Date","09-Sep-2099",200701416
+"152",1,2,"200701425","WARRANTY","Rust, 5 Years,  /U Miles","Warranty Start Date","19-Jun-2014",200701416
+"153",1,3,"200701425","WARRANTY","Rust, 5 Years,  /U Miles","Warranty Miles Limited/unlimited","U",200701416
+"154",1,4,"200701425","WARRANTY","Rust, 5 Years,  /U Miles","Warranty Years Limited/unlimited","L",200701416
+"155",1,5,"200701425","WARRANTY","Rust, 5 Years,  /U Miles","Warranty Maximum Years","5",200701416
+"156",1,6,"200701425","WARRANTY","Rust, 5 Years,  /U Miles","Warranty Type","Rust",200701416
+"157",1,1,"200701426","WARRANTY","Roadside, 4 Years, 50000/L Miles","Warranty Maximum Mileage","50000",200701416
+"158",1,2,"200701426","WARRANTY","Roadside, 4 Years, 50000/L Miles","Warranty End Date","09-Sep-2099",200701416
+"159",1,3,"200701426","WARRANTY","Roadside, 4 Years, 50000/L Miles","Warranty Start Date","19-Jun-2014",200701416
+"160",1,4,"200701426","WARRANTY","Roadside, 4 Years, 50000/L Miles","Warranty Miles Limited/unlimited","L",200701416
+"161",1,5,"200701426","WARRANTY","Roadside, 4 Years, 50000/L Miles","Warranty Years Limited/unlimited","L",200701416
+"162",1,6,"200701426","WARRANTY","Roadside, 4 Years, 50000/L Miles","Warranty Maximum Years","4",200701416
+"163",1,7,"200701426","WARRANTY","Roadside, 4 Years, 50000/L Miles","Warranty Type","Roadside",200701416
+"164",1,1,"200701427","WARRANTY","Drivetrain, 6 Years, 70000/L Miles","Warranty Maximum Mileage","70000",200701416
+"165",1,2,"200701427","WARRANTY","Drivetrain, 6 Years, 70000/L Miles","Warranty End Date","09-Sep-2099",200701416
+"166",1,3,"200701427","WARRANTY","Drivetrain, 6 Years, 70000/L Miles","Warranty Start Date","19-Jun-2014",200701416
+"167",1,4,"200701427","WARRANTY","Drivetrain, 6 Years, 70000/L Miles","Warranty Miles Limited/unlimited","L",200701416
+"168",1,5,"200701427","WARRANTY","Drivetrain, 6 Years, 70000/L Miles","Warranty Years Limited/unlimited","L",200701416
+"169",1,6,"200701427","WARRANTY","Drivetrain, 6 Years, 70000/L Miles","Warranty Maximum Years","6",200701416
+"170",1,7,"200701427","WARRANTY","Drivetrain, 6 Years, 70000/L Miles","Warranty Type","Drivetrain",200701416
+"171",1,1,"200701431","AUDIO_SYSTEM","Technology Package Audio","Hard Drive","built-in hard drive",200701416
+"172",1,2,"200701431","AUDIO_SYSTEM","Technology Package Audio","Total Number Of Speakers","10",200701416
+"173",1,3,"200701431","AUDIO_SYSTEM","Technology Package Audio","Cd Player","single CD player",200701416
+"174",1,4,"200701431","AUDIO_SYSTEM","Technology Package Audio","Cd Mp3 Playback","CD MP3 Playback",200701416
+"175",1,5,"200701431","AUDIO_SYSTEM","Technology Package Audio","Speed Sensitive Volume Control","speed sensitive volume control",200701416
+"176",1,6,"200701431","AUDIO_SYSTEM","Technology Package Audio","Radio","AM/FM",200701416
+"177",1,7,"200701431","AUDIO_SYSTEM","Technology Package Audio","Satellite Radio","satellite radio",200701416
+"178",1,8,"200701431","AUDIO_SYSTEM","Technology Package Audio","Surround Audio","surround audio",200701416
+"179",1,9,"200701431","AUDIO_SYSTEM","Technology Package Audio","Months Of Provided Satellite Radio Service","3",200701416
+"180",1,10,"200701431","AUDIO_SYSTEM","Technology Package Audio","Subwoofer","1",200701416
+"181",1,11,"200701431","AUDIO_SYSTEM","Technology Package Audio","Digital Audio Input","auxiliary audio input and USB with external media control",200701416
+"182",1,12,"200701431","AUDIO_SYSTEM","Technology Package Audio","Antenna Type","mast",200701416
+"183",1,13,"200701431","AUDIO_SYSTEM","Technology Package Audio","Usb Connection","USB connection",200701416
+"184",1,14,"200701431","AUDIO_SYSTEM","Technology Package Audio","Dvd Audio","DVD-Audio",200701416
+"185",1,15,"200701431","AUDIO_SYSTEM","Technology Package Audio","Radio Data System","radio data system",200701416
+"186",1,16,"200701431","AUDIO_SYSTEM","Technology Package Audio","Consumer Generic Feature 0","Aux Audio Inputs",200701416
+"187",1,17,"200701431","AUDIO_SYSTEM","Technology Package Audio","Consumer Generic Feature 1","USB Inputs",200701416
+"188",1,1,"200701432","TIRES","Premium And 2.4 17""","Rear Tire Width","215",200701416
+"189",1,2,"200701432","TIRES","Premium And 2.4 17""","Rear Tire Load Rating","87",200701416
+"190",1,3,"200701432","TIRES","Premium And 2.4 17""","Rear Tire Prefix","P",200701416
+"191",1,4,"200701432","TIRES","Premium And 2.4 17""","Tire Type","all season",200701416
+"192",1,5,"200701432","TIRES","Premium And 2.4 17""","Rear Tire Diameter","17",200701416
+"193",1,6,"200701432","TIRES","Premium And 2.4 17""","Rear Tire Profile","45",200701416
+"194",1,7,"200701432","TIRES","Premium And 2.4 17""","Rear Tire Speed Rating","V",200701416
+"195",1,1,"200701433","WHEELS","17 X 7.0 Alloy","Rim Type","alloy",200701416
+"196",1,2,"200701433","WHEELS","17 X 7.0 Alloy","Rear Wheel Diameter","17",200701416
+"197",1,3,"200701433","WHEELS","17 X 7.0 Alloy","Rear Wheel Width","7.0",200701416
+"198",1,1,"10065068110","OTHER","Cargo Dimensions","Cargo Capacity, All Seats In Place","14.8",100650681
+"199",1,2,"10065068110","OTHER","Cargo Dimensions","Cargo Capacity, Rear Seat Down Or Removed","49.6",100650681
+"200",1,3,"10065068110","OTHER","Cargo Dimensions","Max Cargo Capacity","81.5",100650681
+"201",1,1,"10065068112","OTHER","Instrumentation","External Temperature Gauge","external temperature display",100650681
+"202",1,2,"10065068112","OTHER","Instrumentation","Tire Pressure Monitoring System","tire pressure monitoring",100650681
+"203",1,3,"10065068112","OTHER","Instrumentation","Low Fuel Level Indicator","low fuel level",100650681
+"204",1,4,"10065068112","OTHER","Instrumentation","Tachometer","tachometer",100650681
+"205",1,5,"10065068112","OTHER","Instrumentation","Trip Computer","trip computer",100650681
+"206",1,6,"10065068112","OTHER","Instrumentation","Clock","clock",100650681
+"207",1,1,"10065068113","OTHER","Doors","Liftgate Window","fixed",100650681
+"208",1,2,"10065068113","OTHER","Doors","Rear Door Type","liftgate",100650681
+"209",1,3,"10065068113","OTHER","Doors","Number Of Doors","4",100650681
+"210",1,1,"10065068114","OTHER","Exterior Lights","Front Fog Lights","front fog/driving lights",100650681
+"211",1,2,"10065068114","OTHER","Exterior Lights","Headlights Auto Delay","auto delay off",100650681
+"212",1,3,"10065068114","OTHER","Exterior Lights","Headlights Dusk Sensor","dusk sensing",100650681
+"213",1,1,"10065068117","OTHER","Front Passenger Seat","Heated Passenger Seat","heated",100650681
+"214",1,2,"10065068117","OTHER","Front Passenger Seat","Number Of Passenger Seat Power Adjustments","8",100650681
+"215",1,1,"10065068118","MIRRORS","Mirrors","Auto Dimming Rearview Mirror","electrochromatic",100650681
+"216",1,2,"10065068118","MIRRORS","Mirrors","1st Row Vanity Mirrors","dual illuminated vanity mirrors",100650681
+"217",1,3,"10065068118","MIRRORS","Mirrors","Passenger Side Mirror Adjustment","power",100650681
+"218",1,4,"10065068118","MIRRORS","Mirrors","Exterior Mirror Adjustment","power",100650681
+"219",1,5,"10065068118","MIRRORS","Mirrors","Heated Exterior Mirrors","heated",100650681
+"220",1,6,"10065068118","MIRRORS","Mirrors","Heated Passenger Side Mirror","heated",100650681
+"221",1,1,"10065068119","OTHER","Steering","Power Steering","speed-proportional power steering",100650681
+"222",1,1,"10065068120","OTHER","1st Row Seats","1st Row Seat Type","bucket",100650681
+"223",1,2,"10065068120","OTHER","1st Row Seats","Adjustable Seat Headrest","height adjustable headrests",100650681
+"224",1,3,"10065068120","OTHER","1st Row Seats","1st Row Upholstery","leather",100650681
+"225",1,4,"10065068120","OTHER","1st Row Seats","Number Of 1st Row Headrests","2",100650681
+"226",1,1,"10065068121","OTHER","Interior Dimensions","2nd Row Leg Room","37.8",100650681
+"227",1,2,"10065068121","OTHER","Interior Dimensions","3rd Row Shoulder Room","58.6",100650681
+"228",1,3,"10065068121","OTHER","Interior Dimensions","3rd Row Leg Room","29.3",100650681
+"229",1,4,"10065068121","OTHER","Interior Dimensions","3rd Row Hip Room","48.5",100650681
+"230",1,5,"10065068121","OTHER","Interior Dimensions","1st Row Hip Room","56.9",100650681
+"231",1,6,"10065068121","OTHER","Interior Dimensions","3rd Row Head Room","36.1",100650681
+"232",1,7,"10065068121","OTHER","Interior Dimensions","2nd Row Shoulder Room","61.1",100650681
+"233",1,8,"10065068121","OTHER","Interior Dimensions","1st Row Leg Room","41.5",100650681
+"234",1,9,"10065068121","OTHER","Interior Dimensions","1st Row Head Room","38.4",100650681
+"235",1,10,"10065068121","OTHER","Interior Dimensions","2nd Row Head Room","39.0",100650681
+"236",1,11,"10065068121","OTHER","Interior Dimensions","2nd Row Hip Room","56.3",100650681
+"237",1,12,"10065068121","OTHER","Interior Dimensions","1st Row Shoulder Room","61.2",100650681
+"238",1,1,"10065068122","OTHER","Spare Tire/Wheel","Spare Wheel Rim Type","steel",100650681
+"239",1,2,"10065068122","OTHER","Spare Tire/Wheel","Spare Tire Size","temporary",100650681
+"240",1,3,"10065068122","OTHER","Spare Tire/Wheel","Spare Tire Mount Location","inside",100650681
+"241",1,1,"10065068124","OTHER","Power Outlets","Cargo Area Power Outlet","12V",100650681
+"242",1,2,"10065068124","OTHER","Power Outlets","Power Outlet(s)","12V",100650681
+"243",1,1,"10065068125","OTHER","Exterior Dimensions","Overall Width Without Mirrors","77.0",100650681
+"244",1,2,"10065068125","OTHER","Exterior Dimensions","Wheelbase","106.3",100650681
+"245",1,3,"10065068125","OTHER","Exterior Dimensions","Minimum Ground Clearance","8.0",100650681
+"246",1,4,"10065068125","OTHER","Exterior Dimensions","Overall Length","188.7",100650681
+"247",1,5,"10065068125","OTHER","Exterior Dimensions","Overall Height","68.7",100650681
+"248",1,6,"10065068125","OTHER","Exterior Dimensions","Rear Track","66.5",100650681
+"249",1,7,"10065068125","OTHER","Exterior Dimensions","Front Track","66.3",100650681
+"250",1,1,"10065068126","OTHER","Windows","Privacy Glass","privacy glass",100650681
+"251",1,2,"10065068126","OTHER","Windows","Speed Sensitive Front Wipers","speed sensitive",100650681
+"252",1,3,"10065068126","OTHER","Windows","One Touch Windows","1",100650681
+"253",1,4,"10065068126","OTHER","Windows","Power Windows","power windows",100650681
+"254",1,5,"10065068126","OTHER","Windows","Rear Wiper","intermittent rear wiper",100650681
+"255",1,6,"10065068126","OTHER","Windows","Intermittent Front Wipers","intermittent",100650681
+"256",1,7,"10065068126","OTHER","Windows","Rear Defogger","rear defogger",100650681
+"257",1,1,"10065068127","OTHER","Steering Wheel","Steering Wheel Adjustments","tilt-adjustable",100650681
+"258",1,2,"10065068127","OTHER","Steering Wheel","Cruise Controls On Steering Wheel","cruise controls",100650681
+"259",1,3,"10065068127","OTHER","Steering Wheel","Steering Wheel Trim","leather",100650681
+"260",1,4,"10065068127","OTHER","Steering Wheel","Audio Controls On Steering Wheel","audio controls",100650681
+"261",1,1,"10065068130","OTHER","Storage","Cupholders Location","front, rear and 3rd row",100650681
+"262",1,2,"10065068130","OTHER","Storage","Seatback Storage","front seatback storage",100650681
+"263",1,3,"10065068130","OTHER","Storage","Door Pockets Location","front and rear",100650681
+"264",1,4,"10065068130","OTHER","Storage","Overhead Console","overhead console with storage",100650681
+"265",1,5,"10065068130","OTHER","Storage","Center Console","front console with storage",100650681
+"266",1,1,"10065068131","OTHER","Sunroof","Sunroof","power glass",100650681
+"267",1,1,"10065068132","OTHER","Seating Configuration","1st Row Seating Capacity","2",100650681
+"268",1,2,"10065068132","OTHER","Seating Configuration","2nd Row Seating Capacity","3",100650681
+"269",1,3,"10065068132","OTHER","Seating Configuration","3rd Row Seating Capacity","2",100650681
+"270",1,1,"10065068133","OTHER","Air Conditioning","Front Air Conditioning Zones","single",100650681
+"271",1,2,"10065068133","OTHER","Air Conditioning","Front Air Conditioning","automatic climate control",100650681
+"272",1,3,"10065068133","OTHER","Air Conditioning","Rear Heat","rear ventilation ducts",100650681
+"273",1,4,"10065068133","OTHER","Air Conditioning","Rear Air Conditioning","automatic climate control",100650681
+"274",1,5,"10065068133","OTHER","Air Conditioning","Rear Air Conditioning Zones","single",100650681
+"275",1,6,"10065068133","OTHER","Air Conditioning","Air Filtration","interior air filtration",100650681
+"276",1,1,"10065068134","OTHER","Differential","Locking Rear Differential","locking rear differential",100650681
+"277",1,2,"10065068134","OTHER","Differential","Final Drive Ratio","4.38",100650681
+"278",1,1,"10065068136","OTHER","Seatbelts","Seatbelt Pretensioners","front",100650681
+"279",1,2,"10065068136","OTHER","Seatbelts","Seatbelt Force Limiters","front",100650681
+"280",1,3,"10065068136","OTHER","Seatbelts","2nd Row Center Seatbelt","3-point belt",100650681
+"281",1,1,"10065068137","OTHER","Suspension","Independent Suspension","four-wheel",100650681
+"282",1,2,"10065068137","OTHER","Suspension","Rear Suspension Type","multi-link",100650681
+"283",1,3,"10065068137","OTHER","Suspension","Front Suspension Type","MacPherson strut",100650681
+"284",1,1,"10065068138","OTHER","Specifications","Angle Of Approach","28.0",100650681
+"285",1,2,"10065068138","OTHER","Specifications","Epa Combined Mpg","17",100650681
+"286",1,3,"10065068138","OTHER","Specifications","Ege Highway Mpg","21",100650681
+"287",1,4,"10065068138","OTHER","Specifications","Epa City Mpg","15",100650681
+"288",1,5,"10065068138","OTHER","Specifications","Curb Weight","4471",100650681
+"289",1,6,"10065068138","OTHER","Specifications","Turning Diameter","38.0",100650681
+"290",1,7,"10065068138","OTHER","Specifications","Angle Of Departure","21.0",100650681
+"291",1,8,"10065068138","OTHER","Specifications","Epa Highway Mpg","21",100650681
+"292",1,9,"10065068138","OTHER","Specifications","Tco Curb Weight","4471",100650681
+"293",1,10,"10065068138","OTHER","Specifications","Ege Combined Mpg","17",100650681
+"294",1,11,"10065068138","OTHER","Specifications","Fuel Capacity","20.4",100650681
+"295",1,12,"10065068138","OTHER","Specifications","Ege City Mpg","15",100650681
+"296",1,13,"10065068138","OTHER","Specifications","Towing Capacity","4500",100650681
+"297",1,1,"10065068139","OTHER","Brake System","Rear Brake Width","0.4",100650681
+"298",1,2,"10065068139","OTHER","Brake System","Front Brake Width","1.1",100650681
+"299",1,3,"10065068139","OTHER","Brake System","Rear Brake Type","disc",100650681
+"300",1,4,"10065068139","OTHER","Brake System","Electronic Brakeforce Distribution","electronic brakeforce distribution",100650681
+"301",1,5,"10065068139","OTHER","Brake System","Front Brake Diameter","11.8",100650681
+"302",1,6,"10065068139","OTHER","Brake System","Front Brake Type","ventilated disc",100650681
+"303",1,7,"10065068139","OTHER","Brake System","Antilock Braking System","4-wheel ABS",100650681
+"304",1,8,"10065068139","OTHER","Brake System","Braking Assist","braking assist",100650681
+"305",1,9,"10065068139","OTHER","Brake System","Rear Brake Diameter","12.3",100650681
+"306",1,1,"10065068140","OTHER","Drive Type","Driven Wheels","all wheel drive",100650681
+"307",1,1,"10065068141","OTHER","Misc. Interior Features","Cruise Control","cruise control",100650681
+"308",1,2,"10065068141","OTHER","Misc. Interior Features","Floor Mats","floor mats",100650681
+"309",1,3,"10065068141","OTHER","Misc. Interior Features","Universal Remote Transmitter","universal remote transmitter",100650681
+"310",1,4,"10065068141","OTHER","Misc. Interior Features","2nd Row Floor Mats","rear floor mats",100650681
+"311",1,5,"10065068141","OTHER","Misc. Interior Features","Cargo Area Light","cargo area light",100650681
+"312",1,6,"10065068141","OTHER","Misc. Interior Features","Reading Lights","front and rear reading lights",100650681
+"313",1,7,"10065068141","OTHER","Misc. Interior Features","Floor Mat Material","carpet",100650681
+"314",1,1,"10065068143","OTHER","Driver Seat","Height Adjustable Driver Seat","height adjustable",100650681
+"315",1,2,"10065068143","OTHER","Driver Seat","Number Of Driver Seat Power Adjustments","8",100650681
+"316",1,3,"10065068143","OTHER","Driver Seat","Heated Driver Seat","heated",100650681
+"317",1,1,"10065068144","OTHER","Security","Engine Immobilizer","engine immobilizer",100650681
+"318",1,2,"10065068144","OTHER","Security","Power Door Locks","remote keyless power door locks",100650681
+"319",1,3,"10065068144","OTHER","Security","Anti Theft Alarm System","remote anti-theft alarm system",100650681
+"320",1,4,"10065068144","OTHER","Security","2 Stage Unlocking","remote 2-stage unlocking",100650681
+"321",1,1,"10065068145","OTHER","3rd Row Seats","Folding 3rd Row","manual folding split-bench",100650681
+"322",1,2,"10065068145","OTHER","3rd Row Seats","3rd Row Seat Type","50-50 split bench",100650681
+"323",1,3,"10065068145","OTHER","3rd Row Seats","Number Of 3rd Row Headrests","2",100650681
+"324",1,1,"10065068147","OTHER","Airbags","Head Airbags","front, rear and third row",100650681
+"325",1,2,"10065068147","OTHER","Airbags","Passenger Airbag Deactivation","occupant sensing deactivation",100650681
+"326",1,3,"10065068147","OTHER","Airbags","Side Curtain Airbag Rollover Sensor","side-curtain airbag rollover sensor",100650681
+"327",1,4,"10065068147","OTHER","Airbags","Side Airbags","dual front",100650681
+"328",1,5,"10065068147","OTHER","Airbags","Passenger Airbag","Standard",100650681
+"329",1,6,"10065068147","OTHER","Airbags","Depowered Airbags","Standard",100650681
+"330",1,1,"10065068148","OTHER","2nd Row Seats","Folding 2nd Row","split folding",100650681
+"331",1,2,"10065068148","OTHER","2nd Row Seats","2nd Row Seat Type","bench",100650681
+"332",1,3,"10065068148","OTHER","2nd Row Seats","Adjustable 2nd Row Headrests","height adjustable headrests",100650681
+"333",1,4,"10065068148","OTHER","2nd Row Seats","Number Of 2nd Row Headrests","3",100650681
+"334",1,5,"10065068148","OTHER","2nd Row Seats","2nd Row Center Armrest","folding with storage",100650681
+"335",1,6,"10065068148","OTHER","2nd Row Seats","Reclining 2nd Row","reclining",100650681
+"336",1,1,"200192887","WARRANTY","Warranty","Warranty Maximum Mileage","50000",100650681
+"337",1,2,"200192887","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",100650681
+"338",1,3,"200192887","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100650681
+"339",1,4,"200192887","WARRANTY","Warranty","Warranty Maximum Years","4",100650681
+"340",1,5,"200192887","WARRANTY","Warranty","Warranty Type","Basic",100650681
+"341",1,1,"200192888","WARRANTY","Warranty","Warranty Maximum Mileage","70000",100650681
+"342",1,2,"200192888","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",100650681
+"343",1,3,"200192888","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100650681
+"344",1,4,"200192888","WARRANTY","Warranty","Warranty Maximum Years","6",100650681
+"345",1,5,"200192888","WARRANTY","Warranty","Warranty Type","Drivetrain",100650681
+"346",1,1,"200192889","WARRANTY","Warranty","Warranty Maximum Mileage","50000",100650681
+"347",1,2,"200192889","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",100650681
+"348",1,3,"200192889","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100650681
+"349",1,4,"200192889","WARRANTY","Warranty","Warranty Maximum Years","4",100650681
+"350",1,5,"200192889","WARRANTY","Warranty","Warranty Type","Roadside",100650681
+"351",1,1,"200192890","WARRANTY","Warranty","Warranty Comments","Prior to 6/30/2005 Rust coverage was 5 Year Unlimited Miles",100650681
+"352",1,2,"200192890","WARRANTY","Warranty","Warranty Miles Limited/unlimited","U",100650681
+"353",1,3,"200192890","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100650681
+"354",1,4,"200192890","WARRANTY","Warranty","Warranty Maximum Years","5",100650681
+"355",1,5,"200192890","WARRANTY","Warranty","Warranty Type","Rust",100650681
+"356",1,1,"200192894","AUDIO_SYSTEM","Audio System","Total Number Of Speakers","7",100650681
+"357",1,2,"200192894","AUDIO_SYSTEM","Audio System","Antenna Type","mast",100650681
+"358",1,3,"200192894","AUDIO_SYSTEM","Audio System","Cd Player","single CD player",100650681
+"359",1,4,"200192894","AUDIO_SYSTEM","Audio System","Audio Security System","audio security system",100650681
+"360",1,5,"200192894","AUDIO_SYSTEM","Audio System","Radio","AM/FM",100650681
+"361",1,6,"200192894","AUDIO_SYSTEM","Audio System","Satellite Radio","satellite radio",100650681
+"362",1,7,"200192894","AUDIO_SYSTEM","Audio System","Watts","155",100650681
+"363",1,8,"200192894","AUDIO_SYSTEM","Audio System","Subwoofer","1",100650681
+"364",1,1,"200192895","TIRES","Tires","Rear Tire Width","235",100650681
+"365",1,2,"200192895","TIRES","Tires","Rear Tire Prefix","P",100650681
+"366",1,3,"200192895","TIRES","Tires","Tire Type","all season",100650681
+"367",1,4,"200192895","TIRES","Tires","Rear Tire Diameter","17",100650681
+"368",1,5,"200192895","TIRES","Tires","Rear Tire Profile","65",100650681
+"369",1,6,"200192895","TIRES","Tires","Rear Tire Speed Rating","T",100650681
+"370",1,1,"200192896","WHEELS","Wheels","Rim Type","alloy",100650681
+"371",1,2,"200192896","WHEELS","Wheels","Rear Wheel Diameter","17",100650681
+"372",1,3,"200192896","WHEELS","Wheels","Rear Wheel Width","6.5",100650681
+"373",1,1,"10103742510","OTHER","Cargo Dimensions","Cargo Capacity, All Seats In Place","15.0",101037425
+"374",1,2,"10103742510","OTHER","Cargo Dimensions","Cargo Capacity, Rear Seat Down Or Removed","42.9",101037425
+"375",1,3,"10103742510","OTHER","Cargo Dimensions","Max Cargo Capacity","83.5",101037425
+"376",1,1,"10103742511","OTHER","Mobile Connectivity","Phone","pre-wired for phone",101037425
+"377",1,2,"10103742511","OTHER","Mobile Connectivity","Bluetooth","Bluetooth",101037425
+"378",1,1,"10103742513","OTHER","Instrumentation","Electroluminescent Instrumentation","electroluminescent instrumentation",101037425
+"379",1,2,"10103742513","OTHER","Instrumentation","External Temperature Gauge","external temperature display",101037425
+"380",1,3,"10103742513","OTHER","Instrumentation","Tire Pressure Monitoring System","tire pressure monitoring",101037425
+"381",1,4,"10103742513","OTHER","Instrumentation","Low Fuel Level Indicator","low fuel level",101037425
+"382",1,5,"10103742513","OTHER","Instrumentation","Tachometer","tachometer",101037425
+"383",1,6,"10103742513","OTHER","Instrumentation","Trip Computer","trip computer",101037425
+"384",1,7,"10103742513","OTHER","Instrumentation","Clock","clock",101037425
+"385",1,1,"10103742514","OTHER","Misc. Exterior Features","Rear Spoiler","rear spoiler",101037425
+"386",1,1,"10103742515","OTHER","Doors","Liftgate Window","fixed",101037425
+"387",1,2,"10103742515","OTHER","Doors","Rear Door Type","liftgate",101037425
+"388",1,3,"10103742515","OTHER","Doors","Number Of Doors","4",101037425
+"389",1,1,"10103742516","OTHER","Exterior Lights","Front Fog Lights","front fog/driving lights",101037425
+"390",1,2,"10103742516","OTHER","Exterior Lights","Daytime Running Lights","daytime running lights",101037425
+"391",1,3,"10103742516","OTHER","Exterior Lights","Xenon Headlights","xenon high intensity discharge",101037425
+"392",1,4,"10103742516","OTHER","Exterior Lights","Headlights Dusk Sensor","dusk sensing",101037425
+"393",1,1,"10103742519","OTHER","Front Passenger Seat","Height Adjustable Passenger Seat","height adjustable",101037425
+"394",1,2,"10103742519","OTHER","Front Passenger Seat","Heated Passenger Seat","multi-level heating",101037425
+"395",1,3,"10103742519","OTHER","Front Passenger Seat","Passenger Seat Whiplash Protection","whiplash protection system",101037425
+"396",1,4,"10103742519","OTHER","Front Passenger Seat","Number Of Passenger Seat Power Adjustments","8",101037425
+"397",1,1,"10103742520","MIRRORS","Mirrors","Auto Dimming Rearview Mirror","electrochromatic",101037425
+"398",1,2,"10103742520","MIRRORS","Mirrors","1st Row Vanity Mirrors","dual illuminated vanity mirrors",101037425
+"399",1,3,"10103742520","MIRRORS","Mirrors","Side Mirror Memory","includes exterior mirrors",101037425
+"400",1,4,"10103742520","MIRRORS","Mirrors","Passenger Side Mirror Adjustment","power",101037425
+"401",1,5,"10103742520","MIRRORS","Mirrors","Turn Signal Side Mirrors","turn signal in mirrors",101037425
+"402",1,6,"10103742520","MIRRORS","Mirrors","Exterior Mirror Adjustment","power",101037425
+"403",1,7,"10103742520","MIRRORS","Mirrors","Heated Exterior Mirrors","heated",101037425
+"404",1,8,"10103742520","MIRRORS","Mirrors","Reverse Tilt Side Mirrors","dual mirrors",101037425
+"405",1,9,"10103742520","MIRRORS","Mirrors","Heated Passenger Side Mirror","heated",101037425
+"406",1,1,"10103742521","OTHER","Steering","Power Steering","speed-proportional power steering",101037425
+"407",1,1,"10103742522","OTHER","1st Row Seats","1st Row Seat Type","sport",101037425
+"408",1,2,"10103742522","OTHER","1st Row Seats","Adjustable Seat Headrest","height adjustable headrests",101037425
+"409",1,3,"10103742522","OTHER","1st Row Seats","1st Row Upholstery","leather",101037425
+"410",1,4,"10103742522","OTHER","1st Row Seats","Number Of 1st Row Headrests","2",101037425
+"411",1,5,"10103742522","OTHER","1st Row Seats","Seat Whiplash Protection","whiplash protection system",101037425
+"412",1,1,"10103742523","OTHER","Interior Dimensions","2nd Row Leg Room","38.7",101037425
+"413",1,2,"10103742523","OTHER","Interior Dimensions","3rd Row Shoulder Room","57.1",101037425
+"414",1,3,"10103742523","OTHER","Interior Dimensions","3rd Row Leg Room","29.1",101037425
+"415",1,4,"10103742523","OTHER","Interior Dimensions","3rd Row Hip Room","42.9",101037425
+"416",1,5,"10103742523","OTHER","Interior Dimensions","1st Row Hip Room","59.0",101037425
+"417",1,6,"10103742523","OTHER","Interior Dimensions","3rd Row Head Room","35.7",101037425
+"418",1,7,"10103742523","OTHER","Interior Dimensions","2nd Row Shoulder Room","61.5",101037425
+"419",1,8,"10103742523","OTHER","Interior Dimensions","1st Row Leg Room","41.2",101037425
+"420",1,9,"10103742523","OTHER","Interior Dimensions","1st Row Head Room","39.2",101037425
+"421",1,10,"10103742523","OTHER","Interior Dimensions","2nd Row Head Room","38.6",101037425
+"422",1,11,"10103742523","OTHER","Interior Dimensions","2nd Row Hip Room","59.1",101037425
+"423",1,12,"10103742523","OTHER","Interior Dimensions","1st Row Shoulder Room","61.6",101037425
+"424",1,1,"10103742524","OTHER","Spare Tire/Wheel","Spare Wheel Rim Type","steel",101037425
+"425",1,2,"10103742524","OTHER","Spare Tire/Wheel","Spare Tire Size","temporary",101037425
+"426",1,3,"10103742524","OTHER","Spare Tire/Wheel","Spare Tire Mount Location","inside",101037425
+"427",1,1,"10103742526","OTHER","Power Outlets","Cargo Area Power Outlet","12V",101037425
+"428",1,2,"10103742526","OTHER","Power Outlets","Power Outlet(s)","12V",101037425
+"429",1,1,"10103742527","OTHER","Exterior Dimensions","Overall Width Without Mirrors","78.5",101037425
+"430",1,2,"10103742527","OTHER","Exterior Dimensions","Wheelbase","108.3",101037425
+"431",1,3,"10103742527","OTHER","Exterior Dimensions","Minimum Ground Clearance","8.2",101037425
+"432",1,4,"10103742527","OTHER","Exterior Dimensions","Overall Length","190.7",101037425
+"433",1,5,"10103742527","OTHER","Exterior Dimensions","Overall Height","68.2",101037425
+"434",1,6,"10103742527","OTHER","Exterior Dimensions","Rear Track","67.5",101037425
+"435",1,7,"10103742527","OTHER","Exterior Dimensions","Front Track","67.7",101037425
+"436",1,1,"10103742528","OTHER","Windows","Remote Window Operation","remote window operation",101037425
+"437",1,2,"10103742528","OTHER","Windows","Privacy Glass","privacy glass",101037425
+"438",1,3,"10103742528","OTHER","Windows","Speed Sensitive Front Wipers","speed sensitive",101037425
+"439",1,4,"10103742528","OTHER","Windows","One Touch Windows","2",101037425
+"440",1,5,"10103742528","OTHER","Windows","Power Windows","power windows",101037425
+"441",1,6,"10103742528","OTHER","Windows","Rear Wiper","intermittent rear wiper",101037425
+"442",1,7,"10103742528","OTHER","Windows","Intermittent Front Wipers","variable intermittent",101037425
+"443",1,8,"10103742528","OTHER","Windows","Rear Defogger","rear defogger",101037425
+"444",1,1,"10103742529","OTHER","Steering Wheel","Steering Wheel Adjustments","tilt and telescopic",101037425
+"445",1,2,"10103742529","OTHER","Steering Wheel","Cruise Controls On Steering Wheel","cruise controls",101037425
+"446",1,3,"10103742529","OTHER","Steering Wheel","Steering Wheel Trim","leather",101037425
+"447",1,4,"10103742529","OTHER","Steering Wheel","Steering Wheel Memory","includes steering wheel",101037425
+"448",1,5,"10103742529","OTHER","Steering Wheel","Audio Controls On Steering Wheel","audio controls",101037425
+"449",1,6,"10103742529","OTHER","Steering Wheel","Phone Controls On Steering Wheel","phone controls on steering wheel",101037425
+"450",1,1,"10103742532","OTHER","Storage","Cupholders Location","front, rear and 3rd row",101037425
+"451",1,2,"10103742532","OTHER","Storage","Seatback Storage","front seatback storage",101037425
+"452",1,3,"10103742532","OTHER","Storage","Door Pockets Location","front and rear",101037425
+"453",1,4,"10103742532","OTHER","Storage","Overhead Console","overhead console with storage",101037425
+"454",1,5,"10103742532","OTHER","Storage","Center Console","front console with storage",101037425
+"455",1,1,"10103742533","OTHER","Sunroof","One Touch Power Sunroof","one-touch power sunroof",101037425
+"456",1,2,"10103742533","OTHER","Sunroof","Sunroof","power glass",101037425
+"457",1,1,"10103742534","OTHER","Seating Configuration","1st Row Seating Capacity","2",101037425
+"458",1,2,"10103742534","OTHER","Seating Configuration","2nd Row Seating Capacity","3",101037425
+"459",1,3,"10103742534","OTHER","Seating Configuration","3rd Row Seating Capacity","2",101037425
+"460",1,1,"10103742535","OTHER","Air Conditioning","Climate Control Memory","includes climate control",101037425
+"461",1,2,"10103742535","OTHER","Air Conditioning","Front Air Conditioning Zones","dual",101037425
+"462",1,3,"10103742535","OTHER","Air Conditioning","Front Air Conditioning","automatic climate control",101037425
+"463",1,4,"10103742535","OTHER","Air Conditioning","Rear Heat","rear ventilation ducts with fan control",101037425
+"464",1,5,"10103742535","OTHER","Air Conditioning","Rear Air Conditioning","automatic climate control",101037425
+"465",1,6,"10103742535","OTHER","Air Conditioning","Rear Air Conditioning Zones","single",101037425
+"466",1,7,"10103742535","OTHER","Air Conditioning","Air Filtration","interior active charcoal air filter",101037425
+"467",1,1,"10103742536","OTHER","Differential","Limited Slip Rear Differential","limited slip rear differential",101037425
+"468",1,2,"10103742536","OTHER","Differential","Final Drive Ratio","4.53",101037425
+"469",1,3,"10103742536","OTHER","Differential","Center Differential","mechanical",101037425
+"470",1,4,"10103742536","OTHER","Differential","Limited Slip Center Differential","limited slip center differential",101037425
+"471",1,1,"10103742538","OTHER","Seatbelts","Seatbelt Pretensioners","front",101037425
+"472",1,2,"10103742538","OTHER","Seatbelts","Seatbelt Force Limiters","front",101037425
+"473",1,3,"10103742538","OTHER","Seatbelts","2nd Row Center Seatbelt","3-point belt",101037425
+"474",1,1,"10103742539","OTHER","Suspension","Front Suspension Classification","independent",101037425
+"475",1,2,"10103742539","OTHER","Suspension","Rear Spring Type","coil springs",101037425
+"476",1,3,"10103742539","OTHER","Suspension","Independent Suspension","four-wheel",101037425
+"477",1,4,"10103742539","OTHER","Suspension","Rear Arm Type","trailing links, lateral links",101037425
+"478",1,5,"10103742539","OTHER","Suspension","Rear Suspension Type","multi-link",101037425
+"479",1,6,"10103742539","OTHER","Suspension","Front Arm Type","lower control arms",101037425
+"480",1,7,"10103742539","OTHER","Suspension","Rear Suspension Classification","independent",101037425
+"481",1,8,"10103742539","OTHER","Suspension","Front Stabilizer Bar","stabilizer bar",101037425
+"482",1,9,"10103742539","OTHER","Suspension","Front Spring Type","coil springs",101037425
+"483",1,10,"10103742539","OTHER","Suspension","Rear Stabilizer Bar","stabilizer bar",101037425
+"484",1,11,"10103742539","OTHER","Suspension","Front Suspension Type","MacPherson strut",101037425
+"485",1,1,"10103742540","OTHER","Specifications","Angle Of Approach","28.0",101037425
+"486",1,2,"10103742540","OTHER","Specifications","Epa Combined Mpg","17",101037425
+"487",1,3,"10103742540","OTHER","Specifications","Ege Highway Mpg","20",101037425
+"488",1,4,"10103742540","OTHER","Specifications","Epa City Mpg","15",101037425
+"489",1,5,"10103742540","OTHER","Specifications","Curb Weight","4548",101037425
+"490",1,6,"10103742540","OTHER","Specifications","Turning Diameter","37.6",101037425
+"491",1,7,"10103742540","OTHER","Specifications","Angle Of Departure","22.9",101037425
+"492",1,8,"10103742540","OTHER","Specifications","Epa Highway Mpg","20",101037425
+"493",1,9,"10103742540","OTHER","Specifications","Tco Curb Weight","4548",101037425
+"494",1,10,"10103742540","OTHER","Specifications","Ege Combined Mpg","17",101037425
+"495",1,11,"10103742540","OTHER","Specifications","Fuel Capacity","21.0",101037425
+"496",1,12,"10103742540","OTHER","Specifications","Ege City Mpg","15",101037425
+"497",1,13,"10103742540","OTHER","Specifications","Towing Capacity","5000",101037425
+"498",1,1,"10103742541","OTHER","Brake System","Rear Brake Width","0.4",101037425
+"499",1,2,"10103742541","OTHER","Brake System","Front Brake Width","1.1",101037425
+"500",1,3,"10103742541","OTHER","Brake System","Rear Brake Type","disc",101037425
+"501",1,4,"10103742541","OTHER","Brake System","Electronic Brakeforce Distribution","electronic brakeforce distribution",101037425
+"502",1,5,"10103742541","OTHER","Brake System","Front Brake Diameter","13.0",101037425
+"503",1,6,"10103742541","OTHER","Brake System","Front Brake Type","ventilated disc",101037425
+"504",1,7,"10103742541","OTHER","Brake System","Antilock Braking System","4-wheel ABS",101037425
+"505",1,8,"10103742541","OTHER","Brake System","Braking Assist","braking assist",101037425
+"506",1,9,"10103742541","OTHER","Brake System","Rear Brake Diameter","13.2",101037425
+"507",1,1,"10103742542","OTHER","Drive Type","Driven Wheels","all wheel drive",101037425
+"508",1,1,"10103742543","OTHER","Misc. Interior Features","Cruise Control","cruise control",101037425
+"509",1,2,"10103742543","OTHER","Misc. Interior Features","Floor Mats","floor mats",101037425
+"510",1,3,"10103742543","OTHER","Misc. Interior Features","Universal Remote Transmitter","universal remote transmitter",101037425
+"511",1,4,"10103742543","OTHER","Misc. Interior Features","2nd Row Floor Mats","rear floor mats",101037425
+"512",1,5,"10103742543","OTHER","Misc. Interior Features","Cargo Area Light","cargo area light",101037425
+"513",1,6,"10103742543","OTHER","Misc. Interior Features","Reading Lights","front and rear reading lights",101037425
+"514",1,7,"10103742543","OTHER","Misc. Interior Features","Retained Accessory Power","retained accessory power",101037425
+"515",1,8,"10103742543","OTHER","Misc. Interior Features","Floor Mat Material","carpet",101037425
+"516",1,1,"10103742545","OTHER","Driver Seat","Height Adjustable Driver Seat","height adjustable",101037425
+"517",1,2,"10103742545","OTHER","Driver Seat","Driver Seat Adjustable Lumbar","power adjustable lumbar support",101037425
+"518",1,3,"10103742545","OTHER","Driver Seat","Number Of Driver Seat Power Adjustments","8",101037425
+"519",1,4,"10103742545","OTHER","Driver Seat","Number Of Memorized Driver Seat Settings","2",101037425
+"520",1,5,"10103742545","OTHER","Driver Seat","Heated Driver Seat","multi-level heating",101037425
+"521",1,1,"10103742546","OTHER","Security","Engine Immobilizer","engine immobilizer",101037425
+"522",1,2,"10103742546","OTHER","Security","Power Door Locks","remote keyless power door locks",101037425
+"523",1,3,"10103742546","OTHER","Security","Anti Theft Alarm System","remote anti-theft alarm system",101037425
+"524",1,4,"10103742546","OTHER","Security","2 Stage Unlocking","remote 2-stage unlocking",101037425
+"525",1,1,"10103742547","OTHER","3rd Row Seats","Folding 3rd Row","manual folding split-bench",101037425
+"526",1,2,"10103742547","OTHER","3rd Row Seats","3rd Row Seat Type","50-50 split bench",101037425
+"527",1,3,"10103742547","OTHER","3rd Row Seats","Number Of 3rd Row Headrests","2",101037425
+"528",1,1,"10103742549","OTHER","Airbags","Head Airbags","front, rear and third row",101037425
+"529",1,2,"10103742549","OTHER","Airbags","Passenger Airbag Deactivation","occupant sensing deactivation",101037425
+"530",1,3,"10103742549","OTHER","Airbags","Side Curtain Airbag Rollover Sensor","side-curtain airbag rollover sensor",101037425
+"531",1,4,"10103742549","OTHER","Airbags","Side Airbags","dual front",101037425
+"532",1,5,"10103742549","OTHER","Airbags","Passenger Airbag","Standard",101037425
+"533",1,6,"10103742549","OTHER","Airbags","Depowered Airbags","Standard",101037425
+"534",1,1,"10103742550","OTHER","2nd Row Seats","Folding 2nd Row","split folding",101037425
+"535",1,2,"10103742550","OTHER","2nd Row Seats","2nd Row Seat Type","40-60 split bench",101037425
+"536",1,3,"10103742550","OTHER","2nd Row Seats","Adjustable 2nd Row Headrests","height adjustable headrests",101037425
+"537",1,4,"10103742550","OTHER","2nd Row Seats","Number Of 2nd Row Headrests","3",101037425
+"538",1,5,"10103742550","OTHER","2nd Row Seats","2nd Row Center Armrest","folding with storage",101037425
+"539",1,6,"10103742550","OTHER","2nd Row Seats","Reclining 2nd Row","reclining",101037425
+"540",1,1,"200010248","WARRANTY","Warranty","Warranty Maximum Mileage","50000",101037425
+"541",1,2,"200010248","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",101037425
+"542",1,3,"200010248","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",101037425
+"543",1,4,"200010248","WARRANTY","Warranty","Warranty Maximum Years","4",101037425
+"544",1,5,"200010248","WARRANTY","Warranty","Warranty Type","Basic",101037425
+"545",1,1,"200010249","WARRANTY","Warranty","Warranty Maximum Mileage","70000",101037425
+"546",1,2,"200010249","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",101037425
+"547",1,3,"200010249","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",101037425
+"548",1,4,"200010249","WARRANTY","Warranty","Warranty Maximum Years","6",101037425
+"549",1,5,"200010249","WARRANTY","Warranty","Warranty Type","Drivetrain",101037425
+"550",1,1,"200010250","WARRANTY","Warranty","Warranty Maximum Mileage","50000",101037425
+"551",1,2,"200010250","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",101037425
+"552",1,3,"200010250","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",101037425
+"553",1,4,"200010250","WARRANTY","Warranty","Warranty Maximum Years","4",101037425
+"554",1,5,"200010250","WARRANTY","Warranty","Warranty Type","Roadside",101037425
+"555",1,1,"200010251","WARRANTY","Warranty","Warranty Miles Limited/unlimited","U",101037425
+"556",1,2,"200010251","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",101037425
+"557",1,3,"200010251","WARRANTY","Warranty","Warranty Maximum Years","5",101037425
+"558",1,4,"200010251","WARRANTY","Warranty","Warranty Type","Rust",101037425
+"559",1,1,"200010255","AUDIO_SYSTEM","Audio System","Audio System Memory Feature","includes audio system",101037425
+"560",1,2,"200010255","AUDIO_SYSTEM","Audio System","Total Number Of Speakers","8",101037425
+"561",1,3,"200010255","AUDIO_SYSTEM","Audio System","Digital Audio Input","auxiliary audio input",101037425
+"562",1,4,"200010255","AUDIO_SYSTEM","Audio System","Antenna Type","diversity",101037425
+"563",1,5,"200010255","AUDIO_SYSTEM","Audio System","Cd Player","6 CD player",101037425
+"564",1,6,"200010255","AUDIO_SYSTEM","Audio System","Cd Mp3 Playback","CD MP3 Playback",101037425
+"565",1,7,"200010255","AUDIO_SYSTEM","Audio System","Audio Security System","audio security system",101037425
+"566",1,8,"200010255","AUDIO_SYSTEM","Audio System","Speed Sensitive Volume Control","speed sensitive volume control",101037425
+"567",1,9,"200010255","AUDIO_SYSTEM","Audio System","Radio","AM/FM",101037425
+"568",1,10,"200010255","AUDIO_SYSTEM","Audio System","Satellite Radio","satellite radio",101037425
+"569",1,11,"200010255","AUDIO_SYSTEM","Audio System","Watts","253",101037425
+"570",1,12,"200010255","AUDIO_SYSTEM","Audio System","Subwoofer","1",101037425
+"571",1,13,"200010255","AUDIO_SYSTEM","Audio System","Consumer Generic Feature 0","Aux Audio Inputs",101037425
+"572",1,1,"200010256","TIRES","Tires","Rear Tire Width","255",101037425
+"573",1,2,"200010256","TIRES","Tires","Rear Tire Load Rating","104",101037425
+"574",1,3,"200010256","TIRES","Tires","Rear Tire Prefix","P",101037425
+"575",1,4,"200010256","TIRES","Tires","Tire Type","all season",101037425
+"576",1,5,"200010256","TIRES","Tires","Rear Tire Diameter","18",101037425
+"577",1,6,"200010256","TIRES","Tires","Rear Tire Profile","55",101037425
+"578",1,7,"200010256","TIRES","Tires","Rear Tire Speed Rating","H",101037425
+"579",1,1,"200010257","WHEELS","Wheels","Rim Type","alloy",101037425
+"580",1,2,"200010257","WHEELS","Wheels","Rear Wheel Diameter","18",101037425
+"581",1,3,"200010257","WHEELS","Wheels","Rear Wheel Width","8.0",101037425
+"582",1,1,"10077323110","OTHER","Cargo Dimensions","Cargo Capacity, All Seats In Place","27.8",100773231
+"583",1,2,"10077323110","OTHER","Cargo Dimensions","Cargo Capacity, Rear Seat Down Or Removed","60.6",100773231
+"584",1,3,"10077323110","OTHER","Cargo Dimensions","Max Cargo Capacity","60.6",100773231
+"585",1,1,"10077323111","OTHER","Mobile Connectivity","Phone","pre-wired for phone",100773231
+"586",1,2,"10077323111","OTHER","Mobile Connectivity","Bluetooth","Bluetooth",100773231
+"587",1,1,"10077323113","OTHER","Instrumentation","Electroluminescent Instrumentation","electroluminescent instrumentation",100773231
+"588",1,2,"10077323113","OTHER","Instrumentation","External Temperature Gauge","external temperature display",100773231
+"589",1,3,"10077323113","OTHER","Instrumentation","Boost Gauge","boost gauge",100773231
+"590",1,4,"10077323113","OTHER","Instrumentation","Tire Pressure Monitoring System","tire pressure monitoring",100773231
+"591",1,5,"10077323113","OTHER","Instrumentation","Low Fuel Level Indicator","low fuel level",100773231
+"592",1,6,"10077323113","OTHER","Instrumentation","Tachometer","tachometer",100773231
+"593",1,7,"10077323113","OTHER","Instrumentation","Trip Computer","trip computer",100773231
+"594",1,8,"10077323113","OTHER","Instrumentation","Clock","clock",100773231
+"595",1,1,"10077323114","OTHER","Misc. Exterior Features","Rear Spoiler","rear spoiler",100773231
+"596",1,1,"10077323115","OTHER","Doors","Liftgate Window","fixed",100773231
+"597",1,2,"10077323115","OTHER","Doors","Rear Door Type","liftgate",100773231
+"598",1,3,"10077323115","OTHER","Doors","Number Of Doors","4",100773231
+"599",1,1,"10077323116","OTHER","Exterior Lights","Front Fog Lights","front fog/driving lights",100773231
+"600",1,2,"10077323116","OTHER","Exterior Lights","Daytime Running Lights","daytime running lights",100773231
+"601",1,3,"10077323116","OTHER","Exterior Lights","Xenon Headlights","xenon high intensity discharge",100773231
+"602",1,1,"10077323119","OTHER","Front Passenger Seat","Number Of Passenger Seat Manual Adjustments","4",100773231
+"603",1,2,"10077323119","OTHER","Front Passenger Seat","Heated Passenger Seat","multi-level heating",100773231
+"604",1,3,"10077323119","OTHER","Front Passenger Seat","Passenger Seat Whiplash Protection","whiplash protection system",100773231
+"605",1,1,"10077323120","MIRRORS","Mirrors","1st Row Vanity Mirrors","dual illuminated vanity mirrors",100773231
+"606",1,2,"10077323120","MIRRORS","Mirrors","Passenger Side Mirror Adjustment","power",100773231
+"607",1,3,"10077323120","MIRRORS","Mirrors","Turn Signal Side Mirrors","turn signal in mirrors",100773231
+"608",1,4,"10077323120","MIRRORS","Mirrors","Exterior Mirror Adjustment","power",100773231
+"609",1,5,"10077323120","MIRRORS","Mirrors","Heated Exterior Mirrors","heated",100773231
+"610",1,6,"10077323120","MIRRORS","Mirrors","Reverse Tilt Side Mirrors","passenger mirror",100773231
+"611",1,7,"10077323120","MIRRORS","Mirrors","Heated Passenger Side Mirror","heated",100773231
+"612",1,1,"10077323121","OTHER","Steering","Power Steering","speed-proportional power steering",100773231
+"613",1,1,"10077323122","OTHER","1st Row Seats","1st Row Seat Type","sport",100773231
+"614",1,2,"10077323122","OTHER","1st Row Seats","Adjustable Seat Headrest","height adjustable headrests",100773231
+"615",1,3,"10077323122","OTHER","1st Row Seats","1st Row Upholstery","leather",100773231
+"616",1,4,"10077323122","OTHER","1st Row Seats","Number Of 1st Row Headrests","2",100773231
+"617",1,5,"10077323122","OTHER","1st Row Seats","Seat Whiplash Protection","whiplash protection system",100773231
+"618",1,1,"10077323123","OTHER","Interior Dimensions","2nd Row Leg Room","37.7",100773231
+"619",1,2,"10077323123","OTHER","Interior Dimensions","1st Row Hip Room","54.4",100773231
+"620",1,3,"10077323123","OTHER","Interior Dimensions","2nd Row Shoulder Room","56.3",100773231
+"621",1,4,"10077323123","OTHER","Interior Dimensions","1st Row Leg Room","41.8",100773231
+"622",1,5,"10077323123","OTHER","Interior Dimensions","1st Row Head Room","38.7",100773231
+"623",1,6,"10077323123","OTHER","Interior Dimensions","2nd Row Head Room","38.3",100773231
+"624",1,7,"10077323123","OTHER","Interior Dimensions","2nd Row Hip Room","53.0",100773231
+"625",1,8,"10077323123","OTHER","Interior Dimensions","1st Row Shoulder Room","58.2",100773231
+"626",1,1,"10077323124","OTHER","Spare Tire/Wheel","Spare Tire Mount Location","inside",100773231
+"627",1,1,"10077323126","OTHER","Power Outlets","Power Outlet(s)","12V",100773231
+"628",1,1,"10077323127","OTHER","Exterior Dimensions","Overall Width Without Mirrors","73.6",100773231
+"629",1,2,"10077323127","OTHER","Exterior Dimensions","Wheelbase","104.3",100773231
+"630",1,3,"10077323127","OTHER","Exterior Dimensions","Minimum Ground Clearance","6.3",100773231
+"631",1,4,"10077323127","OTHER","Exterior Dimensions","Overall Length","180.7",100773231
+"632",1,5,"10077323127","OTHER","Exterior Dimensions","Overall Height","65.2",100773231
+"633",1,6,"10077323127","OTHER","Exterior Dimensions","Rear Track","62.6",100773231
+"634",1,7,"10077323127","OTHER","Exterior Dimensions","Front Track","61.9",100773231
+"635",1,1,"10077323128","OTHER","Windows","Privacy Glass","privacy glass",100773231
+"636",1,2,"10077323128","OTHER","Windows","Speed Sensitive Front Wipers","speed sensitive",100773231
+"637",1,3,"10077323128","OTHER","Windows","One Touch Windows","2",100773231
+"638",1,4,"10077323128","OTHER","Windows","Power Windows","power windows",100773231
+"639",1,5,"10077323128","OTHER","Windows","Rear Wiper","intermittent rear wiper",100773231
+"640",1,6,"10077323128","OTHER","Windows","Intermittent Front Wipers","variable intermittent",100773231
+"641",1,7,"10077323128","OTHER","Windows","Rear Defogger","rear defogger",100773231
+"642",1,1,"10077323129","OTHER","Steering Wheel","Steering Wheel Adjustments","tilt and telescopic",100773231
+"643",1,2,"10077323129","OTHER","Steering Wheel","Cruise Controls On Steering Wheel","cruise controls",100773231
+"644",1,3,"10077323129","OTHER","Steering Wheel","Transmission Controls On Steering Wheel","gear shift controls",100773231
+"645",1,4,"10077323129","OTHER","Steering Wheel","Steering Wheel Trim","leather",100773231
+"646",1,5,"10077323129","OTHER","Steering Wheel","Audio Controls On Steering Wheel","audio controls",100773231
+"647",1,6,"10077323129","OTHER","Steering Wheel","Phone Controls On Steering Wheel","phone controls on steering wheel",100773231
+"648",1,1,"10077323132","OTHER","Storage","Cupholders Location","front and rear",100773231
+"649",1,2,"10077323132","OTHER","Storage","Seatback Storage","front seatback storage",100773231
+"650",1,3,"10077323132","OTHER","Storage","Door Pockets Location","front",100773231
+"651",1,4,"10077323132","OTHER","Storage","Rear Area Cargo Cover","rear area cargo cover",100773231
+"652",1,5,"10077323132","OTHER","Storage","Center Console","front console with storage",100773231
+"653",1,1,"10077323133","OTHER","Sunroof","One Touch Power Sunroof","one-touch power sunroof",100773231
+"654",1,2,"10077323133","OTHER","Sunroof","Sunroof","power glass",100773231
+"655",1,1,"10077323134","OTHER","Seating Configuration","1st Row Seating Capacity","2",100773231
+"656",1,2,"10077323134","OTHER","Seating Configuration","2nd Row Seating Capacity","3",100773231
+"657",1,1,"10077323135","OTHER","Air Conditioning","Front Air Conditioning Zones","dual",100773231
+"658",1,2,"10077323135","OTHER","Air Conditioning","Front Air Conditioning","automatic climate control",100773231
+"659",1,3,"10077323135","OTHER","Air Conditioning","Air Filtration","interior air filtration",100773231
+"660",1,1,"10077323136","OTHER","Differential","Limited Slip Rear Differential","limited slip rear differential",100773231
+"661",1,2,"10077323136","OTHER","Differential","Final Drive Ratio","4.53",100773231
+"662",1,3,"10077323136","OTHER","Differential","Center Differential","mechanical",100773231
+"663",1,4,"10077323136","OTHER","Differential","Limited Slip Center Differential","limited slip center differential",100773231
+"664",1,1,"10077323138","OTHER","Seatbelts","Seatbelt Pretensioners","front",100773231
+"665",1,2,"10077323138","OTHER","Seatbelts","Seatbelt Force Limiters","front",100773231
+"666",1,3,"10077323138","OTHER","Seatbelts","2nd Row Center Seatbelt","3-point belt",100773231
+"667",1,1,"10077323139","OTHER","Suspension","Front Suspension Classification","independent",100773231
+"668",1,2,"10077323139","OTHER","Suspension","Rear Spring Type","coil springs",100773231
+"669",1,3,"10077323139","OTHER","Suspension","Independent Suspension","four-wheel",100773231
+"670",1,4,"10077323139","OTHER","Suspension","Rear Arm Type","trailing arms",100773231
+"671",1,5,"10077323139","OTHER","Suspension","Rear Suspension Type","multi-link",100773231
+"672",1,6,"10077323139","OTHER","Suspension","Front Arm Type","lower control arms",100773231
+"673",1,7,"10077323139","OTHER","Suspension","Rear Suspension Classification","independent",100773231
+"674",1,8,"10077323139","OTHER","Suspension","Front Stabilizer Bar","stabilizer bar",100773231
+"675",1,9,"10077323139","OTHER","Suspension","Front Spring Type","coil springs",100773231
+"676",1,10,"10077323139","OTHER","Suspension","Rear Stabilizer Bar","stabilizer bar",100773231
+"677",1,11,"10077323139","OTHER","Suspension","Front Suspension Type","MacPherson strut",100773231
+"678",1,1,"10077323140","OTHER","Specifications","Ege Highway Mpg","22",100773231
+"679",1,2,"10077323140","OTHER","Specifications","Epa City Mpg","17",100773231
+"680",1,3,"10077323140","OTHER","Specifications","Fuel Capacity","18.0",100773231
+"681",1,4,"10077323140","OTHER","Specifications","Ege Combined Mpg","19",100773231
+"682",1,5,"10077323140","OTHER","Specifications","Epa Highway Mpg","22",100773231
+"683",1,6,"10077323140","OTHER","Specifications","Epa Combined Mpg","19",100773231
+"684",1,7,"10077323140","OTHER","Specifications","Angle Of Approach","28.0",100773231
+"685",1,8,"10077323140","OTHER","Specifications","Curb Weight","3968",100773231
+"686",1,9,"10077323140","OTHER","Specifications","Turning Diameter","37.4",100773231
+"687",1,10,"10077323140","OTHER","Specifications","Angle Of Departure","22.0",100773231
+"688",1,11,"10077323140","OTHER","Specifications","Tco Curb Weight","3968",100773231
+"689",1,12,"10077323140","OTHER","Specifications","Ege City Mpg","17",100773231
+"690",1,13,"10077323140","OTHER","Specifications","Towing Capacity","1500",100773231
+"691",1,1,"10077323141","OTHER","Brake System","Electronic Brakeforce Distribution","electronic brakeforce distribution",100773231
+"692",1,2,"10077323141","OTHER","Brake System","Rear Brake Type","disc",100773231
+"693",1,3,"10077323141","OTHER","Brake System","Front Brake Diameter","11.7",100773231
+"694",1,4,"10077323141","OTHER","Brake System","Front Brake Type","ventilated disc",100773231
+"695",1,5,"10077323141","OTHER","Brake System","Antilock Braking System","4-wheel ABS",100773231
+"696",1,6,"10077323141","OTHER","Brake System","Braking Assist","braking assist",100773231
+"697",1,7,"10077323141","OTHER","Brake System","Rear Brake Diameter","12.0",100773231
+"698",1,1,"10077323142","OTHER","Trailer Towing Equipment","Tow Hooks","front",100773231
+"699",1,1,"10077323143","OTHER","Drive Type","Driven Wheels","all wheel drive",100773231
+"700",1,1,"10077323144","OTHER","Misc. Interior Features","Cruise Control","cruise control",100773231
+"701",1,2,"10077323144","OTHER","Misc. Interior Features","Floor Mats","floor mats",100773231
+"702",1,3,"10077323144","OTHER","Misc. Interior Features","Universal Remote Transmitter","universal remote transmitter",100773231
+"703",1,4,"10077323144","OTHER","Misc. Interior Features","2nd Row Floor Mats","rear floor mats",100773231
+"704",1,5,"10077323144","OTHER","Misc. Interior Features","Cargo Area Light","cargo area light",100773231
+"705",1,6,"10077323144","OTHER","Misc. Interior Features","Reading Lights","front and rear reading lights",100773231
+"706",1,7,"10077323144","OTHER","Misc. Interior Features","Retained Accessory Power","retained accessory power",100773231
+"707",1,8,"10077323144","OTHER","Misc. Interior Features","Floor Mat Material","carpet",100773231
+"708",1,1,"10077323146","OTHER","Driver Seat","Driver Seat Adjustable Lumbar","power adjustable lumbar support",100773231
+"709",1,2,"10077323146","OTHER","Driver Seat","Number Of Driver Seat Power Adjustments","8",100773231
+"710",1,3,"10077323146","OTHER","Driver Seat","Heated Driver Seat","multi-level heating",100773231
+"711",1,1,"10077323147","OTHER","Security","Engine Immobilizer","engine immobilizer",100773231
+"712",1,2,"10077323147","OTHER","Security","Power Door Locks","remote keyless power door locks",100773231
+"713",1,3,"10077323147","OTHER","Security","Anti Theft Alarm System","remote anti-theft alarm system",100773231
+"714",1,4,"10077323147","OTHER","Security","2 Stage Unlocking","remote 2-stage unlocking",100773231
+"715",1,1,"10077323149","OTHER","Airbags","Head Airbags","front and rear",100773231
+"716",1,2,"10077323149","OTHER","Airbags","Passenger Airbag Deactivation","occupant sensing deactivation",100773231
+"717",1,3,"10077323149","OTHER","Airbags","Side Curtain Airbag Rollover Sensor","side-curtain airbag rollover sensor",100773231
+"718",1,4,"10077323149","OTHER","Airbags","Side Airbags","dual front",100773231
+"719",1,5,"10077323149","OTHER","Airbags","Passenger Airbag","Standard",100773231
+"720",1,6,"10077323149","OTHER","Airbags","Depowered Airbags","Standard",100773231
+"721",1,1,"10077323150","OTHER","2nd Row Seats","Folding 2nd Row","split folding",100773231
+"722",1,2,"10077323150","OTHER","2nd Row Seats","2nd Row Seat Type","40-60 split bench",100773231
+"723",1,3,"10077323150","OTHER","2nd Row Seats","Adjustable 2nd Row Headrests","height adjustable headrests",100773231
+"724",1,4,"10077323150","OTHER","2nd Row Seats","Number Of 2nd Row Headrests","3",100773231
+"725",1,5,"10077323150","OTHER","2nd Row Seats","2nd Row Center Armrest","folding with storage",100773231
+"726",1,1,"200159697","WARRANTY","Warranty","Warranty Maximum Mileage","50000",100773231
+"727",1,2,"200159697","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",100773231
+"728",1,3,"200159697","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100773231
+"729",1,4,"200159697","WARRANTY","Warranty","Warranty Maximum Years","4",100773231
+"730",1,5,"200159697","WARRANTY","Warranty","Warranty Type","Basic",100773231
+"731",1,1,"200159698","WARRANTY","Warranty","Warranty Maximum Mileage","70000",100773231
+"732",1,2,"200159698","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",100773231
+"733",1,3,"200159698","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100773231
+"734",1,4,"200159698","WARRANTY","Warranty","Warranty Maximum Years","6",100773231
+"735",1,5,"200159698","WARRANTY","Warranty","Warranty Type","Drivetrain",100773231
+"736",1,1,"200159699","WARRANTY","Warranty","Warranty Maximum Mileage","50000",100773231
+"737",1,2,"200159699","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",100773231
+"738",1,3,"200159699","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100773231
+"739",1,4,"200159699","WARRANTY","Warranty","Warranty Maximum Years","4",100773231
+"740",1,5,"200159699","WARRANTY","Warranty","Warranty Type","Roadside",100773231
+"741",1,1,"200159700","WARRANTY","Warranty","Warranty Miles Limited/unlimited","U",100773231
+"742",1,2,"200159700","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100773231
+"743",1,3,"200159700","WARRANTY","Warranty","Warranty Maximum Years","5",100773231
+"744",1,4,"200159700","WARRANTY","Warranty","Warranty Type","Rust",100773231
+"745",1,1,"200159709","AUDIO_SYSTEM","Audio System","Total Number Of Speakers","7",100773231
+"746",1,2,"200159709","AUDIO_SYSTEM","Audio System","Digital Audio Input","auxiliary audio input",100773231
+"747",1,3,"200159709","AUDIO_SYSTEM","Audio System","Antenna Type","mast",100773231
+"748",1,4,"200159709","AUDIO_SYSTEM","Audio System","Cd Player","6 CD player",100773231
+"749",1,5,"200159709","AUDIO_SYSTEM","Audio System","Cd Mp3 Playback","CD MP3 Playback",100773231
+"750",1,6,"200159709","AUDIO_SYSTEM","Audio System","Speed Sensitive Volume Control","speed sensitive volume control",100773231
+"751",1,7,"200159709","AUDIO_SYSTEM","Audio System","Radio","AM/FM",100773231
+"752",1,8,"200159709","AUDIO_SYSTEM","Audio System","Radio Data System","radio data system",100773231
+"753",1,9,"200159709","AUDIO_SYSTEM","Audio System","Satellite Radio","satellite radio",100773231
+"754",1,10,"200159709","AUDIO_SYSTEM","Audio System","Watts","360",100773231
+"755",1,11,"200159709","AUDIO_SYSTEM","Audio System","Subwoofer","1",100773231
+"756",1,12,"200159709","AUDIO_SYSTEM","Audio System","Consumer Generic Feature 0","Aux Audio Inputs",100773231
+"757",1,1,"200159710","TIRES","Tires","Rear Tire Width","235",100773231
+"758",1,2,"200159710","TIRES","Tires","Rear Tire Load Rating","99",100773231
+"759",1,3,"200159710","TIRES","Tires","Rear Tire Prefix","P",100773231
+"760",1,4,"200159710","TIRES","Tires","Tire Type","all season",100773231
+"761",1,5,"200159710","TIRES","Tires","Rear Tire Diameter","18",100773231
+"762",1,6,"200159710","TIRES","Tires","Rear Tire Profile","55",100773231
+"763",1,7,"200159710","TIRES","Tires","Rear Tire Speed Rating","V",100773231
+"764",1,1,"200159711","WHEELS","Wheels","Rim Type","alloy",100773231
+"765",1,2,"200159711","WHEELS","Wheels","Rear Wheel Diameter","18",100773231
+"766",1,3,"200159711","WHEELS","Wheels","Rear Wheel Width","7.5",100773231
+"767",1,1,"10090554010","OTHER","Cargo Dimensions","Cargo Capacity, All Seats In Place","28.8",100905540
+"768",1,1,"10090554011","OTHER","Mobile Connectivity","Phone","pre-wired for phone",100905540
+"769",1,2,"10090554011","OTHER","Mobile Connectivity","Bluetooth","Bluetooth",100905540
+"770",1,1,"10090554013","OTHER","Instrumentation","Electroluminescent Instrumentation","electroluminescent instrumentation",100905540
+"771",1,2,"10090554013","OTHER","Instrumentation","External Temperature Gauge","external temperature display",100905540
+"772",1,3,"10090554013","OTHER","Instrumentation","Boost Gauge","boost gauge",100905540
+"773",1,4,"10090554013","OTHER","Instrumentation","Tire Pressure Monitoring System","tire pressure monitoring",100905540
+"774",1,5,"10090554013","OTHER","Instrumentation","Low Fuel Level Indicator","low fuel level",100905540
+"775",1,6,"10090554013","OTHER","Instrumentation","Tachometer","tachometer",100905540
+"776",1,7,"10090554013","OTHER","Instrumentation","Trip Computer","trip computer",100905540
+"777",1,8,"10090554013","OTHER","Instrumentation","Clock","clock",100905540
+"778",1,1,"10090554014","OTHER","Misc. Exterior Features","Rear Spoiler","rear spoiler",100905540
+"779",1,1,"10090554015","OTHER","Doors","Liftgate Window","fixed",100905540
+"780",1,2,"10090554015","OTHER","Doors","Rear Door Type","liftgate",100905540
+"781",1,3,"10090554015","OTHER","Doors","Number Of Doors","4",100905540
+"782",1,1,"10090554016","OTHER","Exterior Lights","Front Fog Lights","front fog/driving lights",100905540
+"783",1,2,"10090554016","OTHER","Exterior Lights","Daytime Running Lights","daytime running lights",100905540
+"784",1,3,"10090554016","OTHER","Exterior Lights","Xenon Headlights","xenon high intensity discharge",100905540
+"785",1,1,"10090554019","OTHER","Front Passenger Seat","Number Of Passenger Seat Manual Adjustments","4",100905540
+"786",1,2,"10090554019","OTHER","Front Passenger Seat","Heated Passenger Seat","multi-level heating",100905540
+"787",1,3,"10090554019","OTHER","Front Passenger Seat","Passenger Seat Whiplash Protection","whiplash protection system",100905540
+"788",1,1,"10090554020","MIRRORS","Mirrors","Auto Dimming Rearview Mirror","electrochromatic",100905540
+"789",1,2,"10090554020","MIRRORS","Mirrors","1st Row Vanity Mirrors","dual illuminated vanity mirrors",100905540
+"790",1,3,"10090554020","MIRRORS","Mirrors","Side Mirror Memory","includes exterior mirrors",100905540
+"791",1,4,"10090554020","MIRRORS","Mirrors","Passenger Side Mirror Adjustment","power",100905540
+"792",1,5,"10090554020","MIRRORS","Mirrors","Turn Signal Side Mirrors","turn signal in mirrors",100905540
+"793",1,6,"10090554020","MIRRORS","Mirrors","Exterior Mirror Adjustment","power",100905540
+"794",1,7,"10090554020","MIRRORS","Mirrors","Heated Exterior Mirrors","heated",100905540
+"795",1,8,"10090554020","MIRRORS","Mirrors","Reverse Tilt Side Mirrors","passenger mirror",100905540
+"796",1,9,"10090554020","MIRRORS","Mirrors","Heated Passenger Side Mirror","heated",100905540
+"797",1,1,"10090554021","OTHER","Steering","Power Steering","speed-proportional power steering",100905540
+"798",1,1,"10090554022","OTHER","1st Row Seats","1st Row Seat Type","sport",100905540
+"799",1,2,"10090554022","OTHER","1st Row Seats","Adjustable Seat Headrest","height adjustable headrests",100905540
+"800",1,3,"10090554022","OTHER","1st Row Seats","1st Row Upholstery","leather",100905540
+"801",1,4,"10090554022","OTHER","1st Row Seats","Number Of 1st Row Headrests","2",100905540
+"802",1,5,"10090554022","OTHER","1st Row Seats","Seat Whiplash Protection","whiplash protection system",100905540
+"803",1,1,"10090554023","OTHER","Interior Dimensions","2nd Row Leg Room","37.7",100905540
+"804",1,2,"10090554023","OTHER","Interior Dimensions","1st Row Hip Room","54.4",100905540
+"805",1,3,"10090554023","OTHER","Interior Dimensions","2nd Row Shoulder Room","56.3",100905540
+"806",1,4,"10090554023","OTHER","Interior Dimensions","1st Row Leg Room","41.8",100905540
+"807",1,5,"10090554023","OTHER","Interior Dimensions","1st Row Head Room","38.7",100905540
+"808",1,6,"10090554023","OTHER","Interior Dimensions","2nd Row Head Room","38.3",100905540
+"809",1,7,"10090554023","OTHER","Interior Dimensions","2nd Row Hip Room","53.0",100905540
+"810",1,8,"10090554023","OTHER","Interior Dimensions","1st Row Shoulder Room","58.2",100905540
+"811",1,1,"10090554024","OTHER","Spare Tire/Wheel","Spare Tire Mount Location","inside",100905540
+"812",1,1,"10090554026","OTHER","Power Outlets","Power Outlet(s)","12V",100905540
+"813",1,1,"10090554027","OTHER","Exterior Dimensions","Overall Width Without Mirrors","73.6",100905540
+"814",1,2,"10090554027","OTHER","Exterior Dimensions","Wheelbase","104.3",100905540
+"815",1,3,"10090554027","OTHER","Exterior Dimensions","Minimum Ground Clearance","6.3",100905540
+"816",1,4,"10090554027","OTHER","Exterior Dimensions","Overall Length","180.7",100905540
+"817",1,5,"10090554027","OTHER","Exterior Dimensions","Overall Height","65.2",100905540
+"818",1,6,"10090554027","OTHER","Exterior Dimensions","Rear Track","62.6",100905540
+"819",1,7,"10090554027","OTHER","Exterior Dimensions","Front Track","61.9",100905540
+"820",1,1,"10090554028","OTHER","Windows","Privacy Glass","privacy glass",100905540
+"821",1,2,"10090554028","OTHER","Windows","Speed Sensitive Front Wipers","speed sensitive",100905540
+"822",1,3,"10090554028","OTHER","Windows","One Touch Windows","2",100905540
+"823",1,4,"10090554028","OTHER","Windows","Power Windows","power windows",100905540
+"824",1,5,"10090554028","OTHER","Windows","Rear Wiper","intermittent rear wiper",100905540
+"825",1,6,"10090554028","OTHER","Windows","Intermittent Front Wipers","variable intermittent",100905540
+"826",1,7,"10090554028","OTHER","Windows","Rear Defogger","rear defogger",100905540
+"827",1,1,"10090554029","OTHER","Steering Wheel","Steering Wheel Adjustments","tilt and telescopic",100905540
+"828",1,2,"10090554029","OTHER","Steering Wheel","Cruise Controls On Steering Wheel","cruise controls",100905540
+"829",1,3,"10090554029","OTHER","Steering Wheel","Transmission Controls On Steering Wheel","gear shift controls",100905540
+"830",1,4,"10090554029","OTHER","Steering Wheel","Steering Wheel Trim","leather",100905540
+"831",1,5,"10090554029","OTHER","Steering Wheel","Audio Controls On Steering Wheel","audio controls",100905540
+"832",1,6,"10090554029","OTHER","Steering Wheel","Phone Controls On Steering Wheel","phone controls on steering wheel",100905540
+"833",1,1,"10090554032","OTHER","Storage","Cupholders Location","front and rear",100905540
+"834",1,2,"10090554032","OTHER","Storage","Seatback Storage","front seatback storage",100905540
+"835",1,3,"10090554032","OTHER","Storage","Door Pockets Location","front",100905540
+"836",1,4,"10090554032","OTHER","Storage","Rear Area Cargo Cover","rear area cargo cover",100905540
+"837",1,5,"10090554032","OTHER","Storage","Center Console","front console with storage",100905540
+"838",1,1,"10090554033","OTHER","Sunroof","One Touch Power Sunroof","one-touch power sunroof",100905540
+"839",1,2,"10090554033","OTHER","Sunroof","Remote Sunroof Operation","remote sunroof operation",100905540
+"840",1,3,"10090554033","OTHER","Sunroof","Sunroof","power glass",100905540
+"841",1,1,"10090554034","OTHER","Seating Configuration","1st Row Seating Capacity","2",100905540
+"842",1,2,"10090554034","OTHER","Seating Configuration","2nd Row Seating Capacity","3",100905540
+"843",1,1,"10090554035","OTHER","Air Conditioning","Front Air Conditioning Zones","dual",100905540
+"844",1,2,"10090554035","OTHER","Air Conditioning","Front Air Conditioning","automatic climate control",100905540
+"845",1,3,"10090554035","OTHER","Air Conditioning","Air Filtration","interior air filtration",100905540
+"846",1,1,"10090554036","OTHER","Differential","Limited Slip Rear Differential","limited slip rear differential",100905540
+"847",1,2,"10090554036","OTHER","Differential","Final Drive Ratio","4.53",100905540
+"848",1,3,"10090554036","OTHER","Differential","Center Differential","mechanical",100905540
+"849",1,4,"10090554036","OTHER","Differential","Limited Slip Center Differential","limited slip center differential",100905540
+"850",1,1,"10090554038","OTHER","Seatbelts","Seatbelt Pretensioners","front",100905540
+"851",1,2,"10090554038","OTHER","Seatbelts","Seatbelt Force Limiters","front",100905540
+"852",1,3,"10090554038","OTHER","Seatbelts","2nd Row Center Seatbelt","3-point belt",100905540
+"853",1,1,"10090554039","OTHER","Suspension","Front Suspension Classification","independent",100905540
+"854",1,2,"10090554039","OTHER","Suspension","Rear Spring Type","coil springs",100905540
+"855",1,3,"10090554039","OTHER","Suspension","Independent Suspension","four-wheel",100905540
+"856",1,4,"10090554039","OTHER","Suspension","Rear Arm Type","trailing arms",100905540
+"857",1,5,"10090554039","OTHER","Suspension","Rear Suspension Type","multi-link",100905540
+"858",1,6,"10090554039","OTHER","Suspension","Front Arm Type","lower control arms",100905540
+"859",1,7,"10090554039","OTHER","Suspension","Rear Suspension Classification","independent",100905540
+"860",1,8,"10090554039","OTHER","Suspension","Front Stabilizer Bar","stabilizer bar",100905540
+"861",1,9,"10090554039","OTHER","Suspension","Front Spring Type","coil springs",100905540
+"862",1,10,"10090554039","OTHER","Suspension","Rear Stabilizer Bar","stabilizer bar",100905540
+"863",1,11,"10090554039","OTHER","Suspension","Front Suspension Type","MacPherson strut",100905540
+"864",1,1,"10090554040","OTHER","Specifications","Angle Of Approach","28.0",100905540
+"865",1,2,"10090554040","OTHER","Specifications","Epa Combined Mpg","19",100905540
+"866",1,3,"10090554040","OTHER","Specifications","Ege Highway Mpg","22",100905540
+"867",1,4,"10090554040","OTHER","Specifications","Epa City Mpg","17",100905540
+"868",1,5,"10090554040","OTHER","Specifications","Curb Weight","3924",100905540
+"869",1,6,"10090554040","OTHER","Specifications","Turning Diameter","39.2",100905540
+"870",1,7,"10090554040","OTHER","Specifications","Angle Of Departure","22.0",100905540
+"871",1,8,"10090554040","OTHER","Specifications","Epa Highway Mpg","22",100905540
+"872",1,9,"10090554040","OTHER","Specifications","Tco Curb Weight","3924",100905540
+"873",1,10,"10090554040","OTHER","Specifications","Ege Combined Mpg","19",100905540
+"874",1,11,"10090554040","OTHER","Specifications","Fuel Capacity","18.0",100905540
+"875",1,12,"10090554040","OTHER","Specifications","Ege City Mpg","17",100905540
+"876",1,13,"10090554040","OTHER","Specifications","Towing Capacity","1500",100905540
+"877",1,1,"10090554041","OTHER","Brake System","Rear Brake Type","disc",100905540
+"878",1,2,"10090554041","OTHER","Brake System","Electronic Brakeforce Distribution","electronic brakeforce distribution",100905540
+"879",1,3,"10090554041","OTHER","Brake System","Front Brake Diameter","11.7",100905540
+"880",1,4,"10090554041","OTHER","Brake System","Front Brake Type","ventilated disc",100905540
+"881",1,5,"10090554041","OTHER","Brake System","Antilock Braking System","4-wheel ABS",100905540
+"882",1,6,"10090554041","OTHER","Brake System","Braking Assist","braking assist",100905540
+"883",1,7,"10090554041","OTHER","Brake System","Rear Brake Diameter","12.0",100905540
+"884",1,1,"10090554042","OTHER","Trailer Towing Equipment","Tow Hooks","front",100905540
+"885",1,1,"10090554043","OTHER","Drive Type","Driven Wheels","all wheel drive",100905540
+"886",1,1,"10090554044","OTHER","Misc. Interior Features","Cruise Control","cruise control",100905540
+"887",1,2,"10090554044","OTHER","Misc. Interior Features","Floor Mats","floor mats",100905540
+"888",1,3,"10090554044","OTHER","Misc. Interior Features","Universal Remote Transmitter","universal remote transmitter",100905540
+"889",1,4,"10090554044","OTHER","Misc. Interior Features","2nd Row Floor Mats","rear floor mats",100905540
+"890",1,5,"10090554044","OTHER","Misc. Interior Features","Cargo Area Light","cargo area light",100905540
+"891",1,6,"10090554044","OTHER","Misc. Interior Features","Reading Lights","front reading lights",100905540
+"892",1,7,"10090554044","OTHER","Misc. Interior Features","Retained Accessory Power","retained accessory power",100905540
+"893",1,8,"10090554044","OTHER","Misc. Interior Features","Floor Mat Material","carpet",100905540
+"894",1,1,"10090554046","OTHER","Driver Seat","Driver Seat Adjustable Lumbar","power adjustable lumbar support",100905540
+"895",1,2,"10090554046","OTHER","Driver Seat","Number Of Driver Seat Power Adjustments","8",100905540
+"896",1,3,"10090554046","OTHER","Driver Seat","Number Of Memorized Driver Seat Settings","2",100905540
+"897",1,4,"10090554046","OTHER","Driver Seat","Heated Driver Seat","multi-level heating",100905540
+"898",1,1,"10090554047","OTHER","Security","Engine Immobilizer","engine immobilizer",100905540
+"899",1,2,"10090554047","OTHER","Security","Power Door Locks","remote keyless power door locks",100905540
+"900",1,3,"10090554047","OTHER","Security","Anti Theft Alarm System","remote anti-theft alarm system",100905540
+"901",1,4,"10090554047","OTHER","Security","2 Stage Unlocking","remote 2-stage unlocking",100905540
+"902",1,1,"10090554049","OTHER","Airbags","Head Airbags","front and rear",100905540
+"903",1,2,"10090554049","OTHER","Airbags","Passenger Airbag Deactivation","occupant sensing deactivation",100905540
+"904",1,3,"10090554049","OTHER","Airbags","Side Curtain Airbag Rollover Sensor","side-curtain airbag rollover sensor",100905540
+"905",1,4,"10090554049","OTHER","Airbags","Side Airbags","dual front",100905540
+"906",1,5,"10090554049","OTHER","Airbags","Passenger Airbag","Standard",100905540
+"907",1,6,"10090554049","OTHER","Airbags","Depowered Airbags","Standard",100905540
+"908",1,1,"10090554050","OTHER","2nd Row Seats","Folding 2nd Row","split folding",100905540
+"909",1,2,"10090554050","OTHER","2nd Row Seats","2nd Row Seat Type","40-60 split bench",100905540
+"910",1,3,"10090554050","OTHER","2nd Row Seats","Adjustable 2nd Row Headrests","height adjustable headrests",100905540
+"911",1,4,"10090554050","OTHER","2nd Row Seats","Number Of 2nd Row Headrests","3",100905540
+"912",1,5,"10090554050","OTHER","2nd Row Seats","2nd Row Center Armrest","folding with storage",100905540
+"913",1,1,"200093454","WARRANTY","Warranty","Warranty Maximum Mileage","50000",100905540
+"914",1,2,"200093454","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",100905540
+"915",1,3,"200093454","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100905540
+"916",1,4,"200093454","WARRANTY","Warranty","Warranty Maximum Years","4",100905540
+"917",1,5,"200093454","WARRANTY","Warranty","Warranty Type","Basic",100905540
+"918",1,1,"200093455","WARRANTY","Warranty","Warranty Maximum Mileage","70000",100905540
+"919",1,2,"200093455","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",100905540
+"920",1,3,"200093455","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100905540
+"921",1,4,"200093455","WARRANTY","Warranty","Warranty Maximum Years","6",100905540
+"922",1,5,"200093455","WARRANTY","Warranty","Warranty Type","Drivetrain",100905540
+"923",1,1,"200093456","WARRANTY","Warranty","Warranty Maximum Mileage","50000",100905540
+"924",1,2,"200093456","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",100905540
+"925",1,3,"200093456","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100905540
+"926",1,4,"200093456","WARRANTY","Warranty","Warranty Maximum Years","4",100905540
+"927",1,5,"200093456","WARRANTY","Warranty","Warranty Type","Roadside",100905540
+"928",1,1,"200093457","WARRANTY","Warranty","Warranty Miles Limited/unlimited","U",100905540
+"929",1,2,"200093457","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100905540
+"930",1,3,"200093457","WARRANTY","Warranty","Warranty Maximum Years","5",100905540
+"931",1,4,"200093457","WARRANTY","Warranty","Warranty Type","Rust",100905540
+"932",1,1,"200093461","AUDIO_SYSTEM","Audio System","Total Number Of Speakers","7",100905540
+"933",1,2,"200093461","AUDIO_SYSTEM","Audio System","Digital Audio Input","auxiliary audio input",100905540
+"934",1,3,"200093461","AUDIO_SYSTEM","Audio System","Antenna Type","mast",100905540
+"935",1,4,"200093461","AUDIO_SYSTEM","Audio System","Cd Player","6 CD player",100905540
+"936",1,5,"200093461","AUDIO_SYSTEM","Audio System","Cd Mp3 Playback","CD MP3 Playback",100905540
+"937",1,6,"200093461","AUDIO_SYSTEM","Audio System","Speed Sensitive Volume Control","speed sensitive volume control",100905540
+"938",1,7,"200093461","AUDIO_SYSTEM","Audio System","Radio Data System","radio data system",100905540
+"939",1,8,"200093461","AUDIO_SYSTEM","Audio System","Radio","AM/FM",100905540
+"940",1,9,"200093461","AUDIO_SYSTEM","Audio System","Satellite Radio","satellite radio",100905540
+"941",1,10,"200093461","AUDIO_SYSTEM","Audio System","Watts","360",100905540
+"942",1,11,"200093461","AUDIO_SYSTEM","Audio System","Subwoofer","1",100905540
+"943",1,12,"200093461","AUDIO_SYSTEM","Audio System","Consumer Generic Feature 0","Aux Audio Inputs",100905540
+"944",1,1,"200093462","TIRES","Tires","Rear Tire Width","235",100905540
+"945",1,2,"200093462","TIRES","Tires","Rear Tire Load Rating","99",100905540
+"946",1,3,"200093462","TIRES","Tires","Rear Tire Prefix","P",100905540
+"947",1,4,"200093462","TIRES","Tires","Tire Type","all season",100905540
+"948",1,5,"200093462","TIRES","Tires","Rear Tire Diameter","18",100905540
+"949",1,6,"200093462","TIRES","Tires","Rear Tire Profile","55",100905540
+"950",1,7,"200093462","TIRES","Tires","Rear Tire Speed Rating","V",100905540
+"951",1,1,"200093463","WHEELS","Wheels","Rim Type","alloy",100905540
+"952",1,2,"200093463","WHEELS","Wheels","Rear Wheel Diameter","18",100905540
+"953",1,3,"200093463","WHEELS","Wheels","Rear Wheel Width","7.5",100905540
+"954",1,1,"10141382430","OTHER","Cargo Dimensions","Cargo Capacity, All Seats In Place","14.9",101413824
+"955",1,2,"10141382430","OTHER","Cargo Dimensions","Max Cargo Capacity","14.9",101413824
+"956",1,1,"10141382431","OTHER","Mobile Connectivity","Phone","pre-wired for phone",101413824
+"957",1,2,"10141382431","OTHER","Mobile Connectivity","Satellite Communications","AcuraLink Next Generation",101413824
+"958",1,3,"10141382431","OTHER","Mobile Connectivity","Bluetooth","Bluetooth",101413824
+"959",1,1,"10141382434","OTHER","Instrumentation","External Temperature Gauge","external temperature display",101413824
+"960",1,2,"10141382434","OTHER","Instrumentation","Compass","compass",101413824
+"961",1,3,"10141382434","OTHER","Instrumentation","Tire Pressure Monitoring System","tire pressure monitoring",101413824
+"962",1,4,"10141382434","OTHER","Instrumentation","Low Fuel Level Indicator","low fuel level",101413824
+"963",1,5,"10141382434","OTHER","Instrumentation","Tachometer","tachometer",101413824
+"964",1,6,"10141382434","OTHER","Instrumentation","Trip Computer","trip computer",101413824
+"965",1,7,"10141382434","OTHER","Instrumentation","Clock","clock",101413824
+"966",1,1,"10141382435","OTHER","Misc. Exterior Features","Exterior Camera","rear view camera",101413824
+"967",1,1,"10141382436","OTHER","Doors","Number Of Doors","4",101413824
+"968",1,1,"10141382437","OTHER","Exterior Lights","Exterior Entry Lights","exterior entry lighting",101413824
+"969",1,2,"10141382437","OTHER","Exterior Lights","Headlights Auto Delay","auto delay off",101413824
+"970",1,3,"10141382437","OTHER","Exterior Lights","Daytime Running Lights","daytime running lights",101413824
+"971",1,4,"10141382437","OTHER","Exterior Lights","Xenon Headlights","LED",101413824
+"972",1,5,"10141382437","OTHER","Exterior Lights","Headlights Dusk Sensor","dusk sensing",101413824
+"973",1,1,"10141382440","OTHER","Front Passenger Seat","Height Adjustable Passenger Seat","height adjustable",101413824
+"974",1,2,"10141382440","OTHER","Front Passenger Seat","Heated Passenger Seat","multi-level heating",101413824
+"975",1,3,"10141382440","OTHER","Front Passenger Seat","Number Of Passenger Seat Power Adjustments","8",101413824
+"976",1,4,"10141382440","OTHER","Front Passenger Seat","Adjustable Passenger Seat Headrest","height adjustable headrests",101413824
+"977",1,5,"10141382440","OTHER","Front Passenger Seat","Passenger Seat Adjustable Lumbar","power adjustable lumbar support",101413824
+"978",1,1,"10141382441","MIRRORS","Mirrors","Auto Dimming Rearview Mirror","electrochromatic",101413824
+"979",1,2,"10141382441","MIRRORS","Mirrors","1st Row Vanity Mirrors","dual illuminated vanity mirrors",101413824
+"980",1,3,"10141382441","MIRRORS","Mirrors","Passenger Side Mirror Adjustment","power",101413824
+"981",1,4,"10141382441","MIRRORS","Mirrors","Exterior Mirror Adjustment","power",101413824
+"982",1,5,"10141382441","MIRRORS","Mirrors","Heated Exterior Mirrors","heated",101413824
+"983",1,6,"10141382441","MIRRORS","Mirrors","Reverse Tilt Side Mirrors","dual mirrors",101413824
+"984",1,7,"10141382441","MIRRORS","Mirrors","Heated Passenger Side Mirror","heated",101413824
+"985",1,1,"10141382442","OTHER","Steering","Power Steering","electric speed-proportional power steering",101413824
+"986",1,2,"10141382442","OTHER","Steering","4 Wheel Steering","4-wheel steering",101413824
+"987",1,1,"10141382443","OTHER","1st Row Seats","1st Row Seat Type","bucket",101413824
+"988",1,2,"10141382443","OTHER","1st Row Seats","Adjustable Seat Headrest","height adjustable headrests",101413824
+"989",1,3,"10141382443","OTHER","1st Row Seats","1st Row Upholstery","leather",101413824
+"990",1,1,"10141382444","OTHER","Interior Dimensions","2nd Row Leg Room","38.8",101413824
+"991",1,2,"10141382444","OTHER","Interior Dimensions","1st Row Hip Room","55.9",101413824
+"992",1,3,"10141382444","OTHER","Interior Dimensions","2nd Row Shoulder Room","57.0",101413824
+"993",1,4,"10141382444","OTHER","Interior Dimensions","1st Row Leg Room","42.3",101413824
+"994",1,5,"10141382444","OTHER","Interior Dimensions","1st Row Head Room","37.6",101413824
+"995",1,6,"10141382444","OTHER","Interior Dimensions","2nd Row Head Room","36.9",101413824
+"996",1,7,"10141382444","OTHER","Interior Dimensions","2nd Row Hip Room","54.5",101413824
+"997",1,8,"10141382444","OTHER","Interior Dimensions","Epa Interior Volume","117.0",101413824
+"998",1,9,"10141382444","OTHER","Interior Dimensions","1st Row Shoulder Room","59.6",101413824
+"999",1,1,"10141382445","OTHER","Spare Tire/Wheel","Tire Repair Kit","tire repair kit",101413824
+"1000",1,1,"10141382446","OTHER","Trunk","Emergency Trunk Release","interior trunk release",101413824
+"1001",1,2,"10141382446","OTHER","Trunk","Remote Trunk Release","remote trunk release",101413824
+"1002",1,1,"10141382448","OTHER","Power Outlets","Power Outlet(s)","12V",101413824
+"1003",1,1,"10141382449","OTHER","Exterior Dimensions","Overall Width Without Mirrors","74.4",101413824
+"1004",1,2,"10141382449","OTHER","Exterior Dimensions","Wheelbase","112.2",101413824
+"1005",1,3,"10141382449","OTHER","Exterior Dimensions","Minimum Ground Clearance","3.8",101413824
+"1006",1,4,"10141382449","OTHER","Exterior Dimensions","Overall Length","196.1",101413824
+"1007",1,5,"10141382449","OTHER","Exterior Dimensions","Overall Height","57.7",101413824
+"1008",1,6,"10141382449","OTHER","Exterior Dimensions","Rear Track","64.2",101413824
+"1009",1,7,"10141382449","OTHER","Exterior Dimensions","Maximum Ground Clearance","4.5",101413824
+"1010",1,8,"10141382449","OTHER","Exterior Dimensions","Front Track","64.3",101413824
+"1011",1,1,"10141382450","OTHER","Windows","One Touch Windows","4",101413824
+"1012",1,2,"10141382450","OTHER","Windows","Power Windows","power windows",101413824
+"1013",1,3,"10141382450","OTHER","Windows","Intermittent Front Wipers","variable intermittent",101413824
+"1014",1,4,"10141382450","OTHER","Windows","Rear Defogger","rear defogger",101413824
+"1015",1,1,"10141382451","OTHER","Steering Wheel","Steering Wheel Adjustments","tilt and telescopic",101413824
+"1016",1,2,"10141382451","OTHER","Steering Wheel","Cruise Controls On Steering Wheel","cruise controls",101413824
+"1017",1,3,"10141382451","OTHER","Steering Wheel","Transmission Controls On Steering Wheel","gear shift controls",101413824
+"1018",1,4,"10141382451","OTHER","Steering Wheel","Steering Wheel Trim","leather",101413824
+"1019",1,5,"10141382451","OTHER","Steering Wheel","Audio Controls On Steering Wheel","audio controls",101413824
+"1020",1,6,"10141382451","OTHER","Steering Wheel","Phone Controls On Steering Wheel","phone controls on steering wheel",101413824
+"1021",1,1,"10141382454","OTHER","Storage","Cupholders Location","front and rear",101413824
+"1022",1,2,"10141382454","OTHER","Storage","Seatback Storage","front seatback storage",101413824
+"1023",1,3,"10141382454","OTHER","Storage","Door Pockets Location","front and rear",101413824
+"1024",1,4,"10141382454","OTHER","Storage","Overhead Console","overhead console with storage",101413824
+"1025",1,5,"10141382454","OTHER","Storage","Center Console","front console with storage",101413824
+"1026",1,1,"10141382455","OTHER","Sunroof","One Touch Power Sunroof","one-touch power sunroof",101413824
+"1027",1,2,"10141382455","OTHER","Sunroof","Sunroof","power glass",101413824
+"1028",1,1,"10141382456","OTHER","Seating Configuration","1st Row Seating Capacity","2",101413824
+"1029",1,2,"10141382456","OTHER","Seating Configuration","2nd Row Seating Capacity","3",101413824
+"1030",1,1,"10141382457","OTHER","Air Conditioning","Front Air Conditioning Zones","dual",101413824
+"1031",1,2,"10141382457","OTHER","Air Conditioning","Front Air Conditioning","automatic climate control",101413824
+"1032",1,3,"10141382457","OTHER","Air Conditioning","Rear Heat","rear ventilation ducts",101413824
+"1033",1,4,"10141382457","OTHER","Air Conditioning","Rear Air Conditioning","automatic climate control",101413824
+"1034",1,5,"10141382457","OTHER","Air Conditioning","Rear Air Conditioning Zones","single",101413824
+"1035",1,6,"10141382457","OTHER","Air Conditioning","Air Filtration","interior air filtration",101413824
+"1036",1,1,"10141382458","OTHER","Differential","Final Drive Ratio","4.3",101413824
+"1037",1,1,"10141382460","OTHER","Seatbelts","Seatbelt Pretensioners","front",101413824
+"1038",1,2,"10141382460","OTHER","Seatbelts","Seatbelt Force Limiters","front",101413824
+"1039",1,3,"10141382460","OTHER","Seatbelts","2nd Row Center Seatbelt","3-point belt",101413824
+"1040",1,1,"10141382461","OTHER","Suspension","Front Suspension Classification","independent",101413824
+"1041",1,2,"10141382461","OTHER","Suspension","Rear Spring Type","coil springs",101413824
+"1042",1,3,"10141382461","OTHER","Suspension","Independent Suspension","four-wheel",101413824
+"1043",1,4,"10141382461","OTHER","Suspension","Rear Arm Type","trailing links, lateral links",101413824
+"1044",1,5,"10141382461","OTHER","Suspension","Rear Suspension Type","multi-link",101413824
+"1045",1,6,"10141382461","OTHER","Suspension","Rear Suspension Classification","independent",101413824
+"1046",1,7,"10141382461","OTHER","Suspension","Front Stabilizer Bar","stabilizer bar",101413824
+"1047",1,8,"10141382461","OTHER","Suspension","Front Spring Type","coil springs",101413824
+"1048",1,9,"10141382461","OTHER","Suspension","Rear Stabilizer Bar","stabilizer bar",101413824
+"1049",1,10,"10141382461","OTHER","Suspension","Front Suspension Type","double wishbone",101413824
+"1050",1,1,"10141382463","OTHER","Specifications","Ege Highway Mpg","31",101413824
+"1051",1,2,"10141382463","OTHER","Specifications","Epa Combined Mpg","24",101413824
+"1052",1,3,"10141382463","OTHER","Specifications","Epa City Mpg","20",101413824
+"1053",1,4,"10141382463","OTHER","Specifications","Curb Weight","3933",101413824
+"1054",1,5,"10141382463","OTHER","Specifications","Turning Diameter","40.5",101413824
+"1055",1,6,"10141382463","OTHER","Specifications","Epa Highway Mpg","31",101413824
+"1056",1,7,"10141382463","OTHER","Specifications","Tco Curb Weight","3933",101413824
+"1057",1,8,"10141382463","OTHER","Specifications","Ege Combined Mpg","24",101413824
+"1058",1,9,"10141382463","OTHER","Specifications","Fuel Capacity","18.5",101413824
+"1059",1,10,"10141382463","OTHER","Specifications","Ege City Mpg","20",101413824
+"1060",1,1,"10141382464","OTHER","Brake System","Rear Brake Type","disc",101413824
+"1061",1,2,"10141382464","OTHER","Brake System","Electronic Brakeforce Distribution","electronic brakeforce distribution",101413824
+"1062",1,3,"10141382464","OTHER","Brake System","Front Brake Diameter","12.3",101413824
+"1063",1,4,"10141382464","OTHER","Brake System","Front Brake Type","ventilated disc",101413824
+"1064",1,5,"10141382464","OTHER","Brake System","Antilock Braking System","4-wheel ABS",101413824
+"1065",1,6,"10141382464","OTHER","Brake System","Braking Assist","braking assist",101413824
+"1066",1,7,"10141382464","OTHER","Brake System","Rear Brake Diameter","12.2",101413824
+"1067",1,1,"10141382465","OTHER","Drive Type","Driven Wheels","front wheel drive",101413824
+"1068",1,1,"10141382466","OTHER","Misc. Interior Features","Cruise Control","cruise control",101413824
+"1069",1,2,"10141382466","OTHER","Misc. Interior Features","Floor Mats","floor mats",101413824
+"1070",1,3,"10141382466","OTHER","Misc. Interior Features","Universal Remote Transmitter","universal remote transmitter",101413824
+"1071",1,4,"10141382466","OTHER","Misc. Interior Features","2nd Row Floor Mats","rear floor mats",101413824
+"1072",1,5,"10141382466","OTHER","Misc. Interior Features","Cargo Area Light","trunk light",101413824
+"1073",1,6,"10141382466","OTHER","Misc. Interior Features","Reading Lights","front and rear reading lights",101413824
+"1074",1,7,"10141382466","OTHER","Misc. Interior Features","Retained Accessory Power","retained accessory power",101413824
+"1075",1,8,"10141382466","OTHER","Misc. Interior Features","Floor Mat Material","carpet",101413824
+"1076",1,1,"10141382468","OTHER","Driver Seat","Height Adjustable Driver Seat","height adjustable",101413824
+"1077",1,2,"10141382468","OTHER","Driver Seat","Driver Seat Adjustable Lumbar","power adjustable lumbar support",101413824
+"1078",1,3,"10141382468","OTHER","Driver Seat","Number Of Driver Seat Power Adjustments","8",101413824
+"1079",1,4,"10141382468","OTHER","Driver Seat","Heated Driver Seat","multi-level heating",101413824
+"1080",1,1,"10141382469","OTHER","Security","Engine Immobilizer","engine immobilizer",101413824
+"1081",1,2,"10141382469","OTHER","Security","Power Door Locks","hands-free entry",101413824
+"1082",1,3,"10141382469","OTHER","Security","Anti Theft Alarm System","remote anti-theft alarm system",101413824
+"1083",1,4,"10141382469","OTHER","Security","2 Stage Unlocking","remote 2-stage unlocking",101413824
+"1084",1,1,"10141382471","OTHER","Airbags","Head Airbags","front and rear",101413824
+"1085",1,2,"10141382471","OTHER","Airbags","Passenger Airbag Deactivation","occupant sensing deactivation",101413824
+"1086",1,3,"10141382471","OTHER","Airbags","Side Airbags","dual front",101413824
+"1087",1,4,"10141382471","OTHER","Airbags","Knee Airbags","driver only",101413824
+"1088",1,5,"10141382471","OTHER","Airbags","Passenger Airbag","Standard",101413824
+"1089",1,6,"10141382471","OTHER","Airbags","Depowered Airbags","Standard",101413824
+"1090",1,1,"10141382472","OTHER","2nd Row Seats","2nd Row Seat Type","bench",101413824
+"1091",1,2,"10141382472","OTHER","2nd Row Seats","Adjustable 2nd Row Headrests","height adjustable headrests",101413824
+"1092",1,3,"10141382472","OTHER","2nd Row Seats","Number Of 2nd Row Headrests","3",101413824
+"1093",1,4,"10141382472","OTHER","2nd Row Seats","2nd Row Center Armrest","folding with storage and pass-thru",101413824
+"1094",1,1,"200374621","TELEMATICS","AcuraLink","Vehicle Collision Notification","Vehicle Collision Notification",101413824
+"1095",1,2,"200374621","TELEMATICS","AcuraLink","Vehicle Locator","Vehicle locator",101413824
+"1096",1,3,"200374621","TELEMATICS","AcuraLink","Sent To Navigation Function","Sent-to Navigation Function",101413824
+"1097",1,4,"200374621","TELEMATICS","AcuraLink","Poi Search","POI Search",101413824
+"1098",1,5,"200374621","TELEMATICS","AcuraLink","Stolen Vehicle Tracking/assistance","Stolen Vehicle Tracking/Assistance",101413824
+"1099",1,6,"200374621","TELEMATICS","AcuraLink","Remote Door Unlock","Remote Door Unlock",101413824
+"1100",1,7,"200374621","TELEMATICS","AcuraLink","Destination Guidance (turn By Turn Navigation)","Destination guidance (also Turn-by-Turn Navigation)",101413824
+"1101",1,8,"200374621","TELEMATICS","AcuraLink","Airbag Deployment Notification","Airbag Deployment Notification",101413824
+"1102",1,9,"200374621","TELEMATICS","AcuraLink","Destination Download","Destination Download",101413824
+"1103",1,10,"200374621","TELEMATICS","AcuraLink","Text Message/memo Display","Text Message/Memo Display",101413824
+"1104",1,11,"200374621","TELEMATICS","AcuraLink","Dealer Service Contact","Dealer Service contact",101413824
+"1105",1,12,"200374621","TELEMATICS","AcuraLink","Traffic Information","Traffic Information",101413824
+"1106",1,13,"200374621","TELEMATICS","AcuraLink","Vehicle Diagnostics","Vehicle Diagnostics",101413824
+"1107",1,14,"200374621","TELEMATICS","AcuraLink","Weather Information","Weather Information",101413824
+"1108",1,15,"200374621","TELEMATICS","AcuraLink","Customer Relations/vehicle Information","Customer Relations/Vehicle Information",101413824
+"1109",1,16,"200374621","TELEMATICS","AcuraLink","Remote Door Lock","Remote Door Lock",101413824
+"1110",1,1,"200464628","WHEELS","18 Base, W/Nav","Rim Type","alloy",101413824
+"1111",1,2,"200464628","WHEELS","18 Base, W/Nav","Rear Wheel Diameter","18",101413824
+"1112",1,3,"200464628","WHEELS","18 Base, W/Nav","Rear Wheel Width","8.0",101413824
+"1113",1,1,"200464630","AUDIO_SYSTEM","Base, W/Nav","Hard Drive","built-in hard drive",101413824
+"1114",1,2,"200464630","AUDIO_SYSTEM","Base, W/Nav","Total Number Of Speakers","10",101413824
+"1115",1,3,"200464630","AUDIO_SYSTEM","Base, W/Nav","Cd Player","single CD/DVD",101413824
+"1116",1,4,"200464630","AUDIO_SYSTEM","Base, W/Nav","Cd Mp3 Playback","CD MP3 Playback",101413824
+"1117",1,5,"200464630","AUDIO_SYSTEM","Base, W/Nav","Speed Sensitive Volume Control","speed sensitive volume control",101413824
+"1118",1,6,"200464630","AUDIO_SYSTEM","Base, W/Nav","Radio","AM/FM HD Radio",101413824
+"1119",1,7,"200464630","AUDIO_SYSTEM","Base, W/Nav","Satellite Radio","satellite radio",101413824
+"1120",1,8,"200464630","AUDIO_SYSTEM","Base, W/Nav","Watts","404",101413824
+"1121",1,9,"200464630","AUDIO_SYSTEM","Base, W/Nav","Surround Audio","surround audio",101413824
+"1122",1,10,"200464630","AUDIO_SYSTEM","Base, W/Nav","Months Of Provided Satellite Radio Service","3",101413824
+"1123",1,11,"200464630","AUDIO_SYSTEM","Base, W/Nav","Subwoofer","1",101413824
+"1124",1,12,"200464630","AUDIO_SYSTEM","Base, W/Nav","Digital Audio Input","auxiliary audio input and USB with external media control",101413824
+"1125",1,13,"200464630","AUDIO_SYSTEM","Base, W/Nav","Antenna Type","mast",101413824
+"1126",1,14,"200464630","AUDIO_SYSTEM","Base, W/Nav","Usb Connection","USB connection",101413824
+"1127",1,15,"200464630","AUDIO_SYSTEM","Base, W/Nav","Dvd Audio","DVD-Audio",101413824
+"1128",1,16,"200464630","AUDIO_SYSTEM","Base, W/Nav","Consumer Generic Feature 0","Aux Audio Inputs",101413824
+"1129",1,17,"200464630","AUDIO_SYSTEM","Base, W/Nav","Consumer Generic Feature 1","USB Inputs",101413824
+"1130",1,1,"200464634","TIRES","18""","Rear Tire Width","245",101413824
+"1131",1,2,"200464634","TIRES","18""","Rear Tire Prefix","P",101413824
+"1132",1,3,"200464634","TIRES","18""","Tire Type","all season",101413824
+"1133",1,4,"200464634","TIRES","18""","Rear Tire Diameter","18",101413824
+"1134",1,5,"200464634","TIRES","18""","Rear Tire Profile","45",101413824
+"1135",1,1,"200464640","WARRANTY","Basic, 4 Years, 50000/L Miles","Warranty Maximum Mileage","50000",101413824
+"1136",1,2,"200464640","WARRANTY","Basic, 4 Years, 50000/L Miles","Warranty End Date","09-Sep-2099",101413824
+"1137",1,3,"200464640","WARRANTY","Basic, 4 Years, 50000/L Miles","Warranty Start Date","08-Mar-2013",101413824
+"1138",1,4,"200464640","WARRANTY","Basic, 4 Years, 50000/L Miles","Warranty Miles Limited/unlimited","L",101413824
+"1139",1,5,"200464640","WARRANTY","Basic, 4 Years, 50000/L Miles","Warranty Years Limited/unlimited","L",101413824
+"1140",1,6,"200464640","WARRANTY","Basic, 4 Years, 50000/L Miles","Warranty Maximum Years","4",101413824
+"1141",1,7,"200464640","WARRANTY","Basic, 4 Years, 50000/L Miles","Warranty Type","Basic",101413824
+"1142",1,1,"200464641","WARRANTY","Drivetrain, 6 Years, 70000/L Miles","Warranty Maximum Mileage","70000",101413824
+"1143",1,2,"200464641","WARRANTY","Drivetrain, 6 Years, 70000/L Miles","Warranty End Date","09-Sep-2099",101413824
+"1144",1,3,"200464641","WARRANTY","Drivetrain, 6 Years, 70000/L Miles","Warranty Start Date","08-Mar-2013",101413824
+"1145",1,4,"200464641","WARRANTY","Drivetrain, 6 Years, 70000/L Miles","Warranty Miles Limited/unlimited","L",101413824
+"1146",1,5,"200464641","WARRANTY","Drivetrain, 6 Years, 70000/L Miles","Warranty Years Limited/unlimited","L",101413824
+"1147",1,6,"200464641","WARRANTY","Drivetrain, 6 Years, 70000/L Miles","Warranty Maximum Years","6",101413824
+"1148",1,7,"200464641","WARRANTY","Drivetrain, 6 Years, 70000/L Miles","Warranty Type","Drivetrain",101413824
+"1149",1,1,"200464642","WARRANTY","Roadside, 4 Years, 50000/L Miles","Warranty Maximum Mileage","50000",101413824
+"1150",1,2,"200464642","WARRANTY","Roadside, 4 Years, 50000/L Miles","Warranty End Date","09-Sep-2099",101413824
+"1151",1,3,"200464642","WARRANTY","Roadside, 4 Years, 50000/L Miles","Warranty Start Date","08-Mar-2013",101413824
+"1152",1,4,"200464642","WARRANTY","Roadside, 4 Years, 50000/L Miles","Warranty Miles Limited/unlimited","L",101413824
+"1153",1,5,"200464642","WARRANTY","Roadside, 4 Years, 50000/L Miles","Warranty Years Limited/unlimited","L",101413824
+"1154",1,6,"200464642","WARRANTY","Roadside, 4 Years, 50000/L Miles","Warranty Maximum Years","4",101413824
+"1155",1,7,"200464642","WARRANTY","Roadside, 4 Years, 50000/L Miles","Warranty Type","Roadside",101413824
+"1156",1,1,"200464643","WARRANTY","Rust, 5 Years,  /U Miles","Warranty End Date","09-Sep-2099",101413824
+"1157",1,2,"200464643","WARRANTY","Rust, 5 Years,  /U Miles","Warranty Start Date","08-Mar-2013",101413824
+"1158",1,3,"200464643","WARRANTY","Rust, 5 Years,  /U Miles","Warranty Miles Limited/unlimited","U",101413824
+"1159",1,4,"200464643","WARRANTY","Rust, 5 Years,  /U Miles","Warranty Years Limited/unlimited","L",101413824
+"1160",1,5,"200464643","WARRANTY","Rust, 5 Years,  /U Miles","Warranty Maximum Years","5",101413824
+"1161",1,6,"200464643","WARRANTY","Rust, 5 Years,  /U Miles","Warranty Type","Rust",101413824
+"1162",1,1,"10066820610","OTHER","Cargo Dimensions","Cargo Capacity, All Seats In Place","13.2",100668206
+"1163",1,1,"10066820611","OTHER","Mobile Connectivity","Phone","pre-wired for phone",100668206
+"1164",1,2,"10066820611","OTHER","Mobile Connectivity","Bluetooth","Bluetooth",100668206
+"1165",1,1,"10066820613","OTHER","Instrumentation","Electroluminescent Instrumentation","electroluminescent instrumentation",100668206
+"1166",1,2,"10066820613","OTHER","Instrumentation","External Temperature Gauge","external temperature display",100668206
+"1167",1,3,"10066820613","OTHER","Instrumentation","Low Fuel Level Indicator","low fuel level",100668206
+"1168",1,4,"10066820613","OTHER","Instrumentation","Tachometer","tachometer",100668206
+"1169",1,5,"10066820613","OTHER","Instrumentation","Trip Computer","trip computer",100668206
+"1170",1,6,"10066820613","OTHER","Instrumentation","Clock","clock",100668206
+"1171",1,1,"10066820614","OTHER","Doors","Number Of Doors","4",100668206
+"1172",1,1,"10066820615","OTHER","Exterior Lights","Front Fog Lights","front fog/driving lights",100668206
+"1173",1,2,"10066820615","OTHER","Exterior Lights","Headlights Auto Delay","auto delay off",100668206
+"1174",1,3,"10066820615","OTHER","Exterior Lights","Xenon Headlights","xenon high intensity discharge",100668206
+"1175",1,1,"10066820618","OTHER","Front Passenger Seat","Heated Passenger Seat","multi-level heating",100668206
+"1176",1,2,"10066820618","OTHER","Front Passenger Seat","Number Of Passenger Seat Power Adjustments","4",100668206
+"1177",1,1,"10066820619","MIRRORS","Mirrors","Auto Dimming Rearview Mirror","electrochromatic",100668206
+"1178",1,2,"10066820619","MIRRORS","Mirrors","1st Row Vanity Mirrors","dual illuminated vanity mirrors",100668206
+"1179",1,3,"10066820619","MIRRORS","Mirrors","Passenger Side Mirror Adjustment","power",100668206
+"1180",1,4,"10066820619","MIRRORS","Mirrors","Turn Signal Side Mirrors","turn signal in mirrors",100668206
+"1181",1,5,"10066820619","MIRRORS","Mirrors","Exterior Mirror Adjustment","power",100668206
+"1182",1,6,"10066820619","MIRRORS","Mirrors","Heated Exterior Mirrors","heated",100668206
+"1183",1,7,"10066820619","MIRRORS","Mirrors","Heated Passenger Side Mirror","heated",100668206
+"1184",1,1,"10066820620","OTHER","Steering","Power Steering","speed-proportional power steering",100668206
+"1185",1,1,"10066820621","OTHER","1st Row Seats","1st Row Seat Type","sport",100668206
+"1186",1,2,"10066820621","OTHER","1st Row Seats","Adjustable Seat Headrest","height adjustable headrests",100668206
+"1187",1,3,"10066820621","OTHER","1st Row Seats","1st Row Upholstery","leather",100668206
+"1188",1,4,"10066820621","OTHER","1st Row Seats","Number Of 1st Row Headrests","2",100668206
+"1189",1,1,"10066820622","OTHER","Interior Dimensions","2nd Row Leg Room","34.2",100668206
+"1190",1,2,"10066820622","OTHER","Interior Dimensions","1st Row Hip Room","54.4",100668206
+"1191",1,3,"10066820622","OTHER","Interior Dimensions","2nd Row Shoulder Room","53.5",100668206
+"1192",1,4,"10066820622","OTHER","Interior Dimensions","1st Row Leg Room","42.4",100668206
+"1193",1,5,"10066820622","OTHER","Interior Dimensions","1st Row Head Room","37.8",100668206
+"1194",1,6,"10066820622","OTHER","Interior Dimensions","2nd Row Head Room","37.3",100668206
+"1195",1,7,"10066820622","OTHER","Interior Dimensions","2nd Row Hip Room","54.4",100668206
+"1196",1,8,"10066820622","OTHER","Interior Dimensions","Epa Interior Volume","104.2",100668206
+"1197",1,9,"10066820622","OTHER","Interior Dimensions","1st Row Shoulder Room","55.4",100668206
+"1198",1,1,"10066820623","OTHER","Trunk","Emergency Trunk Release","interior trunk release",100668206
+"1199",1,2,"10066820623","OTHER","Trunk","Remote Trunk Release","remote trunk release",100668206
+"1200",1,1,"10066820625","OTHER","Power Outlets","Power Outlet(s)","12V",100668206
+"1201",1,1,"10066820626","OTHER","Exterior Dimensions","Overall Width Without Mirrors","69.4",100668206
+"1202",1,2,"10066820626","OTHER","Exterior Dimensions","Wheelbase","105.1",100668206
+"1203",1,3,"10066820626","OTHER","Exterior Dimensions","Minimum Ground Clearance","4.3",100668206
+"1204",1,4,"10066820626","OTHER","Exterior Dimensions","Overall Length","183.4",100668206
+"1205",1,5,"10066820626","OTHER","Exterior Dimensions","Overall Height","57.3",100668206
+"1206",1,6,"10066820626","OTHER","Exterior Dimensions","Rear Track","59.6",100668206
+"1207",1,7,"10066820626","OTHER","Exterior Dimensions","Front Track","59.6",100668206
+"1208",1,1,"10066820627","OTHER","Windows","Remote Window Operation","remote window operation",100668206
+"1209",1,2,"10066820627","OTHER","Windows","Speed Sensitive Front Wipers","speed sensitive",100668206
+"1210",1,3,"10066820627","OTHER","Windows","One Touch Windows","1",100668206
+"1211",1,4,"10066820627","OTHER","Windows","Power Windows","power windows",100668206
+"1212",1,5,"10066820627","OTHER","Windows","Intermittent Front Wipers","variable intermittent",100668206
+"1213",1,6,"10066820627","OTHER","Windows","Rear Defogger","rear defogger",100668206
+"1214",1,1,"10066820628","OTHER","Steering Wheel","Steering Wheel Adjustments","tilt and telescopic",100668206
+"1215",1,2,"10066820628","OTHER","Steering Wheel","Cruise Controls On Steering Wheel","cruise controls",100668206
+"1216",1,3,"10066820628","OTHER","Steering Wheel","Steering Wheel Trim","leather",100668206
+"1217",1,4,"10066820628","OTHER","Steering Wheel","Audio Controls On Steering Wheel","audio controls",100668206
+"1218",1,1,"10066820631","OTHER","Storage","Cupholders Location","front and rear",100668206
+"1219",1,2,"10066820631","OTHER","Storage","Seatback Storage","front seatback storage",100668206
+"1220",1,3,"10066820631","OTHER","Storage","Door Pockets Location","front",100668206
+"1221",1,4,"10066820631","OTHER","Storage","Overhead Console","overhead console with storage",100668206
+"1222",1,5,"10066820631","OTHER","Storage","Center Console","front console with storage",100668206
+"1223",1,1,"10066820632","OTHER","Sunroof","Sunroof","power glass",100668206
+"1224",1,1,"10066820633","OTHER","Seating Configuration","1st Row Seating Capacity","2",100668206
+"1225",1,2,"10066820633","OTHER","Seating Configuration","2nd Row Seating Capacity","3",100668206
+"1226",1,1,"10066820634","OTHER","Air Conditioning","Front Air Conditioning Zones","dual",100668206
+"1227",1,2,"10066820634","OTHER","Air Conditioning","Front Air Conditioning","automatic climate control",100668206
+"1228",1,3,"10066820634","OTHER","Air Conditioning","Rear Heat","rear ventilation ducts",100668206
+"1229",1,4,"10066820634","OTHER","Air Conditioning","Air Filtration","interior air filtration",100668206
+"1230",1,1,"10066820636","OTHER","Seatbelts","Seatbelt Pretensioners","front",100668206
+"1231",1,2,"10066820636","OTHER","Seatbelts","Seatbelt Force Limiters","front",100668206
+"1232",1,3,"10066820636","OTHER","Seatbelts","2nd Row Center Seatbelt","3-point belt",100668206
+"1233",1,1,"10066820637","OTHER","Suspension","Independent Suspension","four-wheel",100668206
+"1234",1,2,"10066820637","OTHER","Suspension","Rear Suspension Type","multi-link",100668206
+"1235",1,3,"10066820637","OTHER","Suspension","Front Suspension Type","double wishbone",100668206
+"1236",1,1,"10066820638","OTHER","Specifications","Ege Highway Mpg","28",100668206
+"1237",1,2,"10066820638","OTHER","Specifications","Epa Combined Mpg","23",100668206
+"1238",1,3,"10066820638","OTHER","Specifications","Epa City Mpg","20",100668206
+"1239",1,4,"10066820638","OTHER","Specifications","Curb Weight","3345",100668206
+"1240",1,5,"10066820638","OTHER","Specifications","Turning Diameter","40.0",100668206
+"1241",1,6,"10066820638","OTHER","Specifications","Epa Highway Mpg","28",100668206
+"1242",1,7,"10066820638","OTHER","Specifications","Tco Curb Weight","3345",100668206
+"1243",1,8,"10066820638","OTHER","Specifications","Ege Combined Mpg","23",100668206
+"1244",1,9,"10066820638","OTHER","Specifications","Fuel Capacity","17.1",100668206
+"1245",1,10,"10066820638","OTHER","Specifications","Ege City Mpg","20",100668206
+"1246",1,1,"10066820639","OTHER","Brake System","Rear Brake Width","0.4",100668206
+"1247",1,2,"10066820639","OTHER","Brake System","Front Brake Width","1.1",100668206
+"1248",1,3,"10066820639","OTHER","Brake System","Rear Brake Type","disc",100668206
+"1249",1,4,"10066820639","OTHER","Brake System","Electronic Brakeforce Distribution","electronic brakeforce distribution",100668206
+"1250",1,5,"10066820639","OTHER","Brake System","Front Brake Diameter","11.8",100668206
+"1251",1,6,"10066820639","OTHER","Brake System","Front Brake Type","ventilated disc",100668206
+"1252",1,7,"10066820639","OTHER","Brake System","Antilock Braking System","4-wheel ABS",100668206
+"1253",1,8,"10066820639","OTHER","Brake System","Braking Assist","braking assist",100668206
+"1254",1,9,"10066820639","OTHER","Brake System","Rear Brake Diameter","10.2",100668206
+"1255",1,1,"10066820640","OTHER","Drive Type","Driven Wheels","front wheel drive",100668206
+"1256",1,1,"10066820641","OTHER","Misc. Interior Features","Cruise Control","cruise control",100668206
+"1257",1,2,"10066820641","OTHER","Misc. Interior Features","Floor Mats","floor mats",100668206
+"1258",1,3,"10066820641","OTHER","Misc. Interior Features","Universal Remote Transmitter","universal remote transmitter",100668206
+"1259",1,4,"10066820641","OTHER","Misc. Interior Features","2nd Row Floor Mats","rear floor mats",100668206
+"1260",1,5,"10066820641","OTHER","Misc. Interior Features","Cargo Area Light","trunk light",100668206
+"1261",1,6,"10066820641","OTHER","Misc. Interior Features","Reading Lights","front reading lights",100668206
+"1262",1,7,"10066820641","OTHER","Misc. Interior Features","Retained Accessory Power","retained accessory power",100668206
+"1263",1,8,"10066820641","OTHER","Misc. Interior Features","Floor Mat Material","carpet",100668206
+"1264",1,1,"10066820643","OTHER","Driver Seat","Number Of Driver Seat Manual Adjustments","2",100668206
+"1265",1,2,"10066820643","OTHER","Driver Seat","Height Adjustable Driver Seat","height adjustable",100668206
+"1266",1,3,"10066820643","OTHER","Driver Seat","Driver Seat Adjustable Lumbar","manual adjustable lumbar support",100668206
+"1267",1,4,"10066820643","OTHER","Driver Seat","Number Of Driver Seat Power Adjustments","8",100668206
+"1268",1,5,"10066820643","OTHER","Driver Seat","Number Of Memorized Driver Seat Settings","2",100668206
+"1269",1,6,"10066820643","OTHER","Driver Seat","Heated Driver Seat","multi-level heating",100668206
+"1270",1,1,"10066820644","OTHER","Security","Engine Immobilizer","engine immobilizer",100668206
+"1271",1,2,"10066820644","OTHER","Security","Power Door Locks","remote keyless power door locks",100668206
+"1272",1,3,"10066820644","OTHER","Security","Anti Theft Alarm System","remote anti-theft alarm system",100668206
+"1273",1,4,"10066820644","OTHER","Security","2 Stage Unlocking","remote 2-stage unlocking",100668206
+"1274",1,1,"10066820646","OTHER","Airbags","Head Airbags","front and rear",100668206
+"1275",1,2,"10066820646","OTHER","Airbags","Passenger Airbag Deactivation","occupant sensing deactivation",100668206
+"1276",1,3,"10066820646","OTHER","Airbags","Side Airbags","dual front",100668206
+"1277",1,4,"10066820646","OTHER","Airbags","Passenger Airbag","Standard",100668206
+"1278",1,5,"10066820646","OTHER","Airbags","Depowered Airbags","Standard",100668206
+"1279",1,1,"10066820647","OTHER","2nd Row Seats","Folding 2nd Row","split folding",100668206
+"1280",1,2,"10066820647","OTHER","2nd Row Seats","2nd Row Seat Type","bench",100668206
+"1281",1,3,"10066820647","OTHER","2nd Row Seats","Adjustable 2nd Row Headrests","height adjustable headrests",100668206
+"1282",1,4,"10066820647","OTHER","2nd Row Seats","Number Of 2nd Row Headrests","2",100668206
+"1283",1,5,"10066820647","OTHER","2nd Row Seats","2nd Row Center Armrest","folding with storage and pass-thru",100668206
+"1284",1,1,"200193842","WARRANTY","Warranty","Warranty Maximum Mileage","50000",100668206
+"1285",1,2,"200193842","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",100668206
+"1286",1,3,"200193842","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100668206
+"1287",1,4,"200193842","WARRANTY","Warranty","Warranty Maximum Years","4",100668206
+"1288",1,5,"200193842","WARRANTY","Warranty","Warranty Type","Basic",100668206
+"1289",1,1,"200193843","WARRANTY","Warranty","Warranty Maximum Mileage","70000",100668206
+"1290",1,2,"200193843","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",100668206
+"1291",1,3,"200193843","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100668206
+"1292",1,4,"200193843","WARRANTY","Warranty","Warranty Maximum Years","6",100668206
+"1293",1,5,"200193843","WARRANTY","Warranty","Warranty Type","Drivetrain",100668206
+"1294",1,1,"200193844","WARRANTY","Warranty","Warranty Maximum Mileage","50000",100668206
+"1295",1,2,"200193844","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",100668206
+"1296",1,3,"200193844","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100668206
+"1297",1,4,"200193844","WARRANTY","Warranty","Warranty Maximum Years","4",100668206
+"1298",1,5,"200193844","WARRANTY","Warranty","Warranty Type","Roadside",100668206
+"1299",1,1,"200193845","WARRANTY","Warranty","Warranty Comments","Prior to 6/30/2005 Rust coverage was 5 Year Unlimited Miles",100668206
+"1300",1,2,"200193845","WARRANTY","Warranty","Warranty Miles Limited/unlimited","U",100668206
+"1301",1,3,"200193845","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",100668206
+"1302",1,4,"200193845","WARRANTY","Warranty","Warranty Maximum Years","5",100668206
+"1303",1,5,"200193845","WARRANTY","Warranty","Warranty Type","Rust",100668206
+"1304",1,1,"200193849","AUDIO_SYSTEM","Audio System","Total Number Of Speakers","8",100668206
+"1305",1,2,"200193849","AUDIO_SYSTEM","Audio System","Digital Audio Input","auxiliary audio input",100668206
+"1306",1,3,"200193849","AUDIO_SYSTEM","Audio System","Antenna Type","element",100668206
+"1307",1,4,"200193849","AUDIO_SYSTEM","Audio System","Cd Player","6 CD player",100668206
+"1308",1,5,"200193849","AUDIO_SYSTEM","Audio System","Radio","AM/FM",100668206
+"1309",1,6,"200193849","AUDIO_SYSTEM","Audio System","Satellite Radio","satellite radio",100668206
+"1310",1,7,"200193849","AUDIO_SYSTEM","Audio System","Watts","360",100668206
+"1311",1,8,"200193849","AUDIO_SYSTEM","Audio System","Subwoofer","2",100668206
+"1312",1,9,"200193849","AUDIO_SYSTEM","Audio System","Consumer Generic Feature 0","Aux Audio Inputs",100668206
+"1313",1,1,"200193850","TIRES","Tires","Rear Tire Width","215",100668206
+"1314",1,2,"200193850","TIRES","Tires","Rear Tire Prefix","P",100668206
+"1315",1,3,"200193850","TIRES","Tires","Tire Type","all season",100668206
+"1316",1,4,"200193850","TIRES","Tires","Rear Tire Diameter","17",100668206
+"1317",1,5,"200193850","TIRES","Tires","Rear Tire Profile","50",100668206
+"1318",1,6,"200193850","TIRES","Tires","Rear Tire Speed Rating","V",100668206
+"1319",1,1,"200193851","WHEELS","Wheels","Rim Type","alloy",100668206
+"1320",1,2,"200193851","WHEELS","Wheels","Rear Wheel Diameter","17",100668206
+"1321",1,3,"200193851","WHEELS","Wheels","Rear Wheel Width","7.0",100668206
+"1322",1,1,"10114798510","OTHER","Cargo Dimensions","Cargo Capacity, All Seats In Place","12.6",101147985
+"1323",1,1,"10114798511","OTHER","Mobile Connectivity","Phone","pre-wired for phone",101147985
+"1324",1,2,"10114798511","OTHER","Mobile Connectivity","Bluetooth","Bluetooth",101147985
+"1325",1,1,"10114798513","OTHER","Instrumentation","Electroluminescent Instrumentation","electroluminescent instrumentation",101147985
+"1326",1,2,"10114798513","OTHER","Instrumentation","External Temperature Gauge","external temperature display",101147985
+"1327",1,3,"10114798513","OTHER","Instrumentation","Compass","compass",101147985
+"1328",1,4,"10114798513","OTHER","Instrumentation","Tire Pressure Monitoring System","tire pressure monitoring",101147985
+"1329",1,5,"10114798513","OTHER","Instrumentation","Low Fuel Level Indicator","low fuel level",101147985
+"1330",1,6,"10114798513","OTHER","Instrumentation","Tachometer","tachometer",101147985
+"1331",1,7,"10114798513","OTHER","Instrumentation","Trip Computer","trip computer",101147985
+"1332",1,8,"10114798513","OTHER","Instrumentation","Clock","clock",101147985
+"1333",1,1,"10114798514","OTHER","Doors","Number Of Doors","4",101147985
+"1334",1,1,"10114798515","OTHER","Exterior Lights","Front Fog Lights","front fog/driving lights",101147985
+"1335",1,2,"10114798515","OTHER","Exterior Lights","Headlights Auto Delay","auto delay off",101147985
+"1336",1,3,"10114798515","OTHER","Exterior Lights","Daytime Running Lights","daytime running lights",101147985
+"1337",1,4,"10114798515","OTHER","Exterior Lights","Xenon Headlights","xenon high intensity discharge",101147985
+"1338",1,5,"10114798515","OTHER","Exterior Lights","Headlights Dusk Sensor","dusk sensing",101147985
+"1339",1,1,"10114798518","OTHER","Front Passenger Seat","Heated Passenger Seat","multi-level heating",101147985
+"1340",1,2,"10114798518","OTHER","Front Passenger Seat","Passenger Seat Whiplash Protection","whiplash protection system",101147985
+"1341",1,3,"10114798518","OTHER","Front Passenger Seat","Number Of Passenger Seat Power Adjustments","4",101147985
+"1342",1,1,"10114798519","MIRRORS","Mirrors","Auto Dimming Rearview Mirror","electrochromatic",101147985
+"1343",1,2,"10114798519","MIRRORS","Mirrors","1st Row Vanity Mirrors","dual illuminated vanity mirrors",101147985
+"1344",1,3,"10114798519","MIRRORS","Mirrors","Passenger Side Mirror Adjustment","power",101147985
+"1345",1,4,"10114798519","MIRRORS","Mirrors","Turn Signal Side Mirrors","turn signal in mirrors",101147985
+"1346",1,5,"10114798519","MIRRORS","Mirrors","Exterior Mirror Adjustment","power",101147985
+"1347",1,6,"10114798519","MIRRORS","Mirrors","Heated Exterior Mirrors","heated",101147985
+"1348",1,7,"10114798519","MIRRORS","Mirrors","Reverse Tilt Side Mirrors","passenger mirror",101147985
+"1349",1,8,"10114798519","MIRRORS","Mirrors","Heated Passenger Side Mirror","heated",101147985
+"1350",1,1,"10114798520","OTHER","Steering","Power Steering","electric speed-proportional power steering",101147985
+"1351",1,1,"10114798521","OTHER","1st Row Seats","1st Row Seat Type","sport",101147985
+"1352",1,2,"10114798521","OTHER","1st Row Seats","Adjustable Seat Headrest","height adjustable headrests",101147985
+"1353",1,3,"10114798521","OTHER","1st Row Seats","1st Row Upholstery","leather",101147985
+"1354",1,4,"10114798521","OTHER","1st Row Seats","Number Of 1st Row Headrests","2",101147985
+"1355",1,5,"10114798521","OTHER","1st Row Seats","Seat Whiplash Protection","whiplash protection system",101147985
+"1356",1,1,"10114798522","OTHER","Interior Dimensions","2nd Row Leg Room","34.3",101147985
+"1357",1,2,"10114798522","OTHER","Interior Dimensions","1st Row Hip Room","55.6",101147985
+"1358",1,3,"10114798522","OTHER","Interior Dimensions","2nd Row Shoulder Room","56.1",101147985
+"1359",1,4,"10114798522","OTHER","Interior Dimensions","1st Row Leg Room","42.4",101147985
+"1360",1,5,"10114798522","OTHER","Interior Dimensions","1st Row Head Room","37.6",101147985
+"1361",1,6,"10114798522","OTHER","Interior Dimensions","2nd Row Head Room","37.0",101147985
+"1362",1,7,"10114798522","OTHER","Interior Dimensions","2nd Row Hip Room","54.2",101147985
+"1363",1,8,"10114798522","OTHER","Interior Dimensions","Epa Interior Volume","107.1",101147985
+"1364",1,9,"10114798522","OTHER","Interior Dimensions","1st Row Shoulder Room","57.8",101147985
+"1365",1,1,"10114798523","OTHER","Spare Tire/Wheel","Spare Wheel Rim Type","steel",101147985
+"1366",1,2,"10114798523","OTHER","Spare Tire/Wheel","Spare Tire Size","temporary",101147985
+"1367",1,3,"10114798523","OTHER","Spare Tire/Wheel","Spare Tire Mount Location","inside",101147985
+"1368",1,1,"10114798524","OTHER","Trunk","Emergency Trunk Release","interior trunk release",101147985
+"1369",1,2,"10114798524","OTHER","Trunk","Remote Trunk Release","remote trunk release",101147985
+"1370",1,1,"10114798526","OTHER","Power Outlets","Power Outlet(s)","12V",101147985
+"1371",1,1,"10114798527","OTHER","Exterior Dimensions","Overall Width Without Mirrors","72.4",101147985
+"1372",1,2,"10114798527","OTHER","Exterior Dimensions","Wheelbase","106.6",101147985
+"1373",1,3,"10114798527","OTHER","Exterior Dimensions","Minimum Ground Clearance","5.9",101147985
+"1374",1,4,"10114798527","OTHER","Exterior Dimensions","Overall Length","185.6",101147985
+"1375",1,5,"10114798527","OTHER","Exterior Dimensions","Overall Height","56.6",101147985
+"1376",1,6,"10114798527","OTHER","Exterior Dimensions","Rear Track","62.2",101147985
+"1377",1,7,"10114798527","OTHER","Exterior Dimensions","Front Track","62.2",101147985
+"1378",1,1,"10114798528","OTHER","Windows","Remote Window Operation","remote window operation",101147985
+"1379",1,2,"10114798528","OTHER","Windows","Speed Sensitive Front Wipers","speed sensitive",101147985
+"1380",1,3,"10114798528","OTHER","Windows","One Touch Windows","2",101147985
+"1381",1,4,"10114798528","OTHER","Windows","Power Windows","power windows",101147985
+"1382",1,5,"10114798528","OTHER","Windows","Intermittent Front Wipers","variable intermittent",101147985
+"1383",1,6,"10114798528","OTHER","Windows","Rear Defogger","rear defogger",101147985
+"1384",1,1,"10114798529","OTHER","Steering Wheel","Steering Wheel Adjustments","tilt and telescopic",101147985
+"1385",1,2,"10114798529","OTHER","Steering Wheel","Cruise Controls On Steering Wheel","cruise controls",101147985
+"1386",1,3,"10114798529","OTHER","Steering Wheel","Steering Wheel Trim","leather",101147985
+"1387",1,4,"10114798529","OTHER","Steering Wheel","Audio Controls On Steering Wheel","audio controls",101147985
+"1388",1,5,"10114798529","OTHER","Steering Wheel","Phone Controls On Steering Wheel","phone controls on steering wheel",101147985
+"1389",1,1,"10114798532","OTHER","Storage","Cupholders Location","front and rear",101147985
+"1390",1,2,"10114798532","OTHER","Storage","Seatback Storage","front seatback storage",101147985
+"1391",1,3,"10114798532","OTHER","Storage","Door Pockets Location","front and rear",101147985
+"1392",1,4,"10114798532","OTHER","Storage","Overhead Console","overhead console with storage",101147985
+"1393",1,5,"10114798532","OTHER","Storage","Center Console","front console with storage",101147985
+"1394",1,1,"10114798533","OTHER","Sunroof","One Touch Power Sunroof","one-touch power sunroof",101147985
+"1395",1,2,"10114798533","OTHER","Sunroof","Remote Sunroof Operation","remote sunroof operation",101147985
+"1396",1,3,"10114798533","OTHER","Sunroof","Sunroof","power glass",101147985
+"1397",1,1,"10114798534","OTHER","Seating Configuration","1st Row Seating Capacity","2",101147985
+"1398",1,2,"10114798534","OTHER","Seating Configuration","2nd Row Seating Capacity","3",101147985
+"1399",1,1,"10114798535","OTHER","Air Conditioning","Front Air Conditioning Zones","dual",101147985
+"1400",1,2,"10114798535","OTHER","Air Conditioning","Front Air Conditioning","automatic climate control",101147985
+"1401",1,3,"10114798535","OTHER","Air Conditioning","Rear Heat","rear ventilation ducts",101147985
+"1402",1,4,"10114798535","OTHER","Air Conditioning","Air Filtration","interior air filtration",101147985
+"1403",1,1,"10114798537","OTHER","Seatbelts","Seatbelt Pretensioners","front",101147985
+"1404",1,2,"10114798537","OTHER","Seatbelts","Seatbelt Force Limiters","front",101147985
+"1405",1,3,"10114798537","OTHER","Seatbelts","2nd Row Center Seatbelt","3-point belt",101147985
+"1406",1,1,"10114798538","OTHER","Suspension","Front Suspension Classification","independent",101147985
+"1407",1,2,"10114798538","OTHER","Suspension","Rear Spring Type","coil springs",101147985
+"1408",1,3,"10114798538","OTHER","Suspension","Independent Suspension","four-wheel",101147985
+"1409",1,4,"10114798538","OTHER","Suspension","Rear Arm Type","trailing links, lateral links",101147985
+"1410",1,5,"10114798538","OTHER","Suspension","Rear Suspension Type","multi-link",101147985
+"1411",1,6,"10114798538","OTHER","Suspension","Front Arm Type","lower control arms",101147985
+"1412",1,7,"10114798538","OTHER","Suspension","Rear Suspension Classification","independent",101147985
+"1413",1,8,"10114798538","OTHER","Suspension","Front Stabilizer Bar","stabilizer bar",101147985
+"1414",1,9,"10114798538","OTHER","Suspension","Front Spring Type","coil springs",101147985
+"1415",1,10,"10114798538","OTHER","Suspension","Rear Stabilizer Bar","stabilizer bar",101147985
+"1416",1,11,"10114798538","OTHER","Suspension","Front Suspension Type","double wishbone",101147985
+"1417",1,1,"10114798539","OTHER","Specifications","Ege Highway Mpg","28",101147985
+"1418",1,2,"10114798539","OTHER","Specifications","Epa Combined Mpg","23",101147985
+"1419",1,3,"10114798539","OTHER","Specifications","Epa City Mpg","20",101147985
+"1420",1,4,"10114798539","OTHER","Specifications","Curb Weight","3400",101147985
+"1421",1,5,"10114798539","OTHER","Specifications","Turning Diameter","36.7",101147985
+"1422",1,6,"10114798539","OTHER","Specifications","Epa Highway Mpg","28",101147985
+"1423",1,7,"10114798539","OTHER","Specifications","Tco Curb Weight","3400",101147985
+"1424",1,8,"10114798539","OTHER","Specifications","Ege Combined Mpg","23",101147985
+"1425",1,9,"10114798539","OTHER","Specifications","Fuel Capacity","18.5",101147985
+"1426",1,10,"10114798539","OTHER","Specifications","Ege City Mpg","20",101147985
+"1427",1,1,"10114798540","OTHER","Brake System","Rear Brake Width",".4",101147985
+"1428",1,2,"10114798540","OTHER","Brake System","Front Brake Width","1.1",101147985
+"1429",1,3,"10114798540","OTHER","Brake System","Rear Brake Type","disc",101147985
+"1430",1,4,"10114798540","OTHER","Brake System","Electronic Brakeforce Distribution","electronic brakeforce distribution",101147985
+"1431",1,5,"10114798540","OTHER","Brake System","Front Brake Diameter","11.8",101147985
+"1432",1,6,"10114798540","OTHER","Brake System","Front Brake Type","ventilated disc",101147985
+"1433",1,7,"10114798540","OTHER","Brake System","Antilock Braking System","4-wheel ABS",101147985
+"1434",1,8,"10114798540","OTHER","Brake System","Braking Assist","braking assist",101147985
+"1435",1,9,"10114798540","OTHER","Brake System","Rear Brake Diameter","11.1",101147985
+"1436",1,1,"10114798541","OTHER","Drive Type","Driven Wheels","front wheel drive",101147985
+"1437",1,1,"10114798542","OTHER","Misc. Interior Features","Cruise Control","cruise control",101147985
+"1438",1,2,"10114798542","OTHER","Misc. Interior Features","Floor Mats","floor mats",101147985
+"1439",1,3,"10114798542","OTHER","Misc. Interior Features","Universal Remote Transmitter","universal remote transmitter",101147985
+"1440",1,4,"10114798542","OTHER","Misc. Interior Features","2nd Row Floor Mats","rear floor mats",101147985
+"1441",1,5,"10114798542","OTHER","Misc. Interior Features","Cargo Area Light","trunk light",101147985
+"1442",1,6,"10114798542","OTHER","Misc. Interior Features","Reading Lights","front and rear reading lights",101147985
+"1443",1,7,"10114798542","OTHER","Misc. Interior Features","Retained Accessory Power","retained accessory power",101147985
+"1444",1,8,"10114798542","OTHER","Misc. Interior Features","Floor Mat Material","carpet",101147985
+"1445",1,1,"10114798544","OTHER","Driver Seat","Height Adjustable Driver Seat","height adjustable",101147985
+"1446",1,2,"10114798544","OTHER","Driver Seat","Driver Seat Adjustable Lumbar","manual adjustable lumbar support",101147985
+"1447",1,3,"10114798544","OTHER","Driver Seat","Number Of Driver Seat Power Adjustments","8",101147985
+"1448",1,4,"10114798544","OTHER","Driver Seat","Number Of Memorized Driver Seat Settings","2",101147985
+"1449",1,5,"10114798544","OTHER","Driver Seat","Heated Driver Seat","multi-level heating",101147985
+"1450",1,1,"10114798545","OTHER","Security","Engine Immobilizer","engine immobilizer",101147985
+"1451",1,2,"10114798545","OTHER","Security","Power Door Locks","remote keyless power door locks",101147985
+"1452",1,3,"10114798545","OTHER","Security","Anti Theft Alarm System","remote anti-theft alarm system",101147985
+"1453",1,4,"10114798545","OTHER","Security","2 Stage Unlocking","remote 2-stage unlocking",101147985
+"1454",1,1,"10114798547","OTHER","Airbags","Head Airbags","front and rear",101147985
+"1455",1,2,"10114798547","OTHER","Airbags","Passenger Airbag Deactivation","occupant sensing deactivation",101147985
+"1456",1,3,"10114798547","OTHER","Airbags","Side Airbags","dual front",101147985
+"1457",1,4,"10114798547","OTHER","Airbags","Passenger Airbag","Standard",101147985
+"1458",1,5,"10114798547","OTHER","Airbags","Depowered Airbags","Standard",101147985
+"1459",1,1,"10114798548","OTHER","2nd Row Seats","Folding 2nd Row","split folding",101147985
+"1460",1,2,"10114798548","OTHER","2nd Row Seats","2nd Row Seat Type","bench",101147985
+"1461",1,3,"10114798548","OTHER","2nd Row Seats","Adjustable 2nd Row Headrests","height adjustable headrests",101147985
+"1462",1,4,"10114798548","OTHER","2nd Row Seats","Number Of 2nd Row Headrests","3",101147985
+"1463",1,5,"10114798548","OTHER","2nd Row Seats","2nd Row Center Armrest","folding with storage",101147985
+"1464",1,1,"200039035","WARRANTY","Warranty","Warranty Maximum Mileage","50000",101147985
+"1465",1,2,"200039035","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",101147985
+"1466",1,3,"200039035","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",101147985
+"1467",1,4,"200039035","WARRANTY","Warranty","Warranty Maximum Years","4",101147985
+"1468",1,5,"200039035","WARRANTY","Warranty","Warranty Type","Basic",101147985
+"1469",1,1,"200039036","WARRANTY","Warranty","Warranty Maximum Mileage","70000",101147985
+"1470",1,2,"200039036","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",101147985
+"1471",1,3,"200039036","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",101147985
+"1472",1,4,"200039036","WARRANTY","Warranty","Warranty Maximum Years","6",101147985
+"1473",1,5,"200039036","WARRANTY","Warranty","Warranty Type","Drivetrain",101147985
+"1474",1,1,"200039037","WARRANTY","Warranty","Warranty Maximum Mileage","50000",101147985
+"1475",1,2,"200039037","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",101147985
+"1476",1,3,"200039037","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",101147985
+"1477",1,4,"200039037","WARRANTY","Warranty","Warranty Maximum Years","4",101147985
+"1478",1,5,"200039037","WARRANTY","Warranty","Warranty Type","Roadside",101147985
+"1479",1,1,"200039038","WARRANTY","Warranty","Warranty Miles Limited/unlimited","U",101147985
+"1480",1,2,"200039038","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",101147985
+"1481",1,3,"200039038","WARRANTY","Warranty","Warranty Maximum Years","5",101147985
+"1482",1,4,"200039038","WARRANTY","Warranty","Warranty Type","Rust",101147985
+"1483",1,1,"200039047","AUDIO_SYSTEM","Audio System","Total Number Of Speakers","7",101147985
+"1484",1,2,"200039047","AUDIO_SYSTEM","Audio System","Digital Audio Input","auxiliary audio input and USB with external media control",101147985
+"1485",1,3,"200039047","AUDIO_SYSTEM","Audio System","Antenna Type","element",101147985
+"1486",1,4,"200039047","AUDIO_SYSTEM","Audio System","Cd Player","single CD player",101147985
+"1487",1,5,"200039047","AUDIO_SYSTEM","Audio System","Cd Mp3 Playback","CD MP3 Playback",101147985
+"1488",1,6,"200039047","AUDIO_SYSTEM","Audio System","Speed Sensitive Volume Control","speed sensitive volume control",101147985
+"1489",1,7,"200039047","AUDIO_SYSTEM","Audio System","Usb Connection","USB connection",101147985
+"1490",1,8,"200039047","AUDIO_SYSTEM","Audio System","Radio Data System","radio data system",101147985
+"1491",1,9,"200039047","AUDIO_SYSTEM","Audio System","Radio","AM/FM",101147985
+"1492",1,10,"200039047","AUDIO_SYSTEM","Audio System","Satellite Radio","satellite radio",101147985
+"1493",1,11,"200039047","AUDIO_SYSTEM","Audio System","Watts","360",101147985
+"1494",1,12,"200039047","AUDIO_SYSTEM","Audio System","Months Of Provided Satellite Radio Service","3",101147985
+"1495",1,13,"200039047","AUDIO_SYSTEM","Audio System","Subwoofer","1",101147985
+"1496",1,14,"200039047","AUDIO_SYSTEM","Audio System","Consumer Generic Feature 0","Aux Audio Inputs",101147985
+"1497",1,15,"200039047","AUDIO_SYSTEM","Audio System","Consumer Generic Feature 1","USB Inputs",101147985
+"1498",1,1,"200039048","TIRES","Tires","Rear Tire Width","225",101147985
+"1499",1,2,"200039048","TIRES","Tires","Rear Tire Load Rating","93",101147985
+"1500",1,3,"200039048","TIRES","Tires","Rear Tire Prefix","P",101147985
+"1501",1,4,"200039048","TIRES","Tires","Tire Type","all season",101147985
+"1502",1,5,"200039048","TIRES","Tires","Rear Tire Diameter","17",101147985
+"1503",1,6,"200039048","TIRES","Tires","Rear Tire Profile","50",101147985
+"1504",1,7,"200039048","TIRES","Tires","Rear Tire Speed Rating","V",101147985
+"1505",1,1,"200039049","WHEELS","Wheels","Rim Type","alloy",101147985
+"1506",1,2,"200039049","WHEELS","Wheels","Rear Wheel Diameter","17",101147985
+"1507",1,3,"200039049","WHEELS","Wheels","Rear Wheel Width","7.5",101147985
+"1508",1,1,"10125432710","OTHER","Cargo Dimensions","Cargo Capacity, All Seats In Place","14.0",101254327
+"1509",1,1,"10125432711","OTHER","Mobile Connectivity","Phone","pre-wired for phone",101254327
+"1510",1,2,"10125432711","OTHER","Mobile Connectivity","Bluetooth","Bluetooth",101254327
+"1511",1,1,"10125432713","OTHER","Instrumentation","Electroluminescent Instrumentation","electroluminescent instrumentation",101254327
+"1512",1,2,"10125432713","OTHER","Instrumentation","External Temperature Gauge","external temperature display",101254327
+"1513",1,3,"10125432713","OTHER","Instrumentation","Compass","compass",101254327
+"1514",1,4,"10125432713","OTHER","Instrumentation","Tire Pressure Monitoring System","tire pressure monitoring",101254327
+"1515",1,5,"10125432713","OTHER","Instrumentation","Low Fuel Level Indicator","low fuel level",101254327
+"1516",1,6,"10125432713","OTHER","Instrumentation","Tachometer","tachometer",101254327
+"1517",1,7,"10125432713","OTHER","Instrumentation","Trip Computer","trip computer",101254327
+"1518",1,8,"10125432713","OTHER","Instrumentation","Clock","clock",101254327
+"1519",1,1,"10125432714","OTHER","Doors","Number Of Doors","4",101254327
+"1520",1,1,"10125432715","OTHER","Exterior Lights","Front Fog Lights","front fog/driving lights",101254327
+"1521",1,2,"10125432715","OTHER","Exterior Lights","Headlights Auto Delay","auto delay off",101254327
+"1522",1,3,"10125432715","OTHER","Exterior Lights","Daytime Running Lights","daytime running lights",101254327
+"1523",1,4,"10125432715","OTHER","Exterior Lights","Xenon Headlights","xenon high intensity discharge",101254327
+"1524",1,5,"10125432715","OTHER","Exterior Lights","Headlights Dusk Sensor","dusk sensing",101254327
+"1525",1,1,"10125432718","OTHER","Front Passenger Seat","Heated Passenger Seat","multi-level heating",101254327
+"1526",1,2,"10125432718","OTHER","Front Passenger Seat","Passenger Seat Whiplash Protection","whiplash protection system",101254327
+"1527",1,3,"10125432718","OTHER","Front Passenger Seat","Number Of Passenger Seat Power Adjustments","4",101254327
+"1528",1,1,"10125432719","MIRRORS","Mirrors","Auto Dimming Rearview Mirror","electrochromatic",101254327
+"1529",1,2,"10125432719","MIRRORS","Mirrors","1st Row Vanity Mirrors","dual illuminated vanity mirrors",101254327
+"1530",1,3,"10125432719","MIRRORS","Mirrors","Passenger Side Mirror Adjustment","power",101254327
+"1531",1,4,"10125432719","MIRRORS","Mirrors","Turn Signal Side Mirrors","turn signal in mirrors",101254327
+"1532",1,5,"10125432719","MIRRORS","Mirrors","Exterior Mirror Adjustment","power",101254327
+"1533",1,6,"10125432719","MIRRORS","Mirrors","Heated Exterior Mirrors","heated",101254327
+"1534",1,7,"10125432719","MIRRORS","Mirrors","Reverse Tilt Side Mirrors","dual mirrors",101254327
+"1535",1,8,"10125432719","MIRRORS","Mirrors","Heated Passenger Side Mirror","heated",101254327
+"1536",1,1,"10125432720","OTHER","Steering","Power Steering","electric speed-proportional power steering",101254327
+"1537",1,1,"10125432721","OTHER","1st Row Seats","1st Row Seat Type","sport",101254327
+"1538",1,2,"10125432721","OTHER","1st Row Seats","Adjustable Seat Headrest","height adjustable headrests",101254327
+"1539",1,3,"10125432721","OTHER","1st Row Seats","1st Row Upholstery","leather",101254327
+"1540",1,4,"10125432721","OTHER","1st Row Seats","Number Of 1st Row Headrests","2",101254327
+"1541",1,5,"10125432721","OTHER","1st Row Seats","Seat Whiplash Protection","whiplash protection system",101254327
+"1542",1,1,"10125432722","OTHER","Interior Dimensions","2nd Row Leg Room","34.3",101254327
+"1543",1,2,"10125432722","OTHER","Interior Dimensions","1st Row Hip Room","55.6",101254327
+"1544",1,3,"10125432722","OTHER","Interior Dimensions","2nd Row Shoulder Room","56.1",101254327
+"1545",1,4,"10125432722","OTHER","Interior Dimensions","1st Row Head Room","37.6",101254327
+"1546",1,5,"10125432722","OTHER","Interior Dimensions","1st Row Leg Room","42.4",101254327
+"1547",1,6,"10125432722","OTHER","Interior Dimensions","2nd Row Head Room","37.0",101254327
+"1548",1,7,"10125432722","OTHER","Interior Dimensions","2nd Row Hip Room","54.2",101254327
+"1549",1,8,"10125432722","OTHER","Interior Dimensions","Epa Interior Volume","108.5",101254327
+"1550",1,9,"10125432722","OTHER","Interior Dimensions","1st Row Shoulder Room","57.8",101254327
+"1551",1,1,"10125432723","OTHER","Spare Tire/Wheel","Spare Wheel Rim Type","steel",101254327
+"1552",1,2,"10125432723","OTHER","Spare Tire/Wheel","Spare Tire Mount Location","inside",101254327
+"1553",1,3,"10125432723","OTHER","Spare Tire/Wheel","Spare Tire Size","temporary",101254327
+"1554",1,1,"10125432724","OTHER","Trunk","Emergency Trunk Release","interior trunk release",101254327
+"1555",1,2,"10125432724","OTHER","Trunk","Remote Trunk Release","remote trunk release",101254327
+"1556",1,1,"10125432726","OTHER","Power Outlets","Power Outlet(s)","12V",101254327
+"1557",1,1,"10125432727","OTHER","Exterior Dimensions","Overall Width Without Mirrors","72.4",101254327
+"1558",1,2,"10125432727","OTHER","Exterior Dimensions","Wheelbase","106.6",101254327
+"1559",1,3,"10125432727","OTHER","Exterior Dimensions","Minimum Ground Clearance","5.9",101254327
+"1560",1,4,"10125432727","OTHER","Exterior Dimensions","Overall Length","185.6",101254327
+"1561",1,5,"10125432727","OTHER","Exterior Dimensions","Overall Height","56.6",101254327
+"1562",1,6,"10125432727","OTHER","Exterior Dimensions","Rear Track","62.2",101254327
+"1563",1,7,"10125432727","OTHER","Exterior Dimensions","Front Track","62.2",101254327
+"1564",1,1,"10125432728","OTHER","Windows","Remote Window Operation","remote window operation",101254327
+"1565",1,2,"10125432728","OTHER","Windows","Speed Sensitive Front Wipers","speed sensitive",101254327
+"1566",1,3,"10125432728","OTHER","Windows","One Touch Windows","2",101254327
+"1567",1,4,"10125432728","OTHER","Windows","Power Windows","power windows",101254327
+"1568",1,5,"10125432728","OTHER","Windows","Intermittent Front Wipers","variable intermittent",101254327
+"1569",1,6,"10125432728","OTHER","Windows","Rear Defogger","rear defogger",101254327
+"1570",1,1,"10125432729","OTHER","Steering Wheel","Steering Wheel Adjustments","tilt and telescopic",101254327
+"1571",1,2,"10125432729","OTHER","Steering Wheel","Cruise Controls On Steering Wheel","cruise controls",101254327
+"1572",1,3,"10125432729","OTHER","Steering Wheel","Steering Wheel Trim","leather and alloy",101254327
+"1573",1,4,"10125432729","OTHER","Steering Wheel","Audio Controls On Steering Wheel","audio controls",101254327
+"1574",1,5,"10125432729","OTHER","Steering Wheel","Phone Controls On Steering Wheel","phone controls on steering wheel",101254327
+"1575",1,1,"10125432732","OTHER","Storage","Cupholders Location","front and rear",101254327
+"1576",1,2,"10125432732","OTHER","Storage","Seatback Storage","front seatback storage",101254327
+"1577",1,3,"10125432732","OTHER","Storage","Door Pockets Location","front and rear",101254327
+"1578",1,4,"10125432732","OTHER","Storage","Overhead Console","overhead console with storage",101254327
+"1579",1,5,"10125432732","OTHER","Storage","Center Console","front console with storage",101254327
+"1580",1,1,"10125432733","OTHER","Sunroof","One Touch Power Sunroof","one-touch power sunroof",101254327
+"1581",1,2,"10125432733","OTHER","Sunroof","Remote Sunroof Operation","remote sunroof operation",101254327
+"1582",1,3,"10125432733","OTHER","Sunroof","Sunroof","power glass",101254327
+"1583",1,1,"10125432734","OTHER","Seating Configuration","1st Row Seating Capacity","2",101254327
+"1584",1,2,"10125432734","OTHER","Seating Configuration","2nd Row Seating Capacity","3",101254327
+"1585",1,1,"10125432735","OTHER","Air Conditioning","Front Air Conditioning Zones","dual",101254327
+"1586",1,2,"10125432735","OTHER","Air Conditioning","Front Air Conditioning","automatic climate control",101254327
+"1587",1,3,"10125432735","OTHER","Air Conditioning","Rear Heat","rear ventilation ducts with fan control",101254327
+"1588",1,4,"10125432735","OTHER","Air Conditioning","Air Filtration","interior air filtration",101254327
+"1589",1,1,"10125432737","OTHER","Seatbelts","Seatbelt Pretensioners","front",101254327
+"1590",1,2,"10125432737","OTHER","Seatbelts","Seatbelt Force Limiters","front",101254327
+"1591",1,3,"10125432737","OTHER","Seatbelts","2nd Row Center Seatbelt","3-point belt",101254327
+"1592",1,1,"10125432738","OTHER","Suspension","Front Suspension Classification","independent",101254327
+"1593",1,2,"10125432738","OTHER","Suspension","Rear Spring Type","coil springs",101254327
+"1594",1,3,"10125432738","OTHER","Suspension","Independent Suspension","four-wheel",101254327
+"1595",1,4,"10125432738","OTHER","Suspension","Rear Arm Type","trailing links, lateral links",101254327
+"1596",1,5,"10125432738","OTHER","Suspension","Rear Suspension Type","multi-link",101254327
+"1597",1,6,"10125432738","OTHER","Suspension","Rear Suspension Classification","independent",101254327
+"1598",1,7,"10125432738","OTHER","Suspension","Front Stabilizer Bar","stabilizer bar",101254327
+"1599",1,8,"10125432738","OTHER","Suspension","Front Spring Type","coil springs",101254327
+"1600",1,9,"10125432738","OTHER","Suspension","Rear Stabilizer Bar","stabilizer bar",101254327
+"1601",1,10,"10125432738","OTHER","Suspension","Front Suspension Type","double wishbone",101254327
+"1602",1,1,"10125432739","OTHER","Specifications","Ege Highway Mpg","29",101254327
+"1603",1,2,"10125432739","OTHER","Specifications","Epa Combined Mpg","24",101254327
+"1604",1,3,"10125432739","OTHER","Specifications","Epa City Mpg","21",101254327
+"1605",1,4,"10125432739","OTHER","Specifications","Curb Weight","3400",101254327
+"1606",1,5,"10125432739","OTHER","Specifications","Turning Diameter","36.7",101254327
+"1607",1,6,"10125432739","OTHER","Specifications","Epa Highway Mpg","29",101254327
+"1608",1,7,"10125432739","OTHER","Specifications","Tco Curb Weight","3400",101254327
+"1609",1,8,"10125432739","OTHER","Specifications","Ege Combined Mpg","24",101254327
+"1610",1,9,"10125432739","OTHER","Specifications","Fuel Capacity","18.5",101254327
+"1611",1,10,"10125432739","OTHER","Specifications","Ege City Mpg","21",101254327
+"1612",1,1,"10125432740","OTHER","Brake System","Rear Brake Width","0.4",101254327
+"1613",1,2,"10125432740","OTHER","Brake System","Front Brake Width","1.1",101254327
+"1614",1,3,"10125432740","OTHER","Brake System","Rear Brake Type","disc",101254327
+"1615",1,4,"10125432740","OTHER","Brake System","Electronic Brakeforce Distribution","electronic brakeforce distribution",101254327
+"1616",1,5,"10125432740","OTHER","Brake System","Front Brake Diameter","11.8",101254327
+"1617",1,6,"10125432740","OTHER","Brake System","Front Brake Type","ventilated disc",101254327
+"1618",1,7,"10125432740","OTHER","Brake System","Antilock Braking System","4-wheel ABS",101254327
+"1619",1,8,"10125432740","OTHER","Brake System","Braking Assist","braking assist",101254327
+"1620",1,9,"10125432740","OTHER","Brake System","Rear Brake Diameter","11.1",101254327
+"1621",1,1,"10125432741","OTHER","Drive Type","Driven Wheels","front wheel drive",101254327
+"1622",1,1,"10125432742","OTHER","Misc. Interior Features","Cruise Control","cruise control",101254327
+"1623",1,2,"10125432742","OTHER","Misc. Interior Features","Floor Mats","floor mats",101254327
+"1624",1,3,"10125432742","OTHER","Misc. Interior Features","Universal Remote Transmitter","universal remote transmitter",101254327
+"1625",1,4,"10125432742","OTHER","Misc. Interior Features","2nd Row Floor Mats","rear floor mats",101254327
+"1626",1,5,"10125432742","OTHER","Misc. Interior Features","Cargo Area Light","trunk light",101254327
+"1627",1,6,"10125432742","OTHER","Misc. Interior Features","Reading Lights","front and rear reading lights",101254327
+"1628",1,7,"10125432742","OTHER","Misc. Interior Features","Retained Accessory Power","retained accessory power",101254327
+"1629",1,8,"10125432742","OTHER","Misc. Interior Features","Floor Mat Material","carpet",101254327
+"1630",1,1,"10125432744","OTHER","Driver Seat","Height Adjustable Driver Seat","height adjustable",101254327
+"1631",1,2,"10125432744","OTHER","Driver Seat","Driver Seat Adjustable Lumbar","manual adjustable lumbar support",101254327
+"1632",1,3,"10125432744","OTHER","Driver Seat","Number Of Driver Seat Power Adjustments","8",101254327
+"1633",1,4,"10125432744","OTHER","Driver Seat","Number Of Memorized Driver Seat Settings","2",101254327
+"1634",1,5,"10125432744","OTHER","Driver Seat","Heated Driver Seat","multi-level heating",101254327
+"1635",1,1,"10125432745","OTHER","Security","Engine Immobilizer","engine immobilizer",101254327
+"1636",1,2,"10125432745","OTHER","Security","Power Door Locks","remote keyless power door locks",101254327
+"1637",1,3,"10125432745","OTHER","Security","2 Stage Unlocking","remote 2-stage unlocking",101254327
+"1638",1,4,"10125432745","OTHER","Security","Anti Theft Alarm System","remote anti-theft alarm system",101254327
+"1639",1,1,"10125432747","OTHER","Airbags","Head Airbags","front and rear",101254327
+"1640",1,2,"10125432747","OTHER","Airbags","Passenger Airbag Deactivation","occupant sensing deactivation",101254327
+"1641",1,3,"10125432747","OTHER","Airbags","Side Airbags","dual front",101254327
+"1642",1,4,"10125432747","OTHER","Airbags","Passenger Airbag","Standard",101254327
+"1643",1,5,"10125432747","OTHER","Airbags","Depowered Airbags","Standard",101254327
+"1644",1,1,"10125432748","OTHER","2nd Row Seats","Folding 2nd Row","split folding",101254327
+"1645",1,2,"10125432748","OTHER","2nd Row Seats","2nd Row Seat Type","bench",101254327
+"1646",1,3,"10125432748","OTHER","2nd Row Seats","Adjustable 2nd Row Headrests","height adjustable headrests",101254327
+"1647",1,4,"10125432748","OTHER","2nd Row Seats","Number Of 2nd Row Headrests","3",101254327
+"1648",1,5,"10125432748","OTHER","2nd Row Seats","2nd Row Center Armrest","folding with storage",101254327
+"1649",1,1,"200065484","AUDIO_SYSTEM","Audio System","Total Number Of Speakers","7",101254327
+"1650",1,2,"200065484","AUDIO_SYSTEM","Audio System","Digital Audio Input","auxiliary audio input and USB with external media control",101254327
+"1651",1,3,"200065484","AUDIO_SYSTEM","Audio System","Antenna Type","element",101254327
+"1652",1,4,"200065484","AUDIO_SYSTEM","Audio System","Cd Player","single CD player",101254327
+"1653",1,5,"200065484","AUDIO_SYSTEM","Audio System","Cd Mp3 Playback","CD MP3 Playback",101254327
+"1654",1,6,"200065484","AUDIO_SYSTEM","Audio System","Speed Sensitive Volume Control","speed sensitive volume control",101254327
+"1655",1,7,"200065484","AUDIO_SYSTEM","Audio System","Usb Connection","USB connection",101254327
+"1656",1,8,"200065484","AUDIO_SYSTEM","Audio System","Radio","AM/FM",101254327
+"1657",1,9,"200065484","AUDIO_SYSTEM","Audio System","Radio Data System","radio data system",101254327
+"1658",1,10,"200065484","AUDIO_SYSTEM","Audio System","Satellite Radio","satellite radio",101254327
+"1659",1,11,"200065484","AUDIO_SYSTEM","Audio System","Watts","360",101254327
+"1660",1,12,"200065484","AUDIO_SYSTEM","Audio System","Months Of Provided Satellite Radio Service","3",101254327
+"1661",1,13,"200065484","AUDIO_SYSTEM","Audio System","Subwoofer","1",101254327
+"1662",1,14,"200065484","AUDIO_SYSTEM","Audio System","Consumer Generic Feature 0","Aux Audio Inputs",101254327
+"1663",1,15,"200065484","AUDIO_SYSTEM","Audio System","Consumer Generic Feature 1","USB Inputs",101254327
+"1664",1,1,"200065485","TIRES","Tires","Rear Tire Width","225",101254327
+"1665",1,2,"200065485","TIRES","Tires","Rear Tire Load Rating","93",101254327
+"1666",1,3,"200065485","TIRES","Tires","Rear Tire Prefix","P",101254327
+"1667",1,4,"200065485","TIRES","Tires","Tire Type","all season",101254327
+"1668",1,5,"200065485","TIRES","Tires","Rear Tire Diameter","17",101254327
+"1669",1,6,"200065485","TIRES","Tires","Rear Tire Profile","50",101254327
+"1670",1,7,"200065485","TIRES","Tires","Rear Tire Speed Rating","V",101254327
+"1671",1,1,"200065486","WHEELS","Wheels","Rim Type","alloy",101254327
+"1672",1,2,"200065486","WHEELS","Wheels","Rear Wheel Diameter","17",101254327
+"1673",1,3,"200065486","WHEELS","Wheels","Rear Wheel Width","7.5",101254327
+"1674",1,1,"200362531","WARRANTY","Warranty","Warranty Maximum Mileage","50000",101254327
+"1675",1,2,"200362531","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",101254327
+"1676",1,3,"200362531","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",101254327
+"1677",1,4,"200362531","WARRANTY","Warranty","Warranty Maximum Years","4",101254327
+"1678",1,5,"200362531","WARRANTY","Warranty","Warranty Type","Basic",101254327
+"1679",1,1,"200362532","WARRANTY","Warranty","Warranty Maximum Mileage","70000",101254327
+"1680",1,2,"200362532","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",101254327
+"1681",1,3,"200362532","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",101254327
+"1682",1,4,"200362532","WARRANTY","Warranty","Warranty Maximum Years","6",101254327
+"1683",1,5,"200362532","WARRANTY","Warranty","Warranty Type","Drivetrain",101254327
+"1684",1,1,"200362533","WARRANTY","Warranty","Warranty Maximum Mileage","50000",101254327
+"1685",1,2,"200362533","WARRANTY","Warranty","Warranty Miles Limited/unlimited","L",101254327
+"1686",1,3,"200362533","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",101254327
+"1687",1,4,"200362533","WARRANTY","Warranty","Warranty Maximum Years","4",101254327
+"1688",1,5,"200362533","WARRANTY","Warranty","Warranty Type","Roadside",101254327
+"1689",1,1,"200362534","WARRANTY","Warranty","Warranty Miles Limited/unlimited","U",101254327
+"1690",1,2,"200362534","WARRANTY","Warranty","Warranty Years Limited/unlimited","L",101254327
+"1691",1,3,"200362534","WARRANTY","Warranty","Warranty Maximum Years","5",101254327
+"1692",1,4,"200362534","WARRANTY","Warranty","Warranty Type","Rust",101254327
