@@ -8,6 +8,8 @@ library("tidyjson")
 library("jsonlite")
 library("tidyr")
 
+#rm(list=ls(all=TRUE))
+
 #Set working directory
 setwd("~/Library/Mobile\ Documents/com~apple~CloudDocs/data_science/getaround")
 
@@ -44,9 +46,16 @@ colnames(model.data)[17] <- "zero_sixty"
 model.data$zero_sixty <- as.numeric(as.character(model.data$zero_sixty))
 model.data$power_weight <- (as.numeric(model.data$engine.horsepower) / as.numeric(model.data$`Curb Weight`))
 
-##Normalize numeric data
-###Do across all columns at once
-model.fun.output$zero_sixy.scale <- scale(model.data$zero_sixty)
+
+#Normalize data
+model.fun.output <- model.data %>%
+  select(styles.id)
+
+###Use scale function to normalize
+#!Update this to look for all columns at once and perform the function
+model.fun.output$zero_sixy.scale.scale <- scale(model.data$zero_sixty, center = FALSE, scale = TRUE)
+model.fun.output$power_weight <- scale(model.data$power_weight, center = FALSE, scale = TRUE)
+
 
 ##Vehicle categorial attributes into binary
 model.fun.output$market <- as.numeric(grepl("Performance", model.data$categories.market)|grepl("Exotic", model.data$categories.market)|grepl("Factory Tuner",model.data$categories.market))
@@ -55,7 +64,16 @@ model.fun.output$drivewheels <- as.numeric(grepl("all wheel drive", model.data$s
 
 
 #Scale output using weights
+fun.weights <- c(0.50, 0.20, 0.10, 0.10, 0.10)
+model.fun.output$zero_sixty_scaled <- 1 - ((model.fun.output$zero_sixy.scale.scale * fun.weights[1]))
+model.fun.output$power_weight_scaled <- ((model.fun.output$power_weight * fun.weights[2]))
+model.fun.output$market_scaled <- ((model.fun.output$market * fun.weights[3]))
+model.fun.output$vehiclestyle_scaled <- ((model.fun.output$vehiclestyle * fun.weights[4]))
+model.fun.output$drivewheels_scaled <- ((model.fun.output$drivewheels * fun.weights[5]))
+
 
 
 #Sum Score
-model.fun.output$score <- (model.fun.output$zero_sixty + model.fun.output$power_weight + model.fun.output$market + model.fun.output$vehiclestyle + model.fun.output$drivewheels)
+##model.fun.output$score <- (model.fun.output$zero_sixty + model.fun.output$power_weight + model.fun.output$market + model.fun.output$vehiclestyle + model.fun.output$drivewheels)
+model.fun.output$score <- (model.fun.output$zero_sixty_scaled + model.fun.output$power_weight + model.fun.output$market_scaled + model.fun.output$vehiclestyle_scaled + model.fun.output$drivewheels_scaled)
+model.data$score.fun2 <- model.fun.output$score
