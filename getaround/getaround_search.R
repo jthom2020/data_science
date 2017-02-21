@@ -1,11 +1,11 @@
 #Install and Load required packages
 ##install.packages("dplyr")
-##install.packages("tidyjson")
 ##install.packages("jsonlite")
+##install.packages("tidyjson")
 ##install.packages("tidyr")
 library("dplyr")
-library("tidyjson")
 library("jsonlite")
+library("tidyjson")
 library("tidyr")
 
 #rm(list=ls(all=TRUE))
@@ -22,7 +22,7 @@ edmunds_basic <- read.csv("edmunds_styles_basic_orig_20170116.csv", stringsAsFac
 edmunds_detail <- read.csv("edmunds_styles_details_orig_20170116.csv", stringsAsFactors=FALSE)
 edmunds_detail_all <- read.csv("edmunds_styles_details_orig_20170116.csv", stringsAsFactors=FALSE) #Remove later
 
-#Gather data needed for models
+#Gather data needed for models from each file
 edmunds_style <- edmunds_style %>%
   select(styles.id, cars.make, cars.model, cars.year, styles.submodel.fuel, styles.submodel.tuner)  
 
@@ -42,7 +42,7 @@ edmunds_detail <- edmunds_detail %>%
 
 model.data <-  merge(model.data, edmunds_detail)
 
-#Cleanse Raw Data for Models
+#Cleanse Raw Data
 ##Rename columns
 #colnames(model.data)[23] <- "zero_sixty"
 
@@ -62,11 +62,10 @@ model.data$'Wheelbase' <- as.numeric(model.data$'Wheelbase')
 model.data$'Overall Length' <- as.numeric(model.data$'Overall Length')
 
 ##Fill in missing data points
-#!!Impute data points...revisit original dataset
+##?Impute data points...revisit original dataset
 #model.data$zero_sixty[is.na(model.data$zero_sixty)] <- mean(model.data$zero_sixty, na.rm = TRUE)
-#model.data$zero_sixty[is.na(model.data$zero_sixty)] <- 0
 
-##Getaround Distances
+##Getaround Distance Factors
 getaround$distance.factor[getaround$cars.distance <= .25] <- 1.00 #Local
 getaround$distance.factor[getaround$cars.distance > .25 & getaround$cars.distance <= 1] <- .80 #Walkable
 getaround$distance.factor[getaround$cars.distance > 1 & getaround$cars.distance <= 2]  <- .60 #Bikeable
@@ -76,18 +75,18 @@ getaround$distance.factor[getaround$cars.distance > 5] <- .20 #Bartable
 #########################################################################################################
 
 #2. Build Model Inputs
-#rm(model.input)
+##rm(model.input)
 model.input <- model.data %>%
   select(styles.id, cars.make, cars.model, cars.year)
 
 #Normalize Data
-model.input$zero_sixty_norm <- as.numeric(1 - (scale(model.data$zero_sixty, center = min(model.data$zero_sixty, na.rm = TRUE), scale = diff(range(model.data$zero_sixty, na.rm = TRUE)))))
+model.input$cargo_norm <- as.numeric(scale(model.data$'Max Cargo Capacity', center = min(model.data$'Max Cargo Capacity', na.rm = TRUE), scale = diff(range(model.data$'Max Cargo Capacity', na.rm = TRUE))))
+model.input$length_norm <- as.numeric(1 - (scale(model.data$'Overall Length', center = min(model.data$'Overall Length', na.rm = TRUE), scale = diff(range(model.data$'Overall Length', na.rm = TRUE)))))
 model.input$mpg_city_norm <- as.numeric(scale(model.data$'Epa City Mpg', center = min(model.data$'Epa City Mpg', na.rm = TRUE), scale = diff(range(model.data$'Epa City Mpg', na.rm = TRUE))))
 model.input$mpg_comb_norm <- as.numeric(scale(model.data$'Epa Combined Mpg', center = min(model.data$'Epa Combined Mpg', na.rm = TRUE), scale = diff(range(model.data$'Epa Combined Mpg', na.rm = TRUE))))
-model.input$turning_norm <- as.numeric(1 - (scale(model.data$'Turning Diameter', center = min(model.data$'Turning Diameter', na.rm = TRUE), scale = diff(range(model.data$'Turning Diameter', na.rm = TRUE)))))
-model.input$length_norm <- as.numeric(1 - (scale(model.data$'Overall Length', center = min(model.data$'Overall Length', na.rm = TRUE), scale = diff(range(model.data$'Overall Length', na.rm = TRUE)))))
-model.input$cargo_norm <- as.numeric(scale(model.data$'Max Cargo Capacity', center = min(model.data$'Max Cargo Capacity', na.rm = TRUE), scale = diff(range(model.data$'Max Cargo Capacity', na.rm = TRUE))))
 model.input$speaker_norm <- as.numeric(scale(model.data$'Total Number Of Speakers', center = min(model.data$'Total Number Of Speakers', na.rm = TRUE), scale = diff(range(model.data$'Total Number Of Speakers', na.rm = TRUE))))
+model.input$turning_norm <- as.numeric(1 - (scale(model.data$'Turning Diameter', center = min(model.data$'Turning Diameter', na.rm = TRUE), scale = diff(range(model.data$'Turning Diameter', na.rm = TRUE)))))
+model.input$zero_sixty_norm <- as.numeric(1 - (scale(model.data$zero_sixty, center = min(model.data$zero_sixty, na.rm = TRUE), scale = diff(range(model.data$zero_sixty, na.rm = TRUE)))))
 
 ##Binary Variables
 ###Market
@@ -131,10 +130,10 @@ model.input$is_small <- as.numeric(model.data$'Overall Length' < 170) #170 inche
 model.input$is_newcar <- as.numeric(model.data$cars.year > 2015) #Flag cars newer than 2015 as "new"
 
 #########################################################################################################
-#Build models
-#########################################################################################################
+
+#3. Run Search Models
 #Fun to Drive
-#rm(model.fun)
+##rm(model.fun)
 model.fun <- model.input %>%
   select(cars.make, cars.model, cars.year)
 
@@ -158,7 +157,7 @@ model.fun$score.dist <- (model.fun$distance.factor * model.fun$score)
 results.fun <- distinct(rbind((model.fun %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.fun %>% arrange(desc(score)) %>% slice(1:10))))
 
 #Run Errands
-#rm(model.errands)
+##rm(model.errands)
 model.errands <- model.input %>%
   select(cars.make, cars.model, cars.year)
 
@@ -176,9 +175,8 @@ model.errands <- merge(getaround, model.errands, by  = c("cars.make","cars.model
 model.errands$score.dist <- (model.errands$distance.factor * model.errands$score)
 results.errands <- distinct(rbind((model.errands %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.errands %>% arrange(desc(score)) %>% slice(1:10))))
 
-
-#Audiophile#
-#rm(model.audio)
+#Audiophile
+##rm(model.audio)
 model.audio <- model.input %>%
   select(cars.make, cars.model, cars.year)
 
@@ -207,11 +205,10 @@ model.audio <- merge(getaround, model.audio, by  = c("cars.make","cars.model","c
 model.audio$score.dist <- (model.audio$distance.factor * model.audio$score)
 results.audio <- distinct(rbind((model.audio %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.audio %>% arrange(desc(score)) %>% slice(1:10))))
 
-
 #Ski Trip
 #rm(model.ski)
 model.ski <- model.input %>%
-  select(cars.make, cars.model, cars.year)#, mpg_comb_norm)
+  select(cars.make, cars.model, cars.year)
 
 ##Weight Model Inputs & Score
 weights.ski <- c(.15, .05, .20, .20, .20, .20)
@@ -229,9 +226,8 @@ model.ski <- merge(getaround, model.ski, by  = c("cars.make", "cars.model", "car
 model.ski$score.dist <- (model.ski$distance.factor * model.ski$score)
 results.ski <- distinct(rbind((model.ski %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.ski %>% arrange(desc(score)) %>% slice(1:10))))
 
-
 #Date Night
-#rm(model.date)
+##rm(model.date)
 model.date <- model.input %>%
   select(cars.make, cars.model, cars.year)
 
