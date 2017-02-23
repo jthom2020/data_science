@@ -138,23 +138,17 @@ model.fun <- model.input %>%
   select(cars.make, cars.model, cars.year)
 
 ##Weight Model Inputs & Score
-weights.fun <- c(.40, .04,.16,.10, .06,.10,.04, .02,.08)
+weights.fun <- c(.40, .04, .16, .10, .06, .10, .04, .02,.08)
 
-model.fun$zero_sixty_norm <- (model.input$zero_sixty_norm * weights.fun[1])
-model.fun$is_performance <- (model.input$is_performance * weights.fun[2])
-model.fun$is_tuner <- (model.input$is_tuner * weights.fun[3])
-model.fun$is_exotic <- (model.input$is_exotic * weights.fun[4])
-model.fun$is_coupe <- (model.input$is_coupe * weights.fun[5])
-model.fun$is_convertible <- (model.input$is_convertible * weights.fun[6])
-model.fun$is_hatchback <- (model.input$is_hatchback * weights.fun[7])
-model.fun$is_awd <- (model.input$is_awd * weights.fun[8])
-model.fun$is_rwd <- (model.input$is_rwd * weights.fun[9])
-model.fun$score <- rowSums(model.fun[4:12], na.rm = TRUE)
+model.fun.inputs <-  model.input %>% select(zero_sixty_norm, is_performance, is_tuner, is_exotic, is_coupe, is_convertible, is_hatchback, is_awd, is_rwd) 
+model.fun.weights <- data.frame(mapply(`*`, model.fun.inputs[1:ncol(model.fun.inputs)], weights.fun))
+model.fun.weights$score <- rowSums(model.fun.weights[1:ncol(model.fun.weights)], na.rm = TRUE)
+model.fun <- cbind(model.fun, model.fun.weights)
 
 ##Search Results
 model.fun <- merge(getaround, model.fun, by  = c("cars.make","cars.model","cars.year"))
 model.fun$score.dist <- (model.fun$distance.factor * model.fun$score)
-results.fun <- distinct(rbind((model.fun %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.fun %>% arrange(desc(score)) %>% slice(1:10))))
+#results.fun <- distinct(rbind((model.fun %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.fun %>% arrange(desc(score)) %>% slice(1:10))))
 
 #Run Errands
 ##rm(model.errands)
@@ -162,18 +156,17 @@ model.errands <- model.input %>%
   select(cars.make, cars.model, cars.year)
 
 ##Weight Model Inputs & Score
-weights.errands <- c(.05, .05, .50, .40)
+weights.errands <- c(.40, .05, .50, .05)
 
-model.errands$mpg_city_norm <- ((model.input$mpg_city_norm * weights.errands[1]))
-model.errands$turning_norm <- ((model.input$turning_norm * weights.errands[2]))
-model.errands$is_small <- ((model.input$is_small * weights.errands[3]))
-model.errands$cargo_norm <- ((model.input$cargo_norm * weights.errands[4]))
-model.errands$score <- rowSums(model.input[4:7], na.rm = TRUE)
+model.errands.inputs <-  model.input %>% select(mpg_city_norm, turning_norm, is_small, cargo_norm)
+model.errands.weights <- data.frame(mapply(`*`, model.errands.inputs[1:ncol(model.errands.inputs)], weights.errands))
+model.errands.weights$score <- rowSums(model.errands.weights[1:ncol(model.errands.weights)], na.rm = TRUE)
+model.errands <- cbind(model.errands, model.errands.weights)
 
 ##Search Results
 model.errands <- merge(getaround, model.errands, by  = c("cars.make","cars.model","cars.year"))
 model.errands$score.dist <- (model.errands$distance.factor * model.errands$score)
-results.errands <- distinct(rbind((model.errands %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.errands %>% arrange(desc(score)) %>% slice(1:10))))
+#results.errands <- distinct(rbind((model.errands %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.errands %>% arrange(desc(score)) %>% slice(1:10))))
 
 #Audiophile
 ##rm(model.audio)
@@ -181,29 +174,18 @@ model.audio <- model.input %>%
   select(cars.make, cars.model, cars.year)
 
 ##Weight Model Inputs & Score
-weights.audiophile <- c(0.35, 0.025, 0.05,  0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.025)
+weights.audio <- c(0.35, 0.025, 0.05,  0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.025)
 
-model.audio$speaker_norm <- ((model.input$speaker_norm * weights.audiophile[1]))
-model.audio$has_cd <- ((model.input$has_cd * weights.audiophile[2]))
-model.audio$has_mp3 <- ((model.input$has_mp3 * weights.audiophile[3]))
-model.audio$has_usb <- ((model.input$has_usb * weights.audiophile[4]))
-model.audio$has_digital_input <-  ((model.input$has_digital_input * weights.audiophile[5]))
-model.audio$has_mem_card <-  ((model.input$has_mem_card * weights.audiophile[6]))
-model.audio$has_hd <-  ((model.input$has_hd  * weights.audiophile[7]))
-model.audio$has_prem_audio <-  ((model.input$has_prem_audio * weights.audiophile[8]))
-model.audio$has_prem_speaker <-  ((model.input$has_prem_speaker * weights.audiophile[9]))
-model.audio$has_sub <-  ((model.input$has_sub * weights.audiophile[10]))
-model.audio$has_surround <-  ((model.input$has_surround * weights.audiophile[11]))
-model.audio$has_rds <-  ((model.input$has_rds * weights.audiophile[12]))
-model.audio$has_sat <-  ((model.input$has_sat * weights.audiophile[13]))
-model.audio$has_steering <-  ((model.input$has_steering * weights.audiophile[14]))
-model.audio$has_speed_vol <-  ((model.input$has_speed_vol * weights.audiophile[15]))
-model.audio$score <- rowSums(model.audio[4:18], na.rm = TRUE)
+model.audio.inputs <-  model.input %>% select(speaker_norm, has_cd, has_mp3, has_usb, has_digital_input, has_mem_card, has_hd, has_prem_audio, has_prem_speaker, 
+                                                has_sub, has_surround, has_rds, has_sat, has_steering, has_speed_vol)
+model.audio.weights <- data.frame(mapply(`*`, model.audio.inputs[1:ncol(model.audio.inputs)], weights.audio))
+model.audio.weights$score <- rowSums(model.audio.weights[1:ncol(model.audio.weights)], na.rm = TRUE)
+model.audio <- cbind(model.audio, model.audio.weights)
 
 ##Search Results
 model.audio <- merge(getaround, model.audio, by  = c("cars.make","cars.model","cars.year"))
 model.audio$score.dist <- (model.audio$distance.factor * model.audio$score)
-results.audio <- distinct(rbind((model.audio %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.audio %>% arrange(desc(score)) %>% slice(1:10))))
+#results.audio <- distinct(rbind((model.audio %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.audio %>% arrange(desc(score)) %>% slice(1:10))))
 
 #Ski Trip
 #rm(model.ski)
@@ -213,35 +195,29 @@ model.ski <- model.input %>%
 ##Weight Model Inputs & Score
 weights.ski <- c(.15, .05, .20, .20, .20, .20)
 
-model.ski$mpg_comb_norm <- ((model.input$mpg_comb_norm * weights.ski[1]))
-model.ski$is_crossover <- ((model.input$is_crossover * weights.ski[2]))
-model.ski$is_suv <- ((model.input$is_suv * weights.ski[3]))
-model.ski$is_wagon  <- ((model.input$is_wagon * weights.ski[4]))
-model.ski$is_awd <- ((model.input$is_awd * weights.ski[5]))
-model.ski$has_rack <- ((model.input$has_rack * weights.ski[6]))
-model.ski$score <- rowSums(model.ski[4:9])
+model.ski.inputs <-  model.input %>% select(mpg_comb_norm, is_crossover, is_suv, is_wagon, is_awd, has_rack)
+model.ski.weights <- data.frame(mapply(`*`, model.ski.inputs[1:ncol(model.ski.inputs)], weights.ski))
+model.ski.weights$score <- rowSums(model.ski.weights[1:ncol(model.ski.weights)], na.rm = TRUE)
+model.ski <- cbind(model.ski, model.ski.weights)
 
 ##Search Results
 model.ski <- merge(getaround, model.ski, by  = c("cars.make", "cars.model", "cars.year"))
 model.ski$score.dist <- (model.ski$distance.factor * model.ski$score)
-results.ski <- distinct(rbind((model.ski %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.ski %>% arrange(desc(score)) %>% slice(1:10))))
+#results.ski <- distinct(rbind((model.ski %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.ski %>% arrange(desc(score)) %>% slice(1:10))))
 
 #Date Night
 ##rm(model.date)
-model.date <- model.input %>%
-  select(cars.make, cars.model, cars.year)
+model.date <- model.input %>% select(cars.make, cars.model, cars.year)
 
 ##Weight Model Inputs & Score
-weights.date <- c(.50, .10, .10, .10, .20 )
+weights.date <- t(c(.50, .10, .10, .10, .20 ))
 
-model.date$is_luxury <- ((model.input$is_luxury * weights.date[1]))
-model.date$has_leather <- ((model.input$has_leather * weights.date[2]))
-model.date$has_heated_seat <- ((model.input$has_heated_seat * weights.date[3]))
-model.date$has_navi  <- ((model.input$has_navi * weights.date[4]))
-model.date$speaker_norm <- ((model.input$speaker_norm * weights.date[5]))
-model.date$score <- rowSums(model.date[4:8])
+model.date.inputs <-  model.input %>% select(is_luxury, has_leather, has_heated_seat, has_navi, speaker_norm)
+model.date.weights <- data.frame(mapply(`*`, model.date.inputs[1:ncol(model.date.inputs)], weights.date))
+model.date.weights$score <- rowSums(model.date.weights[1:ncol(model.date.weights)], na.rm = TRUE)
+model.date <- cbind(model.date, model.date.weights)
 
 ##Search Results
 model.date <- merge(getaround, model.date, by  = c("cars.make", "cars.model", "cars.year"))
 model.date$score.dist <- (model.date$distance.factor * model.date$score)
-results.date <- distinct(rbind((model.date %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.date %>% arrange(desc(score)) %>% slice(1:10))))
+#results.date <- distinct(rbind((model.date %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.date %>% arrange(desc(score)) %>% slice(1:10))))
