@@ -210,7 +210,7 @@ model.ski$score.dist <- (model.ski$distance.factor * model.ski$score)
 model.date <- model.input %>% select(cars.make, cars.model, cars.year)
 
 ##Weight Model Inputs & Score
-weights.date <- t(c(.50, .10, .10, .10, .20 ))
+weights.date <- (.50, .10, .10, .10, .20)
 
 model.date.inputs <-  model.input %>% select(is_luxury, has_leather, has_heated_seat, has_navi, speaker_norm)
 model.date.weights <- data.frame(mapply(`*`, model.date.inputs[1:ncol(model.date.inputs)], weights.date))
