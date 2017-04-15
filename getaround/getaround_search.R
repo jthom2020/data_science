@@ -8,10 +8,10 @@ library("jsonlite")
 library("tidyjson")
 library("tidyr")
 
-#rm(list=ls(all=TRUE))
-
 #Set working directory
 setwd("~/Library/Mobile\ Documents/com~apple~CloudDocs/data_science/getaround")
+
+#rm(list=ls(all=TRUE))
 
 
 #1.Load Raw Data
@@ -20,7 +20,6 @@ getaround <- read.csv("getaround_clean_20170116.csv", stringsAsFactors=FALSE)
 edmunds_style <- read.csv("edmunds_styles_orig_20170116.csv", stringsAsFactors=FALSE)
 edmunds_basic <- read.csv("edmunds_styles_basic_orig_20170116.csv", stringsAsFactors=FALSE)
 edmunds_detail <- read.csv("edmunds_styles_details_orig_20170116.csv", stringsAsFactors=FALSE)
-edmunds_detail_all <- read.csv("edmunds_styles_details_orig_20170116.csv", stringsAsFactors=FALSE) #Remove later
 
 #Gather data needed for models from each file
 edmunds_style <- edmunds_style %>%
@@ -43,11 +42,7 @@ edmunds_detail <- edmunds_detail %>%
 model.data <-  merge(model.data, edmunds_detail)
 
 #Cleanse Raw Data
-##Rename columns
-#colnames(model.data)[23] <- "zero_sixty"
-
 ##Reformat data types
-##? Can I do this in all one shot?
 model.data$zero_sixty <- as.numeric(model.data$'Manufacturer 0 60mph Acceleration Time (seconds)')
 model.data$'Cargo Capacity, Rear Seat Down Or Removed' <- as.numeric(model.data$'Cargo Capacity, Rear Seat Down Or Removed')
 model.data$'Curb Weight' <- as.numeric(model.data$'Curb Weight')
@@ -70,7 +65,7 @@ getaround$distance.factor[getaround$cars.distance <= .25] <- 1.00 #Local
 getaround$distance.factor[getaround$cars.distance > .25 & getaround$cars.distance <= 1] <- .80 #Walkable
 getaround$distance.factor[getaround$cars.distance > 1 & getaround$cars.distance <= 2]  <- .60 #Bikeable
 getaround$distance.factor[getaround$cars.distance > 2 & getaround$cars.distance <= 5]  <- .40 #Uberable
-getaround$distance.factor[getaround$cars.distance > 5] <- .20 #Bartable
+getaround$distance.factor[getaround$cars.distance > 5] <- .20 #BARTable
 
 #########################################################################################################
 
@@ -120,7 +115,6 @@ model.input$has_speed_vol <- as.numeric(grepl('*', model.data$'Speed Sensitive V
 model.input$has_sub <- as.numeric(grepl('*', model.data$'Subwoofer'))
 model.input$has_surround <- as.numeric(grepl('*', model.data$'Surround Audio'))
 model.input$has_usb <- as.numeric(grepl('*', model.data$'Usb Connection'))
-
 model.input$has_heated_seat <- as.numeric(grepl('*', model.data$'Heated Driver Seat') | grepl('*', model.data$'Heated Passenger Seat'))
 model.input$has_leather <- as.numeric(grepl('leather|suede', model.data$'1st Row Upholstery'))
 model.input$has_rack <- as.numeric(grepl('*', model.data$'Roof Rack'))
@@ -148,7 +142,7 @@ model.fun <- cbind(model.fun, model.fun.weights)
 ##Search Results
 model.fun <- merge(getaround, model.fun, by  = c("cars.make","cars.model","cars.year"))
 model.fun$score.dist <- (model.fun$distance.factor * model.fun$score)
-#results.fun <- distinct(rbind((model.fun %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.fun %>% arrange(desc(score)) %>% slice(1:10))))
+model.fun <- (model.fun %>% arrange(desc(score), cars.distance))
 
 #Run Errands
 ##rm(model.errands)
@@ -166,7 +160,7 @@ model.errands <- cbind(model.errands, model.errands.weights)
 ##Search Results
 model.errands <- merge(getaround, model.errands, by  = c("cars.make","cars.model","cars.year"))
 model.errands$score.dist <- (model.errands$distance.factor * model.errands$score)
-#results.errands <- distinct(rbind((model.errands %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.errands %>% arrange(desc(score)) %>% slice(1:10))))
+model.errands <- (model.errands %>% arrange(desc(score), cars.distance))
 
 #Audiophile
 ##rm(model.audio)
@@ -185,7 +179,7 @@ model.audio <- cbind(model.audio, model.audio.weights)
 ##Search Results
 model.audio <- merge(getaround, model.audio, by  = c("cars.make","cars.model","cars.year"))
 model.audio$score.dist <- (model.audio$distance.factor * model.audio$score)
-#results.audio <- distinct(rbind((model.audio %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.audio %>% arrange(desc(score)) %>% slice(1:10))))
+model.audio <- (model.audio %>% arrange(desc(score), cars.distance))
 
 #Ski Trip
 #rm(model.ski)
@@ -203,14 +197,15 @@ model.ski <- cbind(model.ski, model.ski.weights)
 ##Search Results
 model.ski <- merge(getaround, model.ski, by  = c("cars.make", "cars.model", "cars.year"))
 model.ski$score.dist <- (model.ski$distance.factor * model.ski$score)
-#results.ski <- distinct(rbind((model.ski %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.ski %>% arrange(desc(score)) %>% slice(1:10))))
+model.ski <- (model.ski %>% arrange(desc(score), cars.distance))
 
 #Date Night
 ##rm(model.date)
-model.date <- model.input %>% select(cars.make, cars.model, cars.year)
+model.date <- model.input %>% 
+  select(cars.make, cars.model, cars.year)
 
 ##Weight Model Inputs & Score
-weights.date <- (.50, .10, .10, .10, .20)
+weights.date <- c(.50, .10, .10, .10, .20)
 
 model.date.inputs <-  model.input %>% select(is_luxury, has_leather, has_heated_seat, has_navi, speaker_norm)
 model.date.weights <- data.frame(mapply(`*`, model.date.inputs[1:ncol(model.date.inputs)], weights.date))
@@ -220,4 +215,4 @@ model.date <- cbind(model.date, model.date.weights)
 ##Search Results
 model.date <- merge(getaround, model.date, by  = c("cars.make", "cars.model", "cars.year"))
 model.date$score.dist <- (model.date$distance.factor * model.date$score)
-#results.date <- distinct(rbind((model.date %>% arrange(desc(score.dist)) %>% slice(1:10)), (model.date %>% arrange(desc(score)) %>% slice(1:10))))
+model.date <- (model.date %>% arrange(desc(score), cars.distance))
